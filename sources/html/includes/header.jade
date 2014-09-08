@@ -1,0 +1,122 @@
+doctype html
+<html lang='ru'>
+head
+	meta(charset="utf-8")
+	meta(name="viewport",content="width=1100, user-scalable=no, initial-scale=.7, minimal-ui")
+	meta(name="apple-mobile-web-app-capable", content="yes")
+	meta(name="mobile-web-app-capable", content="yes")
+	meta(name="apple-mobile-web-app-status-bar-style", content="black-translucent")
+	
+	link(href="./layout/css/frontend.css", rel="stylesheet")
+	title Аскет-Авто
+
+<body>
+<div class="container">
+
+header.header
+	.row.no-padding
+		.col-md-2.col-xs-2
+			a(href="/").header__logo
+				img(src='./layout/images/logo.png')
+		.col-md-5.col-xs-5
+			form.header__search
+				input(type="text" placeholder="Я ищу...").header__search-text
+				input(type="submit" value="").header__search-submit
+				span.header__search-description
+					| Введите в поле поиска запрос, например “Автокран”
+		.col-md-3.col-xs-3
+			.header__contacts
+				.header__contacts-icon
+				.header__contacts-frame
+					a(href="tel:+74957815078").header__contacts-number
+						| +7
+						span 495
+						| 781-50-78
+					br
+					a(href="tel:+79150711774").header__contacts-number.header__contacts-number--last
+						| +7
+						span 915
+						| 071-17-74
+		.col-md-2.col-xs-2
+			a.header__call(data-toggle="modal", href="#callBack", data-target="#callBack") Бесплатный звонок
+
+
+section.dropdown__catalog
+	.dropdown__catalog-trigger
+		| Каталог спецтехники
+	.dropdown__catalog-frame
+		.row
+			.col-md-12
+				h4.dropdown__catalog-title Новая техника
+				.row
+					.col-md-3.col-xs-3
+						a.dropdown__catalog-item
+							.dropdown__catalog-item_image(style="background-image: url(./layout/images/c-1.png)")
+
+							.dropdown__catalog-item_title
+								| Автокраны
+					.col-md-3.col-xs-3
+						a.dropdown__catalog-item
+							.dropdown__catalog-item_image(style="background-image: url(./layout/images/c-2.png)")
+
+							.dropdown__catalog-item_title
+								| Мусоровозы, бункеровозы
+					.col-md-3.col-xs-3
+						a.dropdown__catalog-item
+							.dropdown__catalog-item_image(style="background-image: url(./layout/images/c-3.png)")
+
+							.dropdown__catalog-item_title
+								| Краны-манипуляторы
+					.col-md-3.col-xs-3
+						a.dropdown__catalog-item
+							.dropdown__catalog-item_image(style="background-image: url(./layout/images/c-4.png)")
+
+							.dropdown__catalog-item_title
+								| Легкие коммерческие автомобили
+		.row
+			.col-md-12
+				h4.dropdown__catalog-title Б/У техника
+				.row
+					.col-md-3.col-xs-3
+						a.dropdown__catalog-item
+							.dropdown__catalog-item_image(style="background-image: url(./layout/images/c-5.png)")
+
+							.dropdown__catalog-item_title
+								| Седельные тягачи
+					.col-md-3.col-xs-3
+						a.dropdown__catalog-item
+							.dropdown__catalog-item_image(style="background-image: url(./layout/images/c-6.png)")
+
+							.dropdown__catalog-item_title
+								| Самосвалы
+					.col-md-3.col-xs-3
+						a.dropdown__catalog-item
+							.dropdown__catalog-item_image(style="background-image: url(./layout/images/c-7.png)")
+
+							.dropdown__catalog-item_title
+								| Бортовые грузовики, фургоны
+					.col-md-3.col-xs-3
+						a.dropdown__catalog-item
+							.dropdown__catalog-item_image(style="background-image: url(./layout/images/c-8.png)")
+
+							.dropdown__catalog-item_title
+								| Прицепы, полуприцепы
+				.row
+					.col-md-3.col-xs-3
+						a.dropdown__catalog-item
+							.dropdown__catalog-item_image(style="background-image: url(./layout/images/c-9.png)")
+
+							.dropdown__catalog-item_title
+								| Дорожно-строительная спецтехника
+					.col-md-3.col-xs-3
+						a.dropdown__catalog-item
+							.dropdown__catalog-item_image(style="background-image: url(./layout/images/c-10.png)")
+
+							.dropdown__catalog-item_title
+								| Мусоровозы, бункеровозы
+					.col-md-3.col-xs-3
+						a.dropdown__catalog-item
+							.dropdown__catalog-item_image(style="background-image: url(./layout/images/c-11.png)")
+
+							.dropdown__catalog-item_title
+								| Краны-манипуляторы

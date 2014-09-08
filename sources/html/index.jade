@@ -1,0 +1,210 @@
+include includes/header
+
+nav.navbar
+	.row.no-padding
+		.col-md-12.col-xs-12
+			a(href="typical.html").navbar-item О компании             
+			a(href="catalog.html").navbar-item.navbar-item--dropdown Каталог спецтехники             
+			a(href="#").navbar-item Лизинг             
+			a(href="#").navbar-item Выкуп б/у техники             
+			a(href="#").navbar-item Техника на заказ             
+			a(href="contacts.html").navbar-item Контакты
+
+section.promo
+	.row
+		.col-md-3.col-xs-3
+			a.promo__banner(href="#", data-id="#new")
+				.promo__banner-title Новая<br>техника
+				.promo__banner-description Из России и Европы
+			a.promo__banner(href="#", data-id="#used")
+				.promo__banner-title Б/У <br>техника
+				.promo__banner-description С возможностью <br>рассрочки
+		.col-md-9.col-xs-9
+			.resp_slider(style="background-image: url(./layout/images/slider-bg.jpg)")
+				.content
+					h1 Специальное предложение <br>на автокраны “Ивановец” <br>25 тонн. Скидки!
+					a.button Подробнее
+		.promo-slide(id="used")
+			.row
+				.col-md-3.col-xs-3
+					a.promo-slide-item
+						.promo-slide-item_image.promo-slide-item_image--height(style="background-image: url(./layout/images/c-1.png)")
+						.promo-slide-item_title
+							span Автокраны
+				.col-md-3.col-xs-3
+					a.promo-slide-item
+						.promo-slide-item_image(style="background-image: url(./layout/images/c-2.png)")
+						.promo-slide-item_title
+							span Мусоровозы, бункеровозы
+				.col-md-3.col-xs-3
+					a.promo-slide-item
+						.promo-slide-item_image.promo-slide-item_image--height(style="background-image: url(./layout/images/c-3.png)")
+						.promo-slide-item_title
+							span Краны-манипуляторы
+				.col-md-3.col-xs-3
+					a.promo-slide-item
+						.promo-slide-item_image(style="background-image: url(./layout/images/c-4.png)")
+						.promo-slide-item_title
+							span Легкие коммерческие автомобили
+		.promo-slide(id="new")
+			.row
+				.col-md-3.col-xs-3
+					a.promo-slide-item
+						.promo-slide-item_image.promo-slide-item_image--height(style="background-image: url(./layout/images/c-5.png)")
+						.promo-slide-item_title
+							span Седельные тягачи
+				.col-md-3.col-xs-3
+					a.promo-slide-item
+						.promo-slide-item_image(style="background-image: url(./layout/images/c-6.png)")
+						.promo-slide-item_title
+							span Самосвалы
+				.col-md-3.col-xs-3
+					a.promo-slide-item
+						.promo-slide-item_image.promo-slide-item_image--height(style="background-image: url(./layout/images/c-7.png)")
+						.promo-slide-item_title
+							span Бортовые грузовики, фургоны
+				.col-md-3.col-xs-3
+					a.promo-slide-item
+						.promo-slide-item_image(style="background-image: url(./layout/images/c-8.png)")
+						.promo-slide-item_title
+							span Прицепы, полуприцепы
+			.row
+				.col-md-3.col-xs-3
+					a.promo-slide-item
+						.promo-slide-item_image.promo-slide-item_image--height(style="background-image: url(./layout/images/c-9.png)")
+						.promo-slide-item_title
+							span Дорожно-строительная спецтехника
+				.col-md-3.col-xs-3
+					a.promo-slide-item
+						.promo-slide-item_image(style="background-image: url(./layout/images/c-10.png)")
+						.promo-slide-item_title
+							span Мусоровозы, бункеровозы
+				.col-md-3.col-xs-3
+					a.promo-slide-item
+						.promo-slide-item_image.promo-slide-item_image--height(style="background-image: url(./layout/images/c-11.png)")
+						.promo-slide-item_title
+							span Краны-манипуляторы
+				
+
+.tabs
+	.tabs__frame.clearfix
+		.tabs__title 
+			a(href="#").tabs__title-link.tabs__title-link--active Новые поступления
+			a(href="#").tabs__title-link Лидеры продаж
+			a(href="#").tabs__title-link Спецтехника из Европы
+		.tabs__content
+			.catalog__list
+				.row
+					.col-md-3.col-xs-3
+						a(href="#").catalog__list-item
+							.catalog__list-item_image(style="background-image: url(./layout/images/p-1.jpg)")
+							.catalog__list-item_type Кран-манипулятор 1
+							.catalog__list-item_name КАМАЗ 111
+							.catalog__list-item_props
+								|	Год выпуска: 2011 <br>
+								|	Состояние: новый <br>
+								|	Цена: 1,57 млн. руб. <br>
+								|	Местонахождение: Москва
+					.col-md-3.col-xs-3
+						a(href="#").catalog__list-item
+							.catalog__list-item_image(style="background-image: url(./layout/images/p-2.jpg)")
+							.catalog__list-item_type Кран-манипулятор 1
+							.catalog__list-item_name КАМАЗ 111
+							.catalog__list-item_props
+								|	Год выпуска: 2011 <br>
+								|	Состояние: новый <br>
+								|	Цена: 1,57 млн. руб. <br>
+								|	Местонахождение: Москва
+					.col-md-3.col-xs-3
+						a(href="#").catalog__list-item
+							.catalog__list-item_image(style="background-image: url(./layout/images/p-3.jpg)")
+							.catalog__list-item_type Кран-манипулятор 1
+							.catalog__list-item_name КАМАЗ 111
+							.catalog__list-item_props
+								|	Год выпуска: 2011 <br>
+								|	Состояние: новый <br>
+								|	Цена: 1,57 млн. руб. <br>
+								|	Местонахождение: Москва
+					.col-md-3.col-xs-3
+						a(href="#").catalog__list-item
+							.catalog__list-item_image(style="background-image: url(./layout/images/p-4.jpg)")
+							.catalog__list-item_type Кран-манипулятор 1
+							.catalog__list-item_name КАМАЗ 111
+							.catalog__list-item_props
+								|	Год выпуска: 2011 <br>
+								|	Состояние: новый <br>
+								|	Цена: 1,57 млн. руб. <br>
+								|	Местонахождение: Москва
+
+.frame.clearfix
+	.row
+		.col-md-6.col-xs-6
+			.block.faq
+				.row
+					.col-md-5.col-xs-5
+						img(src="./layout/images/faq.jpg", width="100%")
+						a.ask(data-toggle="modal", href="#sendFaq", data-target="#sendFaq") Задать свой вопрос
+					.col-md-7.col-xs-7
+						h3 Ваши вопросы о технике
+						p
+							small Вопрос от Георгия:<br>
+							strong Зачем для производства 32 тонных автокранов «Галичанин» используют<br> 4-х-осное шасси?
+						p 
+							small Ответ:<br>
+							Это повышает устойчивость автокрана как в транспортном, так и в рабочем положении, и этот автокран может...
+						p.big-line-height
+							a(href="#") Читать далее
+
+		.col-md-6.col-xs-6
+			.block.faq
+				h3 Мы найдем решение, если у вас:
+				.select
+					img.trigger(src="./layout/images/trigger.png")
+					select
+						option Нет полной суммы на покупку новой техники 
+						option Что-то еще
+				p.big-line-height
+					Наша компания готова предложить вам лизинг техники на выгодных условиях. Срок договора лизинга до 3 лет, авансовый платёж от 20%, равномерные или убывающие платежи.
+				p.big-line-height
+					a(href="#") Подробнее
+
+.frame.clearfix
+	.features
+		.features__item.row
+			.col-md-3.col-xs-3
+				.features__item-content
+					p Наши преимущества
+					.features__item-content_number
+						img(src="./layout/images/n-1.png")
+					.features__item-content_footer
+						h2 Выгодное соотношение цены и состояния техники
+						p Из-за благоприятных условий эксплуатации наша техника характеризуется отличным состоянием.
+			.col-md-9.col-xs-9
+				.features__item-image(style="background-image: url(./layout/images/feature.jpg)")
+
+.frame.clearfix.fixed-height
+	.row
+		.col-md-4.col-xs-4
+			.block
+				small.date 1 апреля 2014
+				br
+				p 
+					a.title(href="#") Бульдог – это мощный автокран!
+				p.gray Ивановская марка выпустила в продажу долгожданную модель автокрана Ивановец - Бульдог (КС-55744). Более подробную информацию можно почерпнуть из промороликов, посвящённых новинке. 
+		.col-md-4.col-xs-4
+			.block
+				small.date 1 апреля 2014
+				br
+				p 
+					a.title(href="#") Бульдог – это мощный автокран!
+				p.gray Ивановская марка выпустила в продажу долгожданную модель автокрана Ивановец - Бульдог (КС-55744). Более подробную информацию можно почерпнуть из промороликов. 
+		.col-md-4.col-xs-4
+			.block
+				small.date 1 апреля 2014
+				br
+				p 
+					a.title(href="#") Бульдог – это мощный автокран!
+				p.gray Для удобства общения с клиентами компания «Аскет-Авто» открыла офис в Кемерово. Теперь автокраны Ивановец можно приобрести в данном филиале. Цены и скидки на технику соответствуют предложению.
+
+
+include includes/footer

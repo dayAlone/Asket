@@ -1,0 +1,112 @@
+include includes/header
+
+nav.navbar
+	.row.no-padding
+		.col-md-12.col-xs-12
+			a(href="typical.html").navbar-item О компании             
+			a(href="catalog.html").navbar-item.navbar-item--dropdown Каталог спецтехники             
+			a(href="#").navbar-item Лизинг             
+			a(href="#").navbar-item Выкуп б/у техники             
+			a(href="#").navbar-item Техника на заказ             
+			a(href="contacts.html").navbar-item.navbar-item--active Контакты
+		
+.frame.clearfix
+	.block.main.contacts
+		.row
+			.col-md-10.col-xs-10
+				h1 Контакты
+			.col-md-2.col-xs-2
+				a.print(href="#")
+					include ../../public_html/layout/images/svg/print.svg
+					| Версия для печати
+		.row
+			.col-md-3.col-xs-3
+				img(src="./layout/images/office.png", width="100%")
+			.col-md-5.col-xs-5
+				h2.no-margin-top.small-margin-bottom Центральный офис
+				p <strong>Телефоны:</strong><br>+7 (495) 781-50-78 - секретарь;<br>+7 (915) 071-17-74 - отдел автотранспорта, <br>спецтехники и оборудования.
+
+				p <strong>E-mail:</strong> info@asket-auto.ru
+
+				p <strong>Наш адрес:</strong> 117105, г. Москва, ул. Нагатинская, д. 1, стр. 1
+
+				p <strong>Координаты для GPS:</strong> 55.683065, 37.624655
+			.col-md-4.col-xs-4
+				h2.no-margin-top Филиал в г. Кемерово <br>(продажа автокранов "Ивановец")
+				p 
+					strong Телефон: 
+					| +7 (3842) 33-54-03
+
+				p Деменок Дмитрий Алексеевич
+
+				p 
+					strong Адрес: 
+					| г. Кемерово, ул. Тухачевского, <br>д.22а, офис 223
+		.divider
+
+		ul.nav.nav-tabs(role="tablist",id="mapTabs")
+			li.active
+				a(href="#map-1", role="tab", data-toggle="tab") Центральный офис 
+			li
+				a(href="#map-2", role="tab", data-toggle="tab") Филиал в г. Кемерово
+		
+		<script src="http://api-maps.yandex.ru/2.1-dev/?lang=ru-RU&load=package.full" type="text/javascript"></script>
+
+		.tab-content
+			.tab-pane.active(id="map-1")
+				#map_1.map
+				
+			.tab-pane(id="map-2")
+				#map_2.map
+	
+div.			
+	<script type="text/javascript">
+	ymaps.ready(function () {
+
+	var myMap = new ymaps.Map('map_1', {
+	center: [55.682737,37.625612],
+	zoom: 15
+	}),
+	myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+	hintContent: 'RADIA Interactive'
+	}, {
+	// Опции.
+	// Необходимо указать данный тип макета.
+	iconLayout: 'default#image',
+	// Своё изображение иконки метки.
+	iconImageHref: '/layout/images/pointer.png',
+	// Размеры метки.
+	iconImageSize: [47, 48],
+	// Смещение левого верхнего угла иконки относительно
+	// её "ножки" (точки привязки).
+	iconImageOffset: [-23, -48]
+	});
+
+	myMap.geoObjects.add(myPlacemark);
+
+	var myMap2 = new ymaps.Map('map_2', {
+	center: [55.336631, 	86.132159],
+	zoom: 15
+	}),
+	myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+	hintContent: 'RADIA Interactive'
+	}, {
+	// Опции.
+	// Необходимо указать данный тип макета.
+	iconLayout: 'default#image',
+	// Своё изображение иконки метки.
+	iconImageHref: '/layout/images/pointer.png',
+	// Размеры метки.
+	iconImageSize: [47, 48],
+	// Смещение левого верхнего угла иконки относительно
+	// её "ножки" (точки привязки).
+	iconImageOffset: [-23, -48]
+	})
+	myMap2.geoObjects.add(myPlacemark);
+	})
+	$('#mapTabs').on('shown.bs.tab',function(){
+		myMap2.container.fitToViewport()
+		myMap2.container.fitToViewport()
+	})
+	</script>.
+include includes/footer

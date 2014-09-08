@@ -1,0 +1,94 @@
+include includes/header
+
+nav.navbar
+	.row.no-padding
+		.col-md-12.col-xs-12
+			a(href="typical.html").navbar-item О компании             
+			a(href="catalog.html").navbar-item.navbar-item--dropdown Каталог спецтехники             
+			a(href="#").navbar-item Лизинг             
+			a(href="#").navbar-item Выкуп б/у техники             
+			a(href="#").navbar-item Техника на заказ             
+			a(href="contacts.html").navbar-item Контакты
+
+.frame.clearfix
+	.block.main
+		.row
+			.col-md-9.col-xs-9.content
+				.row
+					.col-md-9
+						h1 Ваши вопросы о технике
+					.col-md-3
+						a.ask(data-toggle="modal", href="#sendFaq", data-target="#sendFaq").top Задать свой вопрос
+				.faq-list
+					.faq-list_item
+						.row
+							.col-md-2.col-xs-2
+								.faq-list_item-date 1 апреля 2014
+							.col-md-6.col-xs-6
+								.faq-list_item-author Вопрос от Георгия:
+						.faq-list_item-title Зачем для производства 32 тонных автокранов «Галичанин» используют 4-осное шасси?
+						a.faq-list_item-trigger(href="#") 
+							span.shown Показать ответ
+							span.hiden Скрыть ответ
+						.faq-list_item-text 
+							p Это повышает устойчивость автокрана как в транспортном, так и в рабочем положении, и этот автокран может спокойно передвигаться по дорогам общего пользования, т. к. осевые нагрузки «в габарите».
+					.faq-list_item
+						.row
+							.col-md-2.col-xs-2
+								.faq-list_item-date 1 апреля 2014
+							.col-md-6.col-xs-6
+								.faq-list_item-author Вопрос от Георгия:
+						.faq-list_item-title Что означает пометка H&H в моделях «Галичан» грузоподъемностью 60 т и выше?
+						a.faq-list_item-trigger(href="#") 
+							span.shown Показать ответ
+							span.hiden Скрыть ответ
+						.faq-list_item-text 
+							p Это означает, что на кране установлено гидрооборудование HYDAC (Германия) и прибор безопасности фирмы HIRSCHMANN (Германия), которые отлично зарекомендовали себя по всему миру. Благодаря такой комплектации улучшается плавность и точность управления операциями.
+					.faq-list_item
+						.row
+							.col-md-2.col-xs-2
+								.faq-list_item-date 1 апреля 2014
+							.col-md-6.col-xs-6
+								.faq-list_item-author Вопрос от Георгия:
+						.faq-list_item-title Кран г/п 40 т какого производителя Вы посоветуете купить.
+						a.faq-list_item-trigger(href="#") 
+							span.shown Показать ответ
+							span.hiden Скрыть ответ
+						.faq-list_item-text 
+							p Краны большой грузоподъемности советуем брать «Галичанин» или «Клинцы», у этих производителей они наиболее доработаны.
+					.faq-list_item
+						.row
+							.col-md-2.col-xs-2
+								.faq-list_item-date 1 апреля 2014
+							.col-md-6.col-xs-6
+								.faq-list_item-author Вопрос от Георгия:
+						.faq-list_item-title Чем автокраны «Клинцы» и «Галичанин» лучше по сравнению с другими?
+						a.faq-list_item-trigger(href="#") 
+							span.shown Показать ответ
+							span.hiden Скрыть ответ
+						.faq-list_item-text 
+							p Прежде всего, это надежность и простота управления крановыми операциями.
+					.faq-list_item
+						.row
+							.col-md-2.col-xs-2
+								.faq-list_item-date 1 апреля 2014
+							.col-md-6.col-xs-6
+								.faq-list_item-author Вопрос от Георгия:
+						.faq-list_item-title У вас гарантия 18 месяцев на установку или шасси?
+						a.faq-list_item-trigger(href="#") 
+							span.shown Показать ответ
+							span.hiden Скрыть ответ
+						.faq-list_item-text 
+							p 18 месяцев - гарантия на установку. На шасси камаз заводская гарантия 1 год.
+					
+				.pages
+					a(href="#").pages-link.years-link__active 1
+					a(href="#").pages-link 2
+					a(href="#").pages-link 3
+					a(href="#").pages-link 4
+
+				a.ask(data-toggle="modal", href="#sendFaq", data-target="#sendFaq") Задать свой вопрос
+			.col-xs-3.col-md-3
+				include includes/side
+
+include includes/footer

@@ -1,0 +1,209 @@
+include includes/header
+
+nav.navbar
+	.row.no-padding
+		.col-md-12.col-xs-12
+			a(href="typical.html").navbar-item О компании             
+			a(href="catalog.html").navbar-item.navbar-item--dropdown.navbar-item--active Каталог спецтехники             
+			a(href="#").navbar-item Лизинг             
+			a(href="#").navbar-item Выкуп б/у техники             
+			a(href="#").navbar-item Техника на заказ             
+			a(href="contacts.html").navbar-item Контакты
+
+.tabs
+	.tabs__frame.clearfix
+		.tabs__title 
+			a(href="#").tabs__title-link.tabs__title-link--active Новые поступления
+			a(href="#").tabs__title-link Лидеры продаж
+			a(href="#").tabs__title-link Спецтехника из Европы
+		.tabs__content
+			.row
+				.col-xs-3.col-md-3.side
+					.catalog-sections__side
+						a(href="#").catalog-sections__side-item.catalog-sections__side-item__active
+							.catalog-sections__side-item_icon
+								include ../../public_html/layout/images/svg/p-1.svg
+							.catalog-sections__side-item_text Автокраны
+						a(href="#").catalog-sections__side-item
+							.catalog-sections__side-item_icon
+								include ../../public_html/layout/images/svg/p-2.svg
+							.catalog-sections__side-item_text Мусоровозы, бункеровозы
+						a(href="#").catalog-sections__side-item
+							.catalog-sections__side-item_icon
+								include ../../public_html/layout/images/svg/p-3.svg
+							.catalog-sections__side-item_text Краны-манипуляторы
+						a(href="#").catalog-sections__side-item
+							.catalog-sections__side-item_icon
+								include ../../public_html/layout/images/svg/p-4.svg
+							.catalog-sections__side-item_text Легкие коммерческие автомобили
+					h4 Кран манипулятор в аренду — отличное решение для ваших задач
+
+					p Далеко не каждая компания может позволить себе приобретать дорогостоящую технику для погрузочно- разгрузочных работ и транспортировки крупногабаритных грузов, особенно если нет необходимости в ее постоянном использовании. Гораздо выгодней обходится аренда манипулятора.
+
+					p Обратившись в компанию «Аскет Авто» можно заказать универсальный самопогрузчик для перевозки грузов независимо от их габаритов и места назначения. Мы не предъявляем требований к минимальному объему работ, делая услугу аренды крана манипулятора доступной каждому. Цена за любой заказ складывается из расстояния между объектами, веса и размера груза и времени, на которое была предоставлена спецтехника.
+
+					h4 Для каких ситуаций подойдет автокран манипулятор?
+
+					p необходимость проведения краткосрочных или периодических погрузочных работ;<br>неисправность собственного оборудования;<br>потребность в перевозке крупногабаритных грузов;<br>отсутствие достаточного пространства для использования другой техники.
+
+					.widget
+						img(src="./layout/images/ask.png")
+						a.button(data-toggle="modal", href="#sendFaq", data-target="#sendFaq") Задать вопрос
+				.col-md-9.col-xs-9.content
+					.row--title
+						.row
+							.col-md-12.col-md-12
+								h2 Автокраны
+					.toolbar
+						.row
+							.col-md-3.col-xs-3
+								.select
+									img.trigger(src="./layout/images/trigger.png")
+									select
+										option цене
+										option наличию
+							.col-md-1.col-xs-1.no-padding
+								| Выводить
+							.col-md-3.col-xs-3
+								.select
+									img.trigger(src="./layout/images/trigger.png")
+									select
+										option сначала большее
+										option сначала меньшее
+							.col-md-5.col-xs-5.right
+								.pages
+									a(href="#").pages-link.years-link__active 1
+									a(href="#").pages-link 2
+									a(href="#").pages-link 3
+									a(href="#").pages-link 4
+					.catalog__list
+						.row
+							.col-md-4.col-xs-4
+								a(href="#").catalog__list-item
+									.catalog__list-item_image(style="background-image: url(./layout/images/pl-1.jpg)")
+									.catalog__list-item_type Кран-манипулятор 1
+									.catalog__list-item_name КАМАЗ 111
+									.catalog__list-item_props
+										|	Год выпуска: 2011 <br>
+										|	Состояние: новый <br>
+										|	Цена: 1,57 млн. руб. <br>
+										|	Местонахождение: Москва
+							.col-md-4.col-xs-4
+								a(href="#").catalog__list-item
+									.catalog__list-item_image(style="background-image: url(./layout/images/pl-2.jpg)")
+									.catalog__list-item_type Кран-манипулятор 1
+									.catalog__list-item_name КАМАЗ 111
+									.catalog__list-item_props
+										|	Год выпуска: 2011 <br>
+										|	Состояние: новый <br>
+										|	Цена: 1,57 млн. руб. <br>
+										|	Местонахождение: Москва
+							.col-md-4.col-xs-4
+								a(href="#").catalog__list-item
+									.catalog__list-item_image(style="background-image: url(./layout/images/pl-3.jpg)")
+									.catalog__list-item_type Кран-манипулятор 1
+									.catalog__list-item_name КАМАЗ 111
+									.catalog__list-item_props
+										|	Год выпуска: 2011 <br>
+										|	Состояние: новый <br>
+										|	Цена: 1,57 млн. руб. <br>
+										|	Местонахождение: Москва
+						.row
+							.col-md-4.col-xs-4
+								a(href="#").catalog__list-item
+									.catalog__list-item_image(style="background-image: url(./layout/images/pl-4.jpg)")
+									.catalog__list-item_type Кран-манипулятор 1
+									.catalog__list-item_name КАМАЗ 111
+									.catalog__list-item_props
+										|	Год выпуска: 2011 <br>
+										|	Состояние: новый <br>
+										|	Цена: 1,57 млн. руб. <br>
+										|	Местонахождение: Москва
+							.col-md-4.col-xs-4
+								a(href="#").catalog__list-item
+									.catalog__list-item_image(style="background-image: url(./layout/images/pl-5.jpg)")
+									.catalog__list-item_type Кран-манипулятор 1
+									.catalog__list-item_name КАМАЗ 111
+									.catalog__list-item_props
+										|	Год выпуска: 2011 <br>
+										|	Состояние: новый <br>
+										|	Цена: 1,57 млн. руб. <br>
+										|	Местонахождение: Москва
+							.col-md-4.col-xs-4
+								a(href="#").catalog__list-item
+									.catalog__list-item_image(style="background-image: url(./layout/images/pl-6.jpg)")
+									.catalog__list-item_type Кран-манипулятор 1
+									.catalog__list-item_name КАМАЗ 111
+									.catalog__list-item_props
+										|	Год выпуска: 2011 <br>
+										|	Состояние: новый <br>
+										|	Цена: 1,57 млн. руб. <br>
+										|	Местонахождение: Москва
+						.row
+							.col-md-4.col-xs-4
+								a(href="#").catalog__list-item
+									.catalog__list-item_image(style="background-image: url(./layout/images/pl-7.jpg)")
+									.catalog__list-item_type Кран-манипулятор 1
+									.catalog__list-item_name КАМАЗ 111
+									.catalog__list-item_props
+										|	Год выпуска: 2011 <br>
+										|	Состояние: новый <br>
+										|	Цена: 1,57 млн. руб. <br>
+										|	Местонахождение: Москва
+							.col-md-4.col-xs-4
+								a(href="#").catalog__list-item
+									.catalog__list-item_image(style="background-image: url(./layout/images/pl-8.jpg)")
+									.catalog__list-item_type Кран-манипулятор 1
+									.catalog__list-item_name КАМАЗ 111
+									.catalog__list-item_props
+										|	Год выпуска: 2011 <br>
+										|	Состояние: новый <br>
+										|	Цена: 1,57 млн. руб. <br>
+										|	Местонахождение: Москва
+							.col-md-4.col-xs-4
+								a(href="#").catalog__list-item
+									.catalog__list-item_image(style="background-image: url(./layout/images/pl-9.jpg)")
+									.catalog__list-item_type Кран-манипулятор 1
+									.catalog__list-item_name КАМАЗ 111
+									.catalog__list-item_props
+										|	Год выпуска: 2011 <br>
+										|	Состояние: новый <br>
+										|	Цена: 1,57 млн. руб. <br>
+										|	Местонахождение: Москва
+						.row
+							.col-md-4.col-xs-4
+								a(href="#").catalog__list-item
+									.catalog__list-item_image(style="background-image: url(./layout/images/p-1.jpg)")
+									.catalog__list-item_type Кран-манипулятор 1
+									.catalog__list-item_name КАМАЗ 111
+									.catalog__list-item_props
+										|	Год выпуска: 2011 <br>
+										|	Состояние: новый <br>
+										|	Цена: 1,57 млн. руб. <br>
+										|	Местонахождение: Москва
+							.col-md-4.col-xs-4
+								a(href="#").catalog__list-item
+									.catalog__list-item_image(style="background-image: url(./layout/images/p-2.jpg)")
+									.catalog__list-item_type Кран-манипулятор 1
+									.catalog__list-item_name КАМАЗ 111
+									.catalog__list-item_props
+										|	Год выпуска: 2011 <br>
+										|	Состояние: новый <br>
+										|	Цена: 1,57 млн. руб. <br>
+										|	Местонахождение: Москва
+							.col-md-4.col-xs-4
+								a(href="#").catalog__list-item
+									.catalog__list-item_image(style="background-image: url(./layout/images/p-3.jpg)")
+									.catalog__list-item_type Кран-манипулятор 1
+									.catalog__list-item_name КАМАЗ 111
+									.catalog__list-item_props
+										|	Год выпуска: 2011 <br>
+										|	Состояние: новый <br>
+										|	Цена: 1,57 млн. руб. <br>
+										|	Местонахождение: Москва
+					.pages.center
+						a(href="#").pages-link.years-link__active 1
+						a(href="#").pages-link 2
+						a(href="#").pages-link 3
+						a(href="#").pages-link 4
+include includes/footer

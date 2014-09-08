@@ -1,0 +1,201 @@
+include includes/header
+
+nav.navbar
+	.row.no-padding
+		.col-md-12.col-xs-12
+			a(href="typical.html").navbar-item О компании             
+			a(href="catalog.html").navbar-item.navbar-item--dropdown.navbar-item--active Каталог спецтехники             
+			a(href="#").navbar-item Лизинг             
+			a(href="#").navbar-item Выкуп б/у техники             
+			a(href="#").navbar-item Техника на заказ             
+			a(href="contacts.html").navbar-item Контакты
+
+.tabs
+	.tabs__frame.clearfix
+		.tabs__title 
+			a(href="#").tabs__title-link.tabs__title-link--active Новые поступления
+			a(href="#").tabs__title-link Лидеры продаж
+			a(href="#").tabs__title-link Спецтехника из Европы
+		.tabs__content
+			.row
+				.col-xs-3.col-md-3.side
+					.catalog-sections__side
+						a(href="#").catalog-sections__side-item
+							.catalog-sections__side-item_icon
+								include ../../public_html/layout/images/svg/p-1.svg
+							.catalog-sections__side-item_text Автокраны
+						a(href="#").catalog-sections__side-item
+							.catalog-sections__side-item_icon
+								include ../../public_html/layout/images/svg/p-2.svg
+							.catalog-sections__side-item_text Мусоровозы, бункеровозы
+						a(href="#").catalog-sections__side-item
+							.catalog-sections__side-item_icon
+								include ../../public_html/layout/images/svg/p-3.svg
+							.catalog-sections__side-item_text Краны-манипуляторы
+						a(href="#").catalog-sections__side-item
+							.catalog-sections__side-item_icon
+								include ../../public_html/layout/images/svg/p-4.svg
+							.catalog-sections__side-item_text Легкие коммерческие автомобили
+					p Компания «АСКЕТ-АВТО» предоставляет всем возможность приобрести б/у автотранспорт и оборудование по низким ценам.
+					.widget
+						h3 Мы поможем
+						p Если у вас нет полной суммы на покупку новой техники, наша компания готова предложить вам <a href="#">лизинг техники</a> на выгодных условиях. Срок договора лизинга до 3 лет, авансовый платёж от 20%, равномерные или убывающие платежи.
+						a.button(href="#") Подробнее
+					.widget
+						img(src="./layout/images/ask.png")
+						a.button(data-toggle="modal", href="#sendFaq", data-target="#sendFaq") Задать вопрос
+				.col-md-9.col-xs-9.content
+					.row--title
+						.row
+							.col-md-9.col-md-9
+								h2 Автокраны
+							.col-md-3.col-md-3
+								a(href="#").button Показать все
+					.catalog__list
+						.row
+							.col-md-4.col-xs-4
+								a(href="#").catalog__list-item
+									.catalog__list-item_image(style="background-image: url(./layout/images/pl-1.jpg)")
+									.catalog__list-item_type Кран-манипулятор 1
+									.catalog__list-item_name КАМАЗ 111
+									.catalog__list-item_props
+										|	Год выпуска: 2011 <br>
+										|	Состояние: новый <br>
+										|	Цена: 1,57 млн. руб. <br>
+										|	Местонахождение: Москва
+							.col-md-4.col-xs-4
+								a(href="#").catalog__list-item
+									.catalog__list-item_image(style="background-image: url(./layout/images/pl-2.jpg)")
+									.catalog__list-item_type Кран-манипулятор 1
+									.catalog__list-item_name КАМАЗ 111
+									.catalog__list-item_props
+										|	Год выпуска: 2011 <br>
+										|	Состояние: новый <br>
+										|	Цена: 1,57 млн. руб. <br>
+										|	Местонахождение: Москва
+							.col-md-4.col-xs-4
+								a(href="#").catalog__list-item
+									.catalog__list-item_image(style="background-image: url(./layout/images/pl-3.jpg)")
+									.catalog__list-item_type Кран-манипулятор 1
+									.catalog__list-item_name КАМАЗ 111
+									.catalog__list-item_props
+										|	Год выпуска: 2011 <br>
+										|	Состояние: новый <br>
+										|	Цена: 1,57 млн. руб. <br>
+										|	Местонахождение: Москва
+					.row--title
+						.row
+							.col-md-9.col-md-9
+								h2 Мусоровозы, бункеровозы
+							.col-md-3.col-md-3
+								a(href="#").button Показать все
+					.catalog__list
+						.row
+							.col-md-4.col-xs-4
+								a(href="#").catalog__list-item
+									.catalog__list-item_image(style="background-image: url(./layout/images/pl-4.jpg)")
+									.catalog__list-item_type Кран-манипулятор 1
+									.catalog__list-item_name КАМАЗ 111
+									.catalog__list-item_props
+										|	Год выпуска: 2011 <br>
+										|	Состояние: новый <br>
+										|	Цена: 1,57 млн. руб. <br>
+										|	Местонахождение: Москва
+							.col-md-4.col-xs-4
+								a(href="#").catalog__list-item
+									.catalog__list-item_image(style="background-image: url(./layout/images/pl-5.jpg)")
+									.catalog__list-item_type Кран-манипулятор 1
+									.catalog__list-item_name КАМАЗ 111
+									.catalog__list-item_props
+										|	Год выпуска: 2011 <br>
+										|	Состояние: новый <br>
+										|	Цена: 1,57 млн. руб. <br>
+										|	Местонахождение: Москва
+							.col-md-4.col-xs-4
+								a(href="#").catalog__list-item
+									.catalog__list-item_image(style="background-image: url(./layout/images/pl-6.jpg)")
+									.catalog__list-item_type Кран-манипулятор 1
+									.catalog__list-item_name КАМАЗ 111
+									.catalog__list-item_props
+										|	Год выпуска: 2011 <br>
+										|	Состояние: новый <br>
+										|	Цена: 1,57 млн. руб. <br>
+										|	Местонахождение: Москва
+					.row--title
+						.row
+							.col-md-9.col-md-9
+								h2 Краны-манипуляторы
+							.col-md-3.col-md-3
+								a(href="#").button Показать все
+					.catalog__list
+						.row
+							.col-md-4.col-xs-4
+								a(href="#").catalog__list-item
+									.catalog__list-item_image(style="background-image: url(./layout/images/pl-7.jpg)")
+									.catalog__list-item_type Кран-манипулятор 1
+									.catalog__list-item_name КАМАЗ 111
+									.catalog__list-item_props
+										|	Год выпуска: 2011 <br>
+										|	Состояние: новый <br>
+										|	Цена: 1,57 млн. руб. <br>
+										|	Местонахождение: Москва
+							.col-md-4.col-xs-4
+								a(href="#").catalog__list-item
+									.catalog__list-item_image(style="background-image: url(./layout/images/pl-8.jpg)")
+									.catalog__list-item_type Кран-манипулятор 1
+									.catalog__list-item_name КАМАЗ 111
+									.catalog__list-item_props
+										|	Год выпуска: 2011 <br>
+										|	Состояние: новый <br>
+										|	Цена: 1,57 млн. руб. <br>
+										|	Местонахождение: Москва
+							.col-md-4.col-xs-4
+								a(href="#").catalog__list-item
+									.catalog__list-item_image(style="background-image: url(./layout/images/pl-9.jpg)")
+									.catalog__list-item_type Кран-манипулятор 1
+									.catalog__list-item_name КАМАЗ 111
+									.catalog__list-item_props
+										|	Год выпуска: 2011 <br>
+										|	Состояние: новый <br>
+										|	Цена: 1,57 млн. руб. <br>
+										|	Местонахождение: Москва
+					.row--title
+						.row
+							.col-md-9.col-md-9
+								h2 Легкие коммерческие автомобили
+							.col-md-3.col-md-3
+								a(href="#").button Показать все
+					.catalog__list
+						.row
+							.col-md-4.col-xs-4
+								a(href="#").catalog__list-item
+									.catalog__list-item_image(style="background-image: url(./layout/images/p-1.jpg)")
+									.catalog__list-item_type Кран-манипулятор 1
+									.catalog__list-item_name КАМАЗ 111
+									.catalog__list-item_props
+										|	Год выпуска: 2011 <br>
+										|	Состояние: новый <br>
+										|	Цена: 1,57 млн. руб. <br>
+										|	Местонахождение: Москва
+							.col-md-4.col-xs-4
+								a(href="#").catalog__list-item
+									.catalog__list-item_image(style="background-image: url(./layout/images/p-2.jpg)")
+									.catalog__list-item_type Кран-манипулятор 1
+									.catalog__list-item_name КАМАЗ 111
+									.catalog__list-item_props
+										|	Год выпуска: 2011 <br>
+										|	Состояние: новый <br>
+										|	Цена: 1,57 млн. руб. <br>
+										|	Местонахождение: Москва
+							.col-md-4.col-xs-4
+								a(href="#").catalog__list-item
+									.catalog__list-item_image(style="background-image: url(./layout/images/p-3.jpg)")
+									.catalog__list-item_type Кран-манипулятор 1
+									.catalog__list-item_name КАМАЗ 111
+									.catalog__list-item_props
+										|	Год выпуска: 2011 <br>
+										|	Состояние: новый <br>
+										|	Цена: 1,57 млн. руб. <br>
+										|	Местонахождение: Москва
+
+include includes/footer

@@ -1,0 +1,189 @@
+include includes/header
+
+nav.navbar
+	.row.no-padding
+		.col-md-12.col-xs-12
+			a(href="typical.html").navbar-item О компании             
+			a(href="catalog.html").navbar-item.navbar-item--dropdown.navbar-item--active Каталог спецтехники             
+			a(href="#").navbar-item Лизинг             
+			a(href="#").navbar-item Выкуп б/у техники             
+			a(href="#").navbar-item Техника на заказ             
+			a(href="contacts.html").navbar-item Контакты
+		.breadcrumbs.left
+			.col-md-2.col-xs-2
+				select
+					option Новая техника
+					option Б/У техника
+			.col-md-3.col-xs-3
+				select
+					option Краны-манипуляторы
+					option Автокраны
+					option Мусоровозы, бункеровозы
+					option Легкие коммерческие автомобили
+			.col-md-7.col-xs-7 Бортовой автомобиль КАМАЗ-43118 c КМУ Kanglim KS 1256 G-II
+
+.frame.clearfix
+	.block.main
+		.product
+			.row
+				.col-md-10.col-xs-10
+					h1 Бортовой автомобиль КАМАЗ-43118 c КМУ Kanglim KS 1256 G-II
+				.col-md-2.col-xs-2
+					a.print(href="#")
+						include ../../public_html/layout/images/svg/print.svg
+						| Версия для печати
+			.row
+				.col-md-4.col-xs-4.side
+					.gallery
+						.big
+							a(id="big-1", style="background-image: url(./layout/images/p-1.jpg)", rel="prettyPhoto[]", href="./layout/images/p-1.jpg").active
+							a(id="big-2", style="background-image: url(./layout/images/p-2.jpg)", rel="prettyPhoto[]", href="./layout/images/p-2.jpg")
+							a(id="big-3", style="background-image: url(./layout/images/p-3.jpg)", rel="prettyPhoto[]", href="./layout/images/p-3.jpg")
+							a(id="big-4", style="background-image: url(./layout/images/p-4.jpg)", rel="prettyPhoto[]", href="./layout/images/p-4.jpg")
+						.slider
+							.item
+								a.image(style="background-image: url(./layout/images/p-1.jpg)", data-id="big-1")
+							.item
+								a.image(style="background-image: url(./layout/images/p-2.jpg)", data-id="big-2")
+							.item
+								a.image(style="background-image: url(./layout/images/p-3.jpg)", data-id="big-3")
+							.item
+								a.image(style="background-image: url(./layout/images/p-4.jpg)", data-id="big-4")
+							.item
+								a.image(style="background-image: url(./layout/images/p-1.jpg)", data-id="big-1")
+							.item
+								a.image(style="background-image: url(./layout/images/p-2.jpg)", data-id="big-2")
+							.item
+								a.image(style="background-image: url(./layout/images/p-3.jpg)", data-id="big-3")
+							.item
+								a.image(style="background-image: url(./layout/images/p-4.jpg)", data-id="big-4")
+
+					p АО "КАНГЛИМ" является одной из лидерующих компаний Южной Кореи по производству оборудования на основе новейших технологий для удобства в будущем. Со дня появления (1979 год) компания производит крано- манипуляторные установки для внутреннего и внешнего рынков. Кран-манипуляторы Kanglim идеально подходят для монтажа на бортовой автомобиль КАМАЗ 43118. Данный манипулятор предназначен для самозагрузки, саморазгрузки и транспортировки различных грузов по шоссейным дорогам.
+				.col-md-8.col-xs-8
+					.params
+						.params-item
+							.params-item-title
+								.params-item-title_content
+									include ../../public_html/layout/images/svg/i-1.svg
+									| <br> Год выпуска
+							.params-item-value 2014
+						.params-item
+							.params-item-title
+								.params-item-title_content
+									include ../../public_html/layout/images/svg/i-2.svg
+									| <br> Состояние
+							.params-item-value Новый
+						.params-item
+							.params-item-title
+								.params-item-title_content
+									include ../../public_html/layout/images/svg/i-3.svg
+									| <br> Наработка
+							.params-item-value 123 488 км.
+						.params-item
+							.params-item-title
+								.params-item-title_content
+									include ../../public_html/layout/images/svg/i-4.svg
+									| <br> Нахождение
+							.params-item-value Владивосток
+						.params-item
+							.params-item-title
+								.params-item-title_content
+									include ../../public_html/layout/images/svg/i-5.svg
+									| <br> Наличие
+							.params-item-value В наличии
+					.price
+						.price-value 10 820 000 р.
+						a(href="#").price-button Выгодно в лизинг
+					.sub-tabs
+						.sub-tabs_title
+							a(href="#").sub-tabs_title__active Характеристики
+							a(href="#") Износ
+						.sub-tabs_content
+							.param-block
+								.param-block_title Кузов
+								.row
+									.col-md-5.col-xs-5
+										| Объем кузова, м3:
+									.col-md-7.col-xs-7
+										| 15
+							.param-block
+								.param-block_title Масса
+								.row
+									.col-md-5.col-xs-5 Масса без нагрузки, кг:
+									.col-md-7.col-xs-7 15 500
+								.row
+									.col-md-5.col-xs-5 Максимальная масса, кг:
+									.col-md-7.col-xs-7 38 500
+								.row
+									.col-md-5.col-xs-5 Габариты (ДхШхВ), мм:
+									.col-md-7.col-xs-7 8300x2550x3249
+							.param-block
+								.param-block_title Двигатель
+								
+								.row
+									.col-md-5.col-xs-5 Тип двигателя:
+									.col-md-7.col-xs-7 дизель
+								.row
+									.col-md-5.col-xs-5 Объем двигателя, см3:
+									.col-md-7.col-xs-7 12 280
+								.row
+									.col-md-5.col-xs-5 Мощность двигателя л.с. (кВт):
+									.col-md-7.col-xs-7 480 (309)
+								.row
+									.col-md-5.col-xs-5 Модель двигателя:
+									.col-md-7.col-xs-7 IVECO Cursor 13 (F3B E0681)
+								.row
+									.col-md-5.col-xs-5 Экологический класс:
+									.col-md-7.col-xs-7 3
+								.row
+									.col-md-5.col-xs-5 Топливный бак, л:
+									.col-md-7.col-xs-7 500
+							.param-block
+								.param-block_title Трансмиссия
+								.row
+									.col-md-5.col-xs-5
+										| Тип КПП:
+									.col-md-7.col-xs-7
+										| ZF 16S 151 OD механическая, 16-ступенчатая
+							.param-block
+								.param-block_title Шасси
+								.row
+									.col-md-5.col-xs-5
+										| Колесная формула:
+									.col-md-7.col-xs-7
+										| 6x6
+								.row
+									.col-md-5.col-xs-5
+										| Тип подвески:
+									.col-md-7.col-xs-7
+										| рессоры
+								.row
+									.col-md-5.col-xs-5
+										| Тип тормозной системы:
+									.col-md-7.col-xs-7
+										| барабанные тормоза с клиновым  разжимом и ABS
+								.row
+									.col-md-5.col-xs-5
+										| Шины:
+									.col-md-7.col-xs-7
+										| 12.00 R20, 395/85R20
+							.param-block
+								.param-block_title Кабина
+								.row
+									.col-md-5.col-xs-5
+										| Тип кабины:	
+									.col-md-7.col-xs-7
+										| 2-х местная, серии Stralis
+							.param-block
+								.param-block_title Комплектация
+								.row
+									.col-md-12.col-xs-12
+										| Webasto, электростеклоподъемники, обогрев зеркал, электрозеркала
+										
+
+
+					
+					a(href="news-list.html").news-list_item-back 
+						img(src="./layout/images/back.png")
+						| Вернуться в раздел
+include includes/footer

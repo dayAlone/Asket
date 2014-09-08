@@ -1,0 +1,40 @@
+include includes/header
+
+nav.navbar
+	.row.no-padding
+		.col-md-12.col-xs-12
+			a(href="typical.html").navbar-item О компании             
+			a(href="catalog.html").navbar-item.navbar-item--dropdown Каталог спецтехники             
+			a(href="#").navbar-item Лизинг             
+			a(href="#").navbar-item Выкуп б/у техники             
+			a(href="#").navbar-item Техника на заказ             
+			a(href="contacts.html").navbar-item Контакты
+
+.frame.clearfix
+	.block.main
+		.row
+			.col-md-9.col-xs-9.content
+				h1 Новости
+				.years
+					a(href="#").years-link.years-link__active Все новости
+					a(href="#").years-link 2014
+					a(href="#").years-link 2013
+					a(href="#").years-link 2012
+					a(href="#").years-link 2011
+					a(href="#").years-link 2010
+					a(href="#").years-link 2009
+				.news-list
+					.news-list_item.news-list_item__text
+						.news-list_item-date 1 апреля 2014
+						.news-list_item-title Бульдог – это мощный автокран!
+						.news-list_item-text 
+							p Ивановская марка выпустила в продажу долгожданную модель автокрана Ивановец - Бульдог (КС-55744). Более подробную информацию можно почерпнуть из промороликов, посвящённых новинке.
+							p Это 25-тонник, созданный с применением инновационных технологий. В нём собраны все преимущества, необходимые машине следующего поколения. 
+							<iframe width="560" height="315" src="//www.youtube.com/embed/InrknOBrIaI" frameborder="0" allowfullscreen></iframe>
+							a(href="news-list.html").news-list_item-back 
+								img(src="./layout/images/back.png")
+								| Вернуться к списку новостей
+			.col-xs-3.col-md-3
+				include includes/side
+
+include includes/footer

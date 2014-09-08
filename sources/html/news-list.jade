@@ -1,0 +1,59 @@
+include includes/header
+
+nav.navbar
+	.row.no-padding
+		.col-md-12.col-xs-12
+			a(href="typical.html").navbar-item О компании             
+			a(href="catalog.html").navbar-item.navbar-item--dropdown Каталог спецтехники             
+			a(href="#").navbar-item Лизинг             
+			a(href="#").navbar-item Выкуп б/у техники             
+			a(href="#").navbar-item Техника на заказ             
+			a(href="contacts.html").navbar-item Контакты
+
+.frame.clearfix
+	.block.main
+		.row
+			.col-md-9.col-xs-9.content
+				h1 Новости
+				.years
+					a(href="#").years-link.years-link__active Все новости
+					a(href="#").years-link 2014
+					a(href="#").years-link 2013
+					a(href="#").years-link 2012
+					a(href="#").years-link 2011
+					a(href="#").years-link 2010
+					a(href="#").years-link 2009
+				.news-list
+					.news-list_item
+						.news-list_item-date 1 апреля 2014
+						a(href="news-detail.html").news-list_item-title Бульдог – это мощный автокран!
+						p.news-list_item-text Ивановская марка выпустила в продажу долгожданную модель автокрана Ивановец - Бульдог (КС-55744). Более подробную информацию можно почерпнуть из промороликов, посвящённых новинке.
+					.news-list_item
+						.news-list_item-date 4 февраля 2014
+						a(href="news-detail.html").news-list_item-title Автокранов больше – выбор проще!
+						p.news-list_item-text Мы выполнили Ваши пожелания и пополнили ассортимент автокранов на стоянке. Теперь, помимо Ивановца, у нас можно приобрести автокраны Галичанин и Клинцы. С января 2014 года компания «Аскет-Авто» стала официальным дилером Галичского и Клинцовского автокрановых заводов.
+					.news-list_item
+						.news-list_item-date 13 августа 2013
+						a(href="news-detail.html").news-list_item-title Открытие филиала в Кемерово
+						p.news-list_item-text Для удобства общения с клиентами компания «Аскет-Авто» открыла офис в Кемерово. Теперь автокраны Ивановец можно приобрести в данном филиале. Цены и скидки на технику соответствуют предложению от московского офиса компании. 
+					.news-list_item
+						.news-list_item-date 31 мая 2013
+						a(href="news-detail.html").news-list_item-title Автокран на шасси Урал по цене КамАЗа
+						p.news-list_item-text Редкая возможность получить тот же автокран Ивановец только с более высокой проходимостью! Аскет-Авто предлагает для клиентов автокран КС-45717-1Р на шасси УРАЛ 4320 по сниженной цене!
+					.news-list_item
+						.news-list_item-date 12 марта 2013
+						a(href="news-detail.html").news-list_item-title Автокран 25 тонн за цену 16-тонника!
+						p.news-list_item-text Компания «Аскет-Авто» предлагает автокран Ивановец КС-45717К-1 с грузоподъёмностью 25 тонн всего за 4 600 000 рублей! 
+					.news-list_item
+						.news-list_item-date 30 октября 2012
+						a(href="news-detail.html").news-list_item-title У нас автокраны Ивановец всегда в наличии!
+						p.news-list_item-text Автокран Ивановец КС-45717А-1Р на шасси МАЗ-6303 и вездеход Ивановец КС-45717К-3Р на шасси КАМАЗ-43118 снова в наличии на нашей стоянке. Зная всё о Ваших предпочтениях, мы бесперебойно закупаем дефицитные модели автокранов на наиболее востребованных шасси.
+				.pages
+					a(href="#").pages-link.years-link__active 1
+					a(href="#").pages-link 2
+					a(href="#").pages-link 3
+					a(href="#").pages-link 4
+			.col-xs-3.col-md-3
+				include includes/side
+
+include includes/footer

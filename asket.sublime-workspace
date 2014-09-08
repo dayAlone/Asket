@@ -1,0 +1,986 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"tra",
+				"transparent"
+			],
+			[
+				"sub",
+				"subscribe"
+			],
+			[
+				"fi",
+				"first-child"
+			],
+			[
+				"prev",
+				"preventDefault"
+			],
+			[
+				"mail",
+				"maillist"
+			],
+			[
+				"sli",
+				"slick-prev"
+			],
+			[
+				"his",
+				"history-page"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"eve",
+				"event"
+			],
+			[
+				"min-",
+				"min-height"
+			],
+			[
+				"tr",
+				"transition-property"
+			],
+			[
+				"parent",
+				"parents"
+			],
+			[
+				"te-t",
+				"text-transform"
+			],
+			[
+				"end",
+				"endforeach"
+			],
+			[
+				"rem",
+				"removeClass"
+			],
+			[
+				"city",
+				"city-list"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"toggl",
+				"toggleClass"
+			],
+			[
+				"no",
+				"none"
+			],
+			[
+				"sc",
+				"scheme"
+			],
+			[
+				"ac",
+				"active"
+			],
+			[
+				"stro",
+				"stroke"
+			],
+			[
+				"poin",
+				"pointer-events"
+			],
+			[
+				"has",
+				"hasClass"
+			],
+			[
+				"max-",
+				"max-width"
+			],
+			[
+				"con",
+				"container"
+			],
+			[
+				"fir",
+				"first-of-type"
+			],
+			[
+				"vi",
+				"visible"
+			],
+			[
+				"bo-t",
+				"border-top"
+			],
+			[
+				"bot",
+				"bottom"
+			],
+			[
+				"sl",
+				"slick-prev"
+			],
+			[
+				"ba-",
+				"background-position"
+			],
+			[
+				"pa",
+				"parents"
+			],
+			[
+				"_SE",
+				"_SESSION  (variable)"
+			],
+			[
+				"strto",
+				"strtotime"
+			],
+			[
+				"even",
+				"events  (variable)"
+			],
+			[
+				"mo",
+				"monday"
+			],
+			[
+				"arrow-",
+				"arrow-right"
+			],
+			[
+				"of",
+				"offset"
+			],
+			[
+				"pat",
+				"padding-top"
+			],
+			[
+				"ma",
+				"margin-bottom"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"cal",
+				"cal-day"
+			],
+			[
+				"las",
+				"last-of-type"
+			],
+			[
+				"pt",
+				"padding-top"
+			],
+			[
+				"em",
+				"embedded-opentype"
+			],
+			[
+				"se",
+				"section"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"test",
+				"test_result"
+			],
+			[
+				"qu",
+				"questions"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"re",
+				"result"
+			],
+			[
+				"remo",
+				"removeClass"
+			],
+			[
+				"repe",
+				"no-repeat"
+			],
+			[
+				"res",
+				"reasons"
+			],
+			[
+				"te-",
+				"text-align"
+			],
+			[
+				"anim",
+				"animate"
+			],
+			[
+				"pad-",
+				"padding-bottom"
+			],
+			[
+				"li-",
+				"line-height"
+			],
+			[
+				"te",
+				"text-indent"
+			],
+			[
+				"an",
+				"anchor	 frontend.css"
+			],
+			[
+				"whi",
+				"white-space"
+			],
+			[
+				"ml",
+				"margin-left"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"bl",
+				"block"
+			],
+			[
+				"Im",
+				"important"
+			],
+			[
+				"u",
+				"uppercase"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"first",
+				"first-of-type"
+			],
+			[
+				"ab",
+				"absolute"
+			],
+			[
+				"hi",
+				"history"
+			],
+			[
+				"pre",
+				"preventDefault"
+			],
+			[
+				"br",
+				"brands"
+			],
+			[
+				"i",
+				"item"
+			],
+			[
+				"if",
+				"iframe"
+			],
+			[
+				"un",
+				"undefined"
+			],
+			[
+				"ma-",
+				"margin-bottom"
+			],
+			[
+				"fo-s",
+				"font-size"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
+				"bo-r",
+				"border-radius"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"mih",
+				"min-height"
+			],
+			[
+				"bor-",
+				"border-right"
+			],
+			[
+				"to",
+				"toggleClass"
+			],
+			[
+				"cl",
+				"clear"
+			],
+			[
+				"trans",
+				"translateY"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"wid",
+				"width:   (property)"
+			],
+			[
+				"onm",
+				"onmouseover	Attr"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"I",
+				"ITEMS"
+			],
+			[
+				"DETAIL",
+				"arDETAIL_PICTURE  (variable)"
+			],
+			[
+				"po",
+				"portfolio"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"bo-c",
+				"border-color:   (property)"
+			],
+			[
+				"text",
+				"textarea  (element)"
+			],
+			[
+				"incl",
+				"inline-block"
+			],
+			[
+				"full-w",
+				"full-width"
+			],
+			[
+				"des",
+				"description"
+			],
+			[
+				"opca",
+				"opacity"
+			],
+			[
+				"opc",
+				"opacity"
+			],
+			[
+				"orang",
+				"orange2"
+			],
+			[
+				"hit",
+				"highlight2"
+			],
+			[
+				"impo",
+				"important"
+			],
+			[
+				"opac",
+				"opacify	opacify()"
+			],
+			[
+				"so",
+				"solid"
+			],
+			[
+				"ma-b",
+				"margin-bottom:   (property)"
+			],
+			[
+				"over",
+				"overflow"
+			],
+			[
+				"op",
+				"opacity	opacity()"
+			],
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"sh",
+				"short"
+			],
+			[
+				"full",
+				"full-width"
+			],
+			[
+				"ba-s",
+				"background-size:   (property)"
+			],
+			[
+				"arFie",
+				"arFields  (variable)"
+			],
+			[
+				"pro",
+				"product"
+			],
+			[
+				"str_rep",
+				"str_replace"
+			],
+			[
+				"pr",
+				"price"
+			],
+			[
+				"PRO",
+				"PROPS"
+			],
+			[
+				"In",
+				"IncludeModule"
+			],
+			[
+				"off",
+				"offet"
+			],
+			[
+				"SE",
+				"SECTION_ID"
+			],
+			[
+				"DE",
+				"DETAIL_PICTURE"
+			],
+			[
+				"val",
+				"value"
+			],
+			[
+				"DES",
+				"DESCRIPTION"
+			],
+			[
+				"fo",
+				"foreach	foreach …"
+			],
+			[
+				"arr",
+				"array	$… = array (…)"
+			],
+			[
+				"glo",
+				"global"
+			],
+			[
+				"vla",
+				"value	Attr"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/Stylus/Stylus.sublime-build",
+	"command_palette":
+	{
+		"height": 400.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 601.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/slider/Documents/Projects/Archive/Radia/public_html/index.php",
+		"/Users/slider/Documents/Projects/Horses/HTML/public_html/help/index.php",
+		"/Users/slider/Documents/Projects/Horses/HTML/public_html/local/templates/kshve/components/bitrix/news.detail/news/template.php",
+		"/Users/slider/Documents/Projects/Horses/HTML/public_html/urlrewrite.php",
+		"/Users/slider/Library/Caches/Cleanup At Startup/Transmit/16B6423B-F21F-4470-9DED-5E5FE0753810/index.php",
+		"/Users/slider/Documents/Projects/Horses/HTML/public_html/education/directions/index.php",
+		"/Users/slider/Documents/Projects/Horses/HTML/public_html/education/horses/index.php",
+		"/Users/slider/Documents/Projects/Horses/HTML/sources/js/script.coffee",
+		"/Users/slider/Library/Caches/Cleanup At Startup/Transmit/2BAADB33-07DA-4717-93AB-EA5A9D671A95/main.html",
+		"/Users/slider/Library/Caches/Cleanup At Startup/Transmit/4A7B6D74-4B5F-4B0C-9404-40BFCDAEB3A1/typical.html",
+		"/Users/slider/Library/Caches/Cleanup At Startup/Transmit/78C87AEB-33D0-4EEB-9C9F-C556705EA052/news-detail.html",
+		"/Users/slider/Library/Caches/Cleanup At Startup/Transmit/1EA63E89-6905-4688-BB22-D9CDCA284F70/main-2.html",
+		"/Users/slider/Library/Caches/Cleanup At Startup/Transmit/43844497-2407-459B-AA94-80CD183EDCDB/typical-1.html",
+		"/Users/slider/Library/Caches/Cleanup At Startup/Transmit/57B9BBC4-0069-486C-B780-7D0BEC3AB2A0/news-list.html",
+		"/Users/slider/Library/Caches/Cleanup At Startup/Transmit/C8410566-C018-4F22-B3C6-B0543550F225/catalog-detail-discount.html",
+		"/Users/slider/Library/Caches/Cleanup At Startup/Transmit/BA6D0705-6A5E-40D7-8A85-EB7C67819C8B/catalog-detail.html",
+		"/Users/slider/Library/Caches/Cleanup At Startup/Transmit/B20EEC18-C551-480A-8AB1-4EB79A34F45E/catalog-list-category.html",
+		"/Users/slider/Library/Caches/Cleanup At Startup/Transmit/6D53D817-745B-404B-A388-DE2ECC1A4EFE/catalog-list.html",
+		"/Users/slider/Library/Caches/Cleanup At Startup/Transmit/1FFA7870-C5B4-45F3-BA28-1FCAF44B9374/catalog-menu.html",
+		"/Users/slider/Library/Caches/Cleanup At Startup/Transmit/4859823D-B3A8-41E7-BF3B-C3B0545E3130/catalog-submenu.html",
+		"/Users/slider/Library/Caches/Cleanup At Startup/Transmit/D69FE37F-E7DB-4F19-B925-8E899FCAB611/faq.html",
+		"/Users/slider/Library/Caches/Cleanup At Startup/Transmit/1343CBF9-6513-44A0-B683-3080E90A4333/callback.html",
+		"/Users/slider/Documents/Projects/Michelin/public_html/assets/css/carousel-49089.css",
+		"/Users/slider/Documents/Projects/Michelin/public_html/local/templates/michlen/description.php",
+		"/Users/slider/Dropbox/asket/catalog-detail-discount-small.html",
+		"/Users/slider/Dropbox/asket/typical-1-small.html",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/Gruntfile.coffee",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bitrix/local/templates/mars_graduates/components/bitrix/news.detail/event/template.php",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bitrix/local/templates/mars_graduates/header.php",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bitrix/local/templates/mars_graduates/footer.php",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bitrix/include/signup.php",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bitrix/local/templates/mars_graduates/components/bitrix/news.list/events_section/template.php",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bitrix/about/index.php",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bitrix/local/templates/mars_graduates/components/bitrix/news.detail/event/result_modifier.php",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bitrix/events/detail.php",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bitrix/local/templates/mars_graduates/components/bitrix/news.detail/event/component_epilog.php",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bitrix/career/index.php",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bitrix/local/templates/mars_graduates/components/bitrix/news.list/academy_list/template.php",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bitrix/.htaccess",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bitrix/include/calendar.php",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bitrix/local/templates/mars_graduates/components/bitrix/menu/toolbar/template.php",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bitrix/index.php",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bitrix/academy/index.php",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bitrix/events/index.php",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bitrix/local/templates/mars_graduates/components/grain/table.view/schedule/template.php",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bitrix/bitrix/components/grain/table.view/component.php",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bitrix/local/templates/mars_graduates/components/bitrix/menu/countries/template.php",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bitrix/include/mail.php",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bitrix/local/php_interface/init.php",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bitrix/.countries.menu.php",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/package.json",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/sources/html/event.jade",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bitrix/local/templates/mars_graduates/components/bitrix/news.list/career_list/template.php",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bitrix/local/templates/mars_graduates/components/bitrix/menu/nav/template.php",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bitrix/local/templates/mars_graduates/components/bitrix/news.list/events_cal/template.php",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/log.txt",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/.gitignore",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bitrix/include/day.php",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bitrix/local/templates/mars_graduates/components/bitrix/news.list/events_popup/template.php",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bitrix/local/templates/mars_graduates/components/bitrix/news.list/events_day/template.php",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bitrix/local/templates/mars_graduates/components/bitrix/news.list/cities/template.php",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bitrix/local/templates/mars_graduates/components/bitrix/news.list/career_nav/template.php",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bitrix/local/templates/mars_graduates/components/bitrix/news.list/career_side/template.php",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bitrix/local/templates/mars_graduates/components/bitrix/news.list/career_vacancy/template.php",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bitrix/local/templates/mars_graduates/components/bitrix/news.list/academy_nav/template.php",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bitrix/local/templates/mars_graduates/components/bitrix/news.list/career_index/template.php",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bitrix/bitrix/php_interface/dbconn.php",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bitrix/local/templates/mars_graduates/components/bitrix/menu/social/template.php",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bitrix/local/templates/mars_graduates/components/bitrix/news.list/events_popup/result_modifier.php",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bitrix/include/month.php",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bitrix/local/templates/mars_graduates/components/bitrix/news.list/events_section/result_modifier.php",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bitrix/local/templates/mars_graduates/components/bitrix/news.list/career_side/result_modifier.php",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bitrix/local/templates/mars_graduates/components/bitrix/news.list/career_list/result_modifier.php",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bitrix/local/templates/mars_graduates/components/bitrix/news.list/events_day/result_modifier.php",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bitrix/local/templates/mars_graduates/components/bitrix/news.list/academy_side/template.php",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bitrix/local/templates/mars_graduates/components/bitrix/news.list/events_cal/result_modifier.php",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/sources/js/script.coffee",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bower.json",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bitrix/academy.html",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/sources/html/academy.jade",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bitrix/local/templates/mars_graduates/components/bitrix/news.list/academy_list/result_modifier.php",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/sources/html/career.jade",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bitrix/local/templates/mars_graduates/components/bitrix/news.list/career_vacancy/result_modifier.php",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bitrix/local/templates/mars_graduates/components/bitrix/news.list/career_sections/template.php",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bitrix/local/templates/mars_graduates/components/bitrix/news.list/career_sections/result_modifier.php",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/sources/html/includes/toolbar.jade",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/sources/html/index.jade",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/public_html/index.html",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bitrix/local/templates/mars_graduates/components/bitrix/news.list/career_index/result_modifier.php",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/sources/css/style.styl",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/public_html/fonts.html",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bitrix/.top.menu.php",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bitrix/bitrix/.settings.php",
+		"/Users/slider/Documents/Projects/Lilly/public_html/bitrix/.settings.php",
+		"/Users/slider/Documents/Projects/Lilly/public_html/layout/js/main.coffee",
+		"/Users/slider/Documents/DNS",
+		"/Users/slider/Documents/Projects/Lilly/public_html/test/symptoms/questions.json",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/sources/html/fonts.jade",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/sources/html/about.jade",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/sources/html/month.jade",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/sources/html/includes/nav.jade",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/sources/html/includes/header.jade",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bower_components/slick/slick/slick.css",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/sources/html/includes/footer.jade",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/sources/images/svg/mail.svg",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/sources/images/svg/arrow-3.svg",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/sources/images/svg/flag.svg",
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/public_html/layout/images/svg/flag.svg",
+		"/Users/slider/Documents/Projects/Radia/public_html/bitrix/templates/radia/components/bitrix/news.detail/services/template.php",
+		"/Users/slider/Documents/Projects/Radia/public_html/bitrix/templates/radia/components/bitrix/news.list/clients_index/template.php",
+		"/Users/slider/Documents/Projects/Radia/public_html/about/index.php",
+		"/Users/slider/Documents/Projects/Merkado/public_html/bitrix/.settings.php",
+		"/Users/slider/Documents/Projects/Merkado/public_html/bitrix/modules/import/settings.php",
+		"/Users/slider/Documents/Projects/Merkado/public_html/bitrix/php_interface/init.php",
+		"/Users/slider/Documents/Projects/Merkado/public_html/.access.php",
+		"/Users/slider/Documents/Projects/Merkado/public_html/index.php",
+		"/Users/slider/Documents/Projects/Merkado/public_html/bitrix/php_interface/dbconn.php",
+		"/Users/slider/Documents/Projects/Merkado/public_html/bitrix/templates/supermerkado/components/bitrix/catalog.section/.default/result_modifier.php",
+		"/Users/slider/Documents/Projects/Merkado/public_html/bitrix/modules/import/classes/general/CImportHandlers.php",
+		"/Users/slider/Documents/Projects/Merkado/public_html/bitrix/templates/supermerkado/components/bitrix/catalog.element/.default/collection.php",
+		"/var/folders/2t/kkwn6wlx0_nbqs96b12nfr0r0000gn/T/sublime-sftp-browse-1400241494/supermerkado/home/bitrix/www/bitrix/modules/import/classes/general/CImportHandlers.php",
+		"/Users/slider/Documents/Projects/Merkado/public_html/bitrix/templates/supermerkado/components/bitrix/catalog.section/.default/template.php",
+		"/Users/slider/Documents/Projects/Merkado/public_html/bitrix/templates/supermerkado/components/bitrix/news.list/comments/template.php",
+		"/Users/slider/Library/Application Support/Sublime Text 3/Packages/User/sftp_servers/supermerkado",
+		"/Users/slider/Library/Application Support/Sublime Text 3/Packages/User/SFTP.sublime-settings",
+		"/Users/slider/Documents/Projects/Merkado/public_html/bitrix/templates/supermerkado/footer.php",
+		"/Users/slider/Documents/Projects/Merkado/public_html/include/review.php",
+		"/Users/slider/Documents/Projects/Merkado/public_html/bitrix/templates/supermerkado/components/bitrix/sale.order.ajax/.default/confirm.php"
+	],
+	"find":
+	{
+		"height": 24.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Users/slider/Documents/Projects/Lilly",
+			"/Users/slider/Documents/Projects/Merkado/public_html",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"for ",
+			".date",
+			"> <",
+			"#maillist",
+			".trigger",
+			"velocity",
+			"modal",
+			"max-he",
+			".scheme",
+			"subsc",
+			"#page",
+			"max-width: 9",
+			"acade",
+			"var_",
+			"AddBufferContent",
+			"n AddBufferContent",
+			"AddBufferContent",
+			".event",
+			".item",
+			".top",
+			".sections",
+			"svg",
+			".scheme",
+			".brands",
+			"brands",
+			"histo",
+			".month",
+			"звездами",
+			"description",
+			"icon",
+			"GetIBlockDropDownList",
+			".count",
+			"input",
+			"cities_list",
+			"city_l",
+			"#month",
+			"#toolbar",
+			"#toola",
+			"AddGroup",
+			"GetGroups",
+			"group",
+			"#tool",
+			"city-list",
+			"info",
+			"ByID",
+			"GetProperty",
+			"GetPropertyValues",
+			"CIBlockElement::GetPropertyValues\nCIBlockElement::GetPropertyValues",
+			"CIBlockElement::GetPropertyValues",
+			"Property",
+			"PropertyV",
+			"Property",
+			"toolbar",
+			".scheme-description",
+			"label",
+			"form",
+			".block",
+			"spea",
+			"#mail",
+			"#page",
+			"a.top",
+			".sections",
+			"@media (max-width: 570px)",
+			".mars",
+			".socia",
+			"#month",
+			".trigger",
+			".col",
+			"sections",
+			"leader",
+			"#main",
+			"#cal-day",
+			".leader",
+			"&.event",
+			"#cal-",
+			"gre",
+			"$i",
+			"$monday",
+			"#page",
+			"#cal",
+			"#main",
+			"#cal-day",
+			"#tool",
+			".event",
+			".events",
+			"acade",
+			"#toolbar",
+			".color",
+			"#main",
+			"<a",
+			"<A",
+			"desc",
+			".close",
+			"woma",
+			"Answer",
+			"[ ответ с большой буквы ]",
+			"[ ответ ]",
+			"[ ответ с большой буквы ]",
+			"]},",
+			"(возможны несколько вариантов ответов)",
+			"que",
+			"\"question\"",
+			"\"section\" : ",
+			"}},		\n{",
+			"7",
+			"6",
+			"5",
+			"4",
+			"3",
+			"2",
+			"1",
+			"0",
+			",\n			\n{\n	\"section\" :",
+			"]}\n		{",
+			",\n			\n		{",
+			"\"answers\" : {",
+			"	\",",
+			"(возможны несколько вариантов ответов)",
+			"\",\n			\"answers\" : {\n(возможны несколько вариантов ответов)			",
+			"\n(возможны несколько вариантов ответов)			",
+			"			\",",
+			"reInit",
+			"h4",
+			"select",
+			".sele",
+			"#too",
+			"scrollspy",
+			".aca"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			">\n<",
+			"$start",
+			"$i",
+			"tanswer",
+			"#Answer#",
+			"#answer#",
+			"],\n				\"results\" : \"\"\n				},",
+			"<small>(возможны несколько вариантов ответов)</small>",
+			"\"name\"",
+			"\"name\" : ",
+			"]}},		\n{",
+			"\"7\"",
+			"\"6\"",
+			"\"5\"",
+			"\"4\"",
+			"\"3\"",
+			"\"2\"",
+			"\"1\"",
+			"\"0\"",
+			"}},		\n{\n	\"section\" :",
+			"]},\n		{",
+			"]}\n		{",
+			"\"answers\" : [",
+			"\",",
+			" (возможны несколько вариантов ответов)",
+			"(возможны несколько вариантов ответов)\",\n			\"answers\" : {",
+			"",
+			"\",",
+			"../../../",
+			"+background-image(rainbow(top left, (red, orange, yellow, green)))",
+			"item_w(",
+			"item_more(",
+			"item_promo(",
+			"GetDirProperty",
+			"content=\"width=1050, initial-scale=1\"",
+			"<div class=\"title\"><a href=\"#\">\n              <span class=\"span frame\">",
+			"<span class=\"name\">олдтаймер-галерея ильи сорокина</span><span class=\"line\"></span>\n              <span class=\"type\">разработка сайта</span>  ",
+			"<br>",
+			"title",
+			"bgcolor",
+			"highlight",
+			"/products/<?=$item['CODE']?>",
+			"/products/<?=$item['CODE']?>/",
+			"/products/<?=$item['CODE']?>",
+			"categories"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.CSS Extended Completions":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 98.0
+	},
+	"project": "asket.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 234.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

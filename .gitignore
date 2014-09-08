@@ -1,0 +1,10 @@
+bower_components
+node_modules
+public_html/
+bitrix/config.codekit
+upload/
+log.txt
+
+*.html
+
+public_html/0.zip

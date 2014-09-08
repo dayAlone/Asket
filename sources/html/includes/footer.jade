@@ -1,0 +1,151 @@
+</div>
+
+.modal.fade(id="callBack", tabindex="-1", role="dialog" aria-hidden="true")
+	.modal-dialog
+		.modal-content
+			h3 Заявка на обратный звонок
+			form
+				.row
+					.col-md-3
+						label Контактное лицо *
+					.col-md-9
+						input(type="text", name="name", required)
+				.row
+					.col-md-3
+						label Телефон *
+					.col-md-9
+						input(type="text", name="phone", required)
+				.row
+					.col-md-3
+						label Эл. почта
+					.col-md-9
+						input(type="email", name="email")
+				.row
+					.col-md-3
+						label
+							span Сообщение
+					.col-md-9
+						textarea(name="message")
+				.row
+					.col-md-3
+						small Поля, отмеченные * - обязательны<br> для заполнения.
+					.col-md-9
+						p Введите код с картинки
+						.row
+							.col-md-5
+								img(src="/layout/images/captcha.png").captcha
+							.col-md-2
+								a.refresh(href="#")
+									img(src="/layout/images/refresh.png")
+							.col-md-1
+								span.here сюда
+
+							.col-md-4
+								input(name="captcha", type="text")
+				.row
+					.col-md-offset-3.col-md-8
+						input(type="submit", value="Отправить")
+
+.modal.fade(id="sendFaq", tabindex="-1", role="dialog" aria-hidden="true")
+	.modal-dialog
+		.modal-content
+			h3 Задайте свой вопрос о технике
+			form
+				.row
+					.col-md-3
+						label Контактное лицо *
+					.col-md-9
+						input(type="text", name="name", required)
+				.row
+					.col-md-3
+						label Телефон
+					.col-md-9
+						input(type="text", name="phone")
+				.row
+					.col-md-3
+						label Эл. почта *
+					.col-md-9
+						input(type="email", name="email", required)
+				.row
+					.col-md-3
+						label
+							span Сообщение
+					.col-md-9
+						textarea(name="message", required)
+				.row
+					.col-md-3
+						small Поля, отмеченные * - обязательны<br> для заполнения.
+					.col-md-9
+						p Введите код с картинки
+						.row
+							.col-md-5
+								img(src="/layout/images/captcha.png").captcha
+							.col-md-2
+								a.refresh(href="#")
+									img(src="/layout/images/refresh.png")
+							.col-md-1
+								span.here сюда
+
+							.col-md-4
+								input(name="captcha", type="text")
+				.row
+					.col-md-offset-3.col-md-8
+						input(type="submit", value="Отправить")
+
+nav.catalog-sections
+	.container
+		.row
+			.col-md-3.col-xs-3
+				a(href="#").catalog-sections_title Новая техника
+				a(href="#").catalog-sections_link Автокраны
+				a(href="#").catalog-sections_link Мусоровозы, бункеровозы
+				a(href="#").catalog-sections_link Краны-манипуляторы
+				a(href="#").catalog-sections_link Легкие коммерческие автомобили
+			.col-md-3.col-xs-3
+				a(href="#").catalog-sections_title Б/У техника
+				a(href="#").catalog-sections_link Седельные тягачи
+				a(href="#").catalog-sections_link Самосвалы
+				a(href="#").catalog-sections_link Бортовые грузовики, фургоны
+				a(href="#").catalog-sections_link Прицепы, полуприцепы
+				a(href="#").catalog-sections_link Дорожно-строительная спецтехника
+				a(href="#").catalog-sections_link Легковые автомобили, микроавтобусы
+				a(href="#").catalog-sections_link Оборудование, прочее
+			.col-md-3.col-xs-3
+				a(href="#").catalog-sections_title Техника на заказ
+				a(href="#").catalog-sections_link Экскаваторы
+				a(href="#").catalog-sections_link Бульдозеры
+				a(href="#").catalog-sections_link Дробилки
+				a(href="#").catalog-sections_link Закупка и доставка техники
+			.col-md-3.col-xs-3
+				a(href="#").catalog-sections_title Аскет-Авто
+				a(href="#").catalog-sections_link О компании
+				a(href="#").catalog-sections_link Каталог техники
+				a(href="#").catalog-sections_link Лизинг
+				a(href="#").catalog-sections_link Выкуп б/у техинки
+				a(href="#").catalog-sections_link Техника на заказ
+				a(href="#").catalog-sections_link Контакты
+		.catalog-sections_call
+			span Свяжитесь с нами: <br>
+			a(href="tel:+74957815078") +7 (495) 781-50-78 <br>
+			span E-mail: 
+			a(href="mailto:info@asket-auto.ru") info@asket-auto.ru
+
+footer.footer
+	.container
+		.row
+			.col-md-3.col-xs-3
+				| © 1993—2014 ООО Аскет Авто» <br> Все права защищены
+			.col-md-5.col-xs-5
+				| Тел.: 
+				a(href="tel: +74957815078") +7 (495) 781-50-78
+				| - секретарь; <br>Тел.: 
+				a(href="tel: +79150711774") +7 (915) 071-17-74
+				| - отдел автотранспорта, <br><span class="padding">спецтехники и оборудования.</span> <br>E-mail: 
+				a(href="mailto: info@asket-auto.ru") info@asket-auto.ru
+				| <br>117105, г. Москва, ул. Нагатинская, д. 1, стр. 1
+			.col-md-3.col-xs-3
+				| Аскет-Авто - официальны дилер <br>Ивановского, Галичского и Клинцовского <br>автокрановых заводов. 
+.bg-fade
+script(type="text/javascript", src="./layout/js/frontend.js")
+</body>
+</html>
