@@ -44,11 +44,11 @@ body {
   position: relative;
 }
 a {
-  -webkit-transition-property: color, background-color, border-radius, box-shadow;
-  -moz-transition-property: color, background-color, border-radius, box-shadow;
-  -o-transition-property: color, background-color, border-radius, box-shadow;
-  -ms-transition-property: color, background-color, border-radius, box-shadow;
-  transition-property: color, background-color, border-radius, box-shadow;
+  -webkit-transition-property: color, background-color, border-radius, box-shadow, border-radius;
+  -moz-transition-property: color, background-color, border-radius, box-shadow, border-radius;
+  -o-transition-property: color, background-color, border-radius, box-shadow, border-radius;
+  -ms-transition-property: color, background-color, border-radius, box-shadow, border-radius;
+  transition-property: color, background-color, border-radius, box-shadow, border-radius;
   -webkit-transition-duration: 0.3s;
   -moz-transition-duration: 0.3s;
   -o-transition-duration: 0.3s;
@@ -769,6 +769,13 @@ select:focus {
 .promo > .row > div.col-md-9 {
   padding-left: 10px;
 }
+.promo--hover {
+  z-index: 50;
+}
+.promo--hover .promo__banner {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
 .promo__banner {
   float: left;
   width: 100%;
@@ -811,12 +818,9 @@ select:focus {
   color: #fff;
 }
 .promo__banner--hover {
-  background: transparent;
-  color: #383b40;
+  background: #97adbb;
+  color: #383b40 !important;
   text-shadow: 1px 1px 0 rgba(255,255,255,0.3);
-}
-.promo__banner--hover:hover {
-  color: #383b40;
 }
 .promo .resp_slider {
   float: left;
@@ -874,17 +878,15 @@ select:focus {
 }
 .promo-slide {
   position: absolute;
-  width: 101%;
+  width: 800px;
   display: none;
-  padding: 15px 22px 15px 290px !important;
+  padding: 15px 22px 15px 30px !important;
   height: 290px;
   background: #96adbc;
   top: 10px;
-  left: 0;
-  -webkit-border-radius: 7px;
-  border-radius: 7px;
-  margin-right: -5px;
-  margin-left: -5px;
+  right: -5px;
+  -webkit-border-radius: 0 7px 7px 0;
+  border-radius: 0 7px 7px 0;
 }
 .promo-slide .row {
   margin-bottom: 15px;
@@ -896,7 +898,7 @@ select:focus {
   position: absolute;
   width: 9px;
   height: 290px;
-  left: 264px;
+  left: 7px;
   top: 0;
   content: "";
   background: url("../images/shadow.png") center center no-repeat;
@@ -948,6 +950,7 @@ select:focus {
   background-size: auto 90%;
 }
 .promo-slide-item:hover {
+  background: #fff;
   -webkit-box-shadow: 0 0 8px rgba(0,84,188,0.7), inset 0 0 0 1px rgba(0,84,188,0.5);
   box-shadow: 0 0 8px rgba(0,84,188,0.7), inset 0 0 0 1px rgba(0,84,188,0.5);
 }

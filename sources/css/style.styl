@@ -63,7 +63,7 @@ gray-gradient()
 	position relative
 
 a
-	transition-property color, background-color, border-radius, box-shadow
+	transition-property color, background-color, border-radius, box-shadow, border-radius
 	transition-duration .3s
 
 a, input, select
@@ -536,6 +536,11 @@ a, input, select
 			padding 0
 			&.col-md-9
 				padding-left 10px
+	&--hover
+		z-index 50
+		.promo__banner
+			border-top-right-radius 0 !important
+			border-bottom-right-radius 0 !important
 	&__banner
 		full-width()
 		position relative
@@ -566,11 +571,10 @@ a, input, select
 			text-decoration none
 			color white
 		&--hover
-			background transparent
-			color #383b40
+			background #97adbb
+			color #383b40 !important
 			text-shadow 1px 1px 0 rgba(255,255,255,.3)
-			&:hover
-				color #383b40
+			
 	.resp_slider
 		full-width()
 		background-size cover
@@ -597,16 +601,14 @@ a, input, select
 				line-height 41px
 	&-slide
 		position absolute
-		width 101%
+		width 800px
 		display none
-		padding 15px 22px 15px 290px !important
+		padding 15px 22px 15px 30px !important
 		height 290px
 		background #96adbc
 		top 10px
-		left 0
-		border-radius 7px
-		margin-right -5px
-		margin-left -5px
+		right -5px
+		border-radius 0 7px 7px 0
 		.row
 			margin-bottom 15px
 			> div
@@ -615,7 +617,7 @@ a, input, select
 			position absolute
 			width 9px
 			height 290px
-			left 264px
+			left 7px
 			top 0
 			content ""
 			b('shadow.png', center center no-repeat)
@@ -648,6 +650,7 @@ a, input, select
 				background-position center center
 				background-repeat no-repeat
 			&:hover
+				background white
 				box-shadow 0 0 8px rgba(0,84,188,.7), inset 0 0 0 1px rgba(0,84,188,.5)
 			background linear-gradient(bottom, #d3dde9 0%, #b4c0cd 100%)
 

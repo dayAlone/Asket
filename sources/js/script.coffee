@@ -45,9 +45,13 @@ $(document).ready ->
 		over : ()->
 			if !$(this).hasClass 'promo__banner--hover'
 				$('.promo__banner.promo__banner--hover').removeClass 'promo__banner--hover'
+				$('.promo')
+					.addClass 'promo--hover'
 				$(this)
 					.addClass 'promo__banner--hover'
 				elm = $(this).data 'id'
+				$('.bg-fade')
+					.addClass 'in'
 				$('.promo-slide:visible').velocity
 						properties: "transition.slideLeftOut"
 						options:
@@ -58,6 +62,10 @@ $(document).ready ->
 							duration: 300
 			$('.promo').one 'mouseleave', ()->
 				$('.promo__banner').removeClass 'promo__banner--hover'
+				$('.promo')
+					.removeClass 'promo--hover'
+				$('.bg-fade')
+					.removeClass 'in'
 				$('.promo-slide:visible').velocity
 						properties: "transition.slideLeftOut"
 						options:
