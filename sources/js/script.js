@@ -237,6 +237,9 @@
       $(this).addClass('tabs__title-link--active');
       return e.preventDefault();
     });
+    $('.block.main .content').css({
+      'min-height': $('.block.main .sidebar').height()
+    });
     $('.modal').on('hidden.bs.modal', function() {
       $(this).find('input[type="email"], input[type="text"], textarea').removeClass('parsley-error').removeAttr("value").val("");
       $(this).find('form').trigger('reset').show();

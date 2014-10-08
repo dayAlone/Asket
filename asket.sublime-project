@@ -3,7 +3,15 @@
 	[
 		{
 			"follow_symlinks": true,
-			"path": "/Users/slider/Documents/Projects/Asket/HTML"
+			"path": "public_html/local/templates/.default/components/bitrix/"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "."
+		},
+		{
+			"follow_symlinks": true,
+			"path": "public_html"
 		}
 	]
 }
