@@ -1014,13 +1014,13 @@ select:focus {
 }
 .dropdown__catalog-trigger {
   position: absolute;
-  left: 162px;
+  left: 180px;
   font-size: 19px;
   color: #fff;
   text-align: center;
   padding-top: 3px;
   top: -50px;
-  width: 234px;
+  width: 198px;
   height: 50px;
   -webkit-border-radius: 4px 4px 0 0;
   border-radius: 4px 4px 0 0;
@@ -1030,6 +1030,10 @@ select:focus {
   background-color: #2d73dd;
   -webkit-box-shadow: inset 1px 1px 3px rgba(12,51,115,0.97);
   box-shadow: inset 1px 1px 3px rgba(12,51,115,0.97);
+}
+.dropdown__catalog-trigger:hover {
+  color: #fff;
+  text-decoration: none;
 }
 .dropdown__catalog-item {
   float: left;
@@ -1147,6 +1151,14 @@ select:focus {
   margin-bottom: 25px;
   height: 360px;
 }
+.features__item {
+  height: 320px;
+}
+.features__item > * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 .features__item-image {
   float: left;
   width: 100%;
@@ -1160,7 +1172,7 @@ select:focus {
 }
 .features__item-content {
   padding: 18px 20px;
-  height: 360px;
+  height: 324px;
   float: left;
   width: 100%;
   position: relative;
@@ -1176,6 +1188,7 @@ select:focus {
   position: absolute;
   bottom: 10px;
   left: 20px;
+  max-width: 80%;
 }
 .features__item-content p {
   font-size: 14px;
@@ -1231,6 +1244,7 @@ h4 {
   background: -ms-linear-gradient(bottom, #d3dde9 0%, #b1c2cd 100%);
   background: linear-gradient(to top, #d3dde9 0%, #b1c2cd 100%);
   float: left;
+  cursor: pointer;
   width: 33.333333333333336%;
   height: 41px;
   line-height: 41px;
@@ -1284,6 +1298,10 @@ h4 {
   float: left;
   width: 100%;
   padding: 25px 30px;
+  display: none;
+}
+.tabs__content--active {
+  display: block;
 }
 .tabs__content .content {
   min-height: 1032px;

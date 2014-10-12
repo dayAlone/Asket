@@ -17,13 +17,24 @@ module.exports = (grunt)->
 			slick :
 				js  : '/slick/slick/slick.js'
 				css : '/slick/slick/slick.css'
+			blurjs:
+				js : '/blurjs/blur.js'
+			html2canvas:
+				js: '/html2canvas/build/html2canvas.js'
+			spin :
+				js : ['/spin.js/spin.js', '/spin.js/jquery.spin.js']
 			prettyPhoto :
 				js  : '/prettyPhoto/js/jquery.prettyPhoto.js'
 				css : '/prettyPhoto/css/prettyPhoto.css'
 			parsley :
 				js  : '/parsleyjs/dist/parsley.js'
+			fotorama :
+				js : '/fotorama/fotorama.js'
+				css : '/fotorama/fotorama.css'
 			mask :
 				js  : '/jQuery-Mask-Plugin/jquery.mask.js'
+			history :
+				js  : '/history.js/scripts/bundled/html4+html5/jquery.history.js'
 			hypher:
 				js  : [
 					  '/hypher/dist/jquery.hypher.js'
@@ -36,12 +47,18 @@ module.exports = (grunt)->
 						'/velocity/jquery.velocity.js'
 						'/velocity/velocity.ui.js'
 					]
+			isotope :
+				js : '/isotope/dist/isotope.pkgd.js' 
+			bem :
+				js : '/jquery.bem/jquery.bem.js'
 			chosen :
 				js : '/chosen/chosen.jquery.js'
 			browser :
 				js : '/jquery.browser/dist/jquery.browser.js'
 			hoverIntent :
 				js : '/hoverIntent/jquery.hoverIntent.js'
+			imagesLoaded :
+				js : '/imagesloaded/imagesloaded.pkgd.js'
 
 		for i in x
 			elm = plugins[i]
@@ -61,7 +78,7 @@ module.exports = (grunt)->
 			sources : 'sources'
 			layout  : 'public_html/layout'
 
-		use : loadPlugins [ 'jquery', 'bootstrap', 'slick', 'prettyPhoto', 'parsley', 'chosen', 'mask','hypher', 'cookie', 'velocity', 'browser', 'hoverIntent' ]
+		use : loadPlugins [ 'jquery', 'bootstrap', 'slick', 'prettyPhoto', 'parsley', 'fotorama', 'chosen', 'mask','hypher', 'cookie', 'velocity', 'browser', 'hoverIntent' ]
 
 		files:
 			css:
@@ -127,6 +144,7 @@ module.exports = (grunt)->
 				files: [
 					{ expand: true, flatten: true, src: ['./bower_components/bootstrap/dist/css/bootstrap.css.map'], dest: '<%= path.layout %>/css/', filter: 'isFile' }
 					{ expand: true, flatten: true, src: ['./bower_components/prettyPhoto/images/prettyPhoto/default/*.png'], dest: '<%= path.sources %>/images/plugins/', filter: 'isFile' }
+					{ expand: true, flatten: true, src: ['./bower_components/fotorama/*.png'], dest: '<%= path.sources %>/images/plugins/', filter: 'isFile' }
 				]
 
 		# Уменьшение размера изображений

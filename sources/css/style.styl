@@ -694,18 +694,21 @@ a, input, select
 			color #333333
 	&-trigger
 		position absolute
-		left 162px
+		left 180px
 		font-size 19px
 		color white
 		text-align center
 		padding-top 3px
 		top -50px
-		width 234px
+		width 198px
 		height 50px
 		border-radius 4px 4px 0 0
 		background-clip padding-box
 		background-color #2d73dd
 		box-shadow inset 1px 1px 3px rgba(12,51,115,.97)
+		&:hover
+			color white
+			text-decoration none
 	&-item
 		full-width()
 		height           95px
@@ -767,6 +770,9 @@ a, input, select
 	margin-bottom 25px
 	height 360px
 	&__item
+		height 320px
+		> *
+			box-sizing: border-box
 		&-image
 			full-width()
 			height 360px
@@ -776,7 +782,7 @@ a, input, select
 			border-bottom-right-radius 10px
 		&-content
 			padding 18px 20px
-			height 360px
+			height 324px
 			full-width()
 			position relative
 			text-shadow 1px 1px 0 rgba(255,255,255,.4)
@@ -788,6 +794,7 @@ a, input, select
 				position absolute
 				bottom 10px
 				left 20px
+				max-width 80%
 			p
 				font-size 14px
 				line-height 18px
@@ -827,6 +834,7 @@ h1, h2, h3, h4
 		&-link
 			background linear-gradient(bottom, #d3dde9 0%, #b1c2cd 100%)
 			float left
+			cursor pointer
 			width (100/3)%
 			height 41px
 			line-height 41px
@@ -872,7 +880,10 @@ h1, h2, h3, h4
 			
 	&__content
 		full-width()
-		padding 25px 30px	
+		padding 25px 30px
+		display none
+		&--active
+			display block	
 		.content
 			&:after
 				position absolute
