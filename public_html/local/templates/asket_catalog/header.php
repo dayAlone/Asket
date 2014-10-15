@@ -33,7 +33,20 @@ require_once($_SERVER['DOCUMENT_ROOT'].'/include/catalog.php');
                 "SECTION_USER_FIELDS" => array("UF_SVG"),
             ),
             false
-          );?>
+          );
+          $APPLICATION->IncludeComponent("bitrix:news.list", "banners", 
+          array(
+            "IBLOCK_ID"   => 8,
+            "NEWS_COUNT"  => "99",
+            "SORT_BY1"    => "SORT",
+            "SORT_ORDER1" => "ASC",
+            "DETAIL_URL"  => "/",
+            "PROPERTY_CODE"  => array("LINK"),
+            "CACHE_TYPE"  => "A",
+            "SET_TITLE"   => "N"
+             ),
+             false
+        );?>
           <div class="widget"><img src="/layout/images/ask.png"><a data-toggle="modal" href="#sendFaq" data-target="#sendFaq" class="button">Задать вопрос</a></div>
         </div>
         <div class="col-md-9 col-xs-9 content">

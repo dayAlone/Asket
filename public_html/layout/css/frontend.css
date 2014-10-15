@@ -8171,6 +8171,18 @@ select:focus {
 .tabs .catalog-sections__side {
   margin-bottom: 30px;
 }
+.banners {
+  float: left;
+
+  width: 100%;
+  margin: 10px 0;
+}
+.banners a {
+  float: left;
+
+  width: 100%;
+  margin: 20px 0;
+}
 .promo {
   position: relative;
 

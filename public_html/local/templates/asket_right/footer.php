@@ -12,7 +12,22 @@
 				        "SECTION_USER_FIELDS" => array("UF_SVG"),
 				    ),
 				    false
-				);?>
+				);
+
+				 $APPLICATION->IncludeComponent("bitrix:news.list", "banners", 
+					array(
+					  "IBLOCK_ID"   => 8,
+					  "NEWS_COUNT"  => "99",
+					  "SORT_BY1"    => "SORT",
+					  "SORT_ORDER1" => "ASC",
+					  "DETAIL_URL"  => "/",
+					  "PROPERTY_CODE"  => array("LINK"),
+					  "CACHE_TYPE"  => "A",
+					  "SET_TITLE"   => "N"
+					   ),
+					   false
+				);
+				?>
 			</div>
 		</div>
 	</div>
