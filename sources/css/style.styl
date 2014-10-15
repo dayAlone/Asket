@@ -647,6 +647,19 @@ a, input, select
 					background-size auto 90% 
 				background-position center center
 				background-repeat no-repeat
+			&--small
+				height 81px
+				line-height 81px
+				.promo-slide-item_image
+					width 35%
+					background-size 85% auto
+					left 5px
+					position relative
+				.promo-slide-item_title
+					width 65%
+					height 81px
+					line-height 81px
+					font-size 13px
 			&:hover
 				background white
 				box-shadow 0 0 8px rgba(0,84,188,.7), inset 0 0 0 1px rgba(0,84,188,.5)
@@ -765,6 +778,7 @@ a, input, select
 .features
 	full-width()
 	min-height 100px
+	overflow hidden
 	gray-gradient()
 	border-radius 10px
 	margin-bottom 25px
@@ -831,6 +845,7 @@ h1, h2, h3, h4
 		box-shadow 0 0 10px rgba(71,121,172,.5)
 		min-height 100px
 	&__title
+		
 		&-link
 			background linear-gradient(bottom, #d3dde9 0%, #b1c2cd 100%)
 			float left
@@ -877,11 +892,15 @@ h1, h2, h3, h4
 						right -25px
 			&:last-of-type
 				border-top-right-radius 10px
-			
+		&--catalog
+			.tabs__title-link
+				width 50%	
 	&__content
 		full-width()
 		padding 25px 30px
 		display none
+		&.visible
+			display block
 		&--active
 			display block	
 		.content

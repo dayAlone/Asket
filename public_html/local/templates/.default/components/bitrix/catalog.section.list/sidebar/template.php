@@ -10,7 +10,7 @@
             break;
           case '2':
            ?>
-            <a href="<?=SITE_URL?><?=$item['SECTION_PAGE_URL']?>" class="catalog-sections__side-item">
+            <a href="<?=SITE_URL?><?=$item['SECTION_PAGE_URL']?>" class="catalog-sections__side-item <?=($_REQUEST['ELEMENT_CODE']==$item['CODE']?"catalog-sections__side-item__active":"")?>">
               <div class="catalog-sections__side-item_icon"><?=file_get_contents($_SERVER['DOCUMENT_ROOT'].CFile::GetPath($item['UF_SVG']))?></div>
               <div class="catalog-sections__side-item_text"><?=$item['NAME']?></div>
             </a>

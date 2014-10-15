@@ -55,11 +55,11 @@ $(document).ready ->
 				$('.promo-slide:visible').velocity
 						properties: "transition.slideLeftOut"
 						options:
-							duration: 300
+							duration: 500
 				$(elm).velocity
 						properties: "transition.slideLeftIn"
 						options:
-							duration: 300
+							duration: 500
 			$('.promo').one 'mouseleave', ()->
 				$('.promo__banner').removeClass 'promo__banner--hover'
 				$('.promo')
@@ -69,7 +69,7 @@ $(document).ready ->
 				$('.promo-slide:visible').velocity
 						properties: "transition.slideLeftOut"
 						options:
-							duration: 300
+							duration: 500
 		out : ()->
 
 

@@ -64,7 +64,7 @@
       "SECTION_CODE" => "",
       "TOP_DEPTH"    => "2",
       "CACHE_TYPE"   => "A",
-      "CACHE_TIME"   => "3600",
+      "CACHE_TIME"   => "36000",
   ),
   false
 );

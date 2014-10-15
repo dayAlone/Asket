@@ -1,8 +1,37 @@
+<?=(isset($arParams['SECTION_NAME'])?'<div class="row--title"><div class="row"><div class="col-xs-12"><h2>'.$arParams['SECTION_NAME'].'</h2></div></div></div>':'')?>
+<?if($arParams['SHOW_FILTER']=='Y'):?>
+  <div class="toolbar">
+    <div class="row">
+      <div class="col-md-3 col-xs-3">
+        <div class="select"><img src="/layout/images/trigger.png" class="trigger">
+          <select>
+            <option>цене</option>
+            <option>наличию</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-1 col-xs-1 no-padding">Выводить</div>
+      <div class="col-md-3 col-xs-3">
+        <div class="select"><img src="/layout/images/trigger.png" class="trigger">
+          <select>
+            <option>сначала большее</option>
+            <option>сначала меньшее</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-5 col-xs-5 right">
+        <?=$arResult["NAV_STRING"]?>
+      </div>
+    </div>
+  </div>
+<?endif;?>
 <?if(count($arResult['ITEMS'])>0):?>
 <div class="catalog__list" id="<?=($arParams['ID']?$arParams['ID']:"")?>">
   <?php
   $i   = 0;
   $col = 4;
+  if(isset($arParams['COLS']))
+    $col = $arParams['COLS'];
   foreach ($arResult['ITEMS'] as $item) {
           $props = $item['PROPS'];
           if($i % $col == 0) {
@@ -12,7 +41,7 @@
       ?>
           <div class="col-md-<?=12/$col?>">
             <a href="<?=SITE_URL?><?=$item['DETAIL_PAGE_URL']?>" class="catalog__list-item">
-              <div style="background-image: url(./layout/images/p-1.jpg)" class="catalog__list-item_image"></div>
+              <div style="background-image: url(<?=$item['PREVIEW_PICTURE']['SRC']?>)" class="catalog__list-item_image"></div>
               <div class="catalog__list-item_type"><?=$props['TYPE']?></div>
               <div class="catalog__list-item_name"><?=$item['NAME']?></div>
               <div class="catalog__list-item_props">
@@ -29,4 +58,8 @@
   echo "</div>";
   ?>
 </div>
+<?
+if($arParams['DISPLAY_BOTTOM_PAGER']=='Y')
+  echo $arResult["NAV_STRING"]
+?>
 <?endif;?>

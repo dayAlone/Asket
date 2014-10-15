@@ -65,13 +65,13 @@
           $('.promo-slide:visible').velocity({
             properties: "transition.slideLeftOut",
             options: {
-              duration: 300
+              duration: 500
             }
           });
           $(elm).velocity({
             properties: "transition.slideLeftIn",
             options: {
-              duration: 300
+              duration: 500
             }
           });
         }
@@ -82,7 +82,7 @@
           return $('.promo-slide:visible').velocity({
             properties: "transition.slideLeftOut",
             options: {
-              duration: 300
+              duration: 500
             }
           });
         });

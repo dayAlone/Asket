@@ -22014,13 +22014,13 @@ The biggest cause of both codebase bloat and codepath obfuscation is support for
           $('.promo-slide:visible').velocity({
             properties: "transition.slideLeftOut",
             options: {
-              duration: 300
+              duration: 500
             }
           });
           $(elm).velocity({
             properties: "transition.slideLeftIn",
             options: {
-              duration: 300
+              duration: 500
             }
           });
         }
@@ -22031,7 +22031,7 @@ The biggest cause of both codebase bloat and codepath obfuscation is support for
           return $('.promo-slide:visible').velocity({
             properties: "transition.slideLeftOut",
             options: {
-              duration: 300
+              duration: 500
             }
           });
         });

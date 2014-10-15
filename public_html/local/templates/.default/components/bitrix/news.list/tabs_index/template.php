@@ -33,6 +33,7 @@
                 13 => "PRICE_SALE",
                 14 => "CHASSIS",
               ),
+              "DISPLAY_BOTTOM_PAGER" => "N",
               "FILTER_NAME" => "catalog_filter",
               "CACHE_FILTER"  => "Y",
               "CACHE_TYPE"  => "A",
