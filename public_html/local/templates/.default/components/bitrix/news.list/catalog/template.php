@@ -1,21 +1,22 @@
 <?=(isset($arParams['SECTION_NAME'])?'<div class="row--title"><div class="row"><div class="col-xs-12"><h2>'.$arParams['SECTION_NAME'].'</h2></div></div></div>':'')?>
 <?if($arParams['SHOW_FILTER']=='Y'):?>
   <div class="toolbar">
+    <form action="./" method="POST">
     <div class="row">
       <div class="col-md-3 col-xs-3">
         <div class="select"><img src="/layout/images/trigger.png" class="trigger">
-          <select>
-            <option>цене</option>
-            <option>наличию</option>
+          <select name="SORT_BY1">
+            <option <?=($arParams["SORT_BY1"]=="PROPERTY_PRICE"?"selected":"")?> value="PROPERTY_PRICE">цене</option>
+            <option <?=($arParams["SORT_BY1"]=="PROPERTY_AVAILABLE"?"selected":"")?> value="PROPERTY_AVAILABLE">наличию</option>
           </select>
         </div>
       </div>
       <div class="col-md-1 col-xs-1 no-padding">Выводить</div>
       <div class="col-md-3 col-xs-3">
         <div class="select"><img src="/layout/images/trigger.png" class="trigger">
-          <select>
-            <option>сначала большее</option>
-            <option>сначала меньшее</option>
+          <select name="SORT_ORDER1">
+            <option <?=($arParams["SORT_ORDER1"]=="DESC"?"selected":"")?> value="DESC">сначала большее</option>
+            <option <?=($arParams["SORT_ORDER1"]=="ASC"?"selected":"")?> value="ASC">сначала меньшее</option>
           </select>
         </div>
       </div>
@@ -23,6 +24,7 @@
         <?=$arResult["NAV_STRING"]?>
       </div>
     </div>
+    </form>
   </div>
 <?endif;?>
 <?if(count($arResult['ITEMS'])>0):?>

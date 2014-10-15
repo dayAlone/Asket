@@ -22002,6 +22002,10 @@ The biggest cause of both codebase bloat and codepath obfuscation is support for
 
   $(document).ready(function() {
     var arrows_check, slider, x;
+    $('.toolbar select').on('change', function(e) {
+      console.log(123);
+      return $(this).parents('form').submit();
+    });
     $('.promo__banner').hoverIntent({
       over: function() {
         var elm;

@@ -41,6 +41,9 @@ autoHeight = (el)->
 
 $(document).ready ->
 
+	$('.toolbar select').on 'change', (e)->
+		console.log(123)
+		$(this).parents('form').submit()
 	$('.promo__banner').hoverIntent
 		over : ()->
 			if !$(this).hasClass 'promo__banner--hover'

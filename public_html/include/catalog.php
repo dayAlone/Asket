@@ -1,5 +1,8 @@
 <?
-
+	if(isset($_POST['SORT_BY1']))
+		$_SESSION['SORT_BY1'] = $_POST['SORT_BY1'];
+	if(isset($_POST['SORT_ORDER1']))
+		$_SESSION['SORT_ORDER1'] = $_POST['SORT_ORDER1'];
 	$obCache       = new CPHPCache();
 	$cacheLifetime = 86400; 
 	$cacheID       = 'catalog_'.$_REQUEST['ELEMENT_CODE']; 

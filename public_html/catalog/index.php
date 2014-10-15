@@ -18,8 +18,8 @@ elseif(strlen($_REQUEST['ELEMENT_CODE'])>0 && isset($_GLOBALS['currentCatalogInn
       array(
         "IBLOCK_ID"   => 1,
         "NEWS_COUNT"  => "20",
-        "SORT_BY1"    => "PROPERTY_PRICE",
-        "SORT_ORDER1" => "DESC",
+        "SORT_BY1"    => (isset($_SESSION["SORT_BY1"])?$_SESSION["SORT_BY1"]:"PROPERTY_PRICE"),
+        "SORT_ORDER1" => (isset($_SESSION["SORT_ORDER1"])?$_SESSION["SORT_ORDER1"]:"DESC"),
         "SHOW_FILTER" => "Y",
         "DETAIL_URL"  => "/catalog/#ELEMENT_CODE#/",
         "PARENT_SECTION"  => $_GLOBALS['currentCatalogInnerSection']['ID'],
