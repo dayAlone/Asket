@@ -12,6 +12,24 @@ if(strlen($_REQUEST['ELEMENT_CODE'])>0 && !isset($_GLOBALS['currentCatalogInnerS
 		"SET_TITLE"     => "Y",
 		"CACHE_TYPE"    => "A",
 		"CACHE_TIME"    => "36000",
+    "PROPERTY_CODE" => array(
+          1 => "YEAR",
+          2 => "ENGINE",
+          3 => "CABINE",
+          4 => "COMPLECT",
+          5 => "BODY",
+          6 => "MASS",
+          7 => "PLACE",
+          8 => "AVAILABILITY",
+          9 => "STATUS",
+          10 => "TYPE",
+          11 => "TRANSMISSION",
+          12 => "PRICE",
+          13 => "PRICE_SALE",
+          14 => "CHASSIS",
+          15 => "DEPRECIATION",
+          16 => "PHOTOS"
+        ),
 	));
 elseif(strlen($_REQUEST['ELEMENT_CODE'])>0 && isset($_GLOBALS['currentCatalogInnerSection'])):
 	$APPLICATION->IncludeComponent("bitrix:news.list", "catalog", 
@@ -40,6 +58,7 @@ elseif(strlen($_REQUEST['ELEMENT_CODE'])>0 && isset($_GLOBALS['currentCatalogInn
           12 => "PRICE",
           13 => "PRICE_SALE",
           14 => "CHASSIS",
+          15 => "DEPRECIATION"
         ),
         "CACHE_FILTER"  => "Y",
         "CACHE_TYPE"  => "A",
