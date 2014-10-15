@@ -1,7 +1,10 @@
 <?
 require_once($_SERVER['DOCUMENT_ROOT'].'/include/header.php');
 require_once($_SERVER['DOCUMENT_ROOT'].'/include/catalog.php');
-?>
+if(strlen($_REQUEST['ELEMENT_CODE'])>0 && !isset($_GLOBALS['currentCatalogInnerSection']) && !isset($_GLOBALS['currentCatalogSection'])):?>
+<div class="frame clearfix">
+  <div class="block main">
+<?else:?>
 <div class="tabs">
   <div class="tabs__frame clearfix">
     <?
@@ -51,6 +54,7 @@ require_once($_SERVER['DOCUMENT_ROOT'].'/include/catalog.php');
           <div class="widget"><img src="/layout/images/ask.png"><a data-toggle="modal" href="#sendFaq" data-target="#sendFaq" class="button">Задать вопрос</a></div>
         </div>
         <div class="col-md-9 col-xs-9 content">
+<?endif;?>
 <?/*
 <div class="frame clearfix">
   <div class="block main">

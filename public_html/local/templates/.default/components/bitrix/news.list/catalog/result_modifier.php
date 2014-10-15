@@ -18,6 +18,7 @@
 				case "PRICE":
 				case "PRICE_SALE":
 				case "CHASSIS":
+				case "DEPRECIATION":
 					$props[$prop["CODE"]] = $prop["VALUE"];
 				break;
 			endswitch;

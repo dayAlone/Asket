@@ -4,7 +4,7 @@ $APPLICATION->SetTitle('Каталог');
 
 if(strlen($_REQUEST['ELEMENT_CODE'])>0 && !isset($_GLOBALS['currentCatalogInnerSection']) && !isset($_GLOBALS['currentCatalogSection'])):
 	$APPLICATION->SetPageProperty('page_title', 'Каталог');
-	$APPLICATION->IncludeComponent("bitrix:news.detail","news",Array(
+	$APPLICATION->IncludeComponent("bitrix:news.detail","catalog",Array(
 		"IBLOCK_ID"     => 1,
 		"ELEMENT_CODE"  => $_REQUEST['ELEMENT_CODE'],
 		"CHECK_DATES"   => "N",
