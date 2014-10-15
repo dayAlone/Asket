@@ -59,7 +59,8 @@
   ?>
 </div>
 <?
-if($arParams['DISPLAY_BOTTOM_PAGER']=='Y')
-  echo $arResult["NAV_STRING"]
+if($arParams['DISPLAY_BOTTOM_PAGER']=='Y'){?>
+  <div class="center"><?=$arResult["NAV_STRING"]?></div> 
+<?}
 ?>
 <?endif;?>
