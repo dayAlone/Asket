@@ -3,6 +3,8 @@
     $s = 0;
     foreach ($arResult['SECTIONS'] as $key => $item):?>
       <?
+        if($_REQUEST['ELEMENT_CODE']==$item['CODE'])
+          $text = $item['~DESCRIPTION'];
         switch ($item['DEPTH_LEVEL']):
           case '1':?>
                 <a href="<?=SITE_URL?><?=$item['SECTION_PAGE_URL']?>" class="catalog-sections__side-title"><?=$item['NAME']?></a>
@@ -18,5 +20,17 @@
           break;
         endswitch;
       ?>
-    <?endforeach;?>
+    <?
+    endforeach;
+    if(strlen($text)==0):
+      $res = CIBlockSection::GetByID($arParams['SECTION_ID']);
+      if($ar_res = $res->GetNext())
+        $text = $ar_res['~DESCRIPTION'];
+    endif;
+    ?>
 </div>
+<?
+$this->SetViewTarget('sidebar');
+echo $text;
+$this->EndViewTarget();
+?> 
