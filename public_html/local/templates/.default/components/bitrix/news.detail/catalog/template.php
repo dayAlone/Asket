@@ -74,7 +74,7 @@ $props = &$item["PROPS"];
             ?>
             <div class="sub-tabs_content sub-tabs_content--active" id="params">
               <?foreach ($list as $key => $value):?>
-                <?if(count($props[$key])>0&&count($props[$key][0])>0):?>
+                <?if(count($props[$key])>0&&strlen($props[$key][0]['property_name'])>0):?>
                 <div class="param-block">
                   <div class="param-block_title"><?=$value?></div>
                   <?foreach ($props[$key] as $item):?>
