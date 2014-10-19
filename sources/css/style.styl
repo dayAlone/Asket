@@ -522,6 +522,8 @@ a, input, select
 		margin-bottom 0px
 .banners
 	full-width()
+	& + .widget
+		margin-top 0
 	margin 10px 0
 	a
 		full-width()
@@ -1227,13 +1229,23 @@ h1, h2, h3, h4
 	padding 12px
 	position relative
 	background-color #dae1e7
-	&-value
+	&-title
+		font-size 14px
+		color #444f57
+		full-width()
+		margin-bottom 2px
+		text-align: center
+	&-value, &-old
 		text-align center
 		font-weight bold
 		full-width()
 		font-size 21px
 		padding-top 5px
 		text-shadow 1px 1px 0 rgba(247,250,252,.5)
+	&-old
+		font-size 15px
+		color #9da5ab
+		text-decoration line-through
 	&-button
 		full-width()
 		blue-gradient()
@@ -1254,6 +1266,8 @@ h1, h2, h3, h4
 	margin-top 20px
 	position relative
 	font-size 12px
+	&--no-title
+		padding-bottom 10px
 	.row
 		line-height 25px
 		> div
@@ -1280,7 +1294,9 @@ h1, h2, h3, h4
 		border-bottom 1px solid #5e717e
 	&_content
 		full-width()
-
+		display none
+		&--active
+			display block
 	a
 		width 50%
 		line-height 40px

@@ -28,7 +28,8 @@ if(strlen($_REQUEST['ELEMENT_CODE'])>0 && !isset($_GLOBALS['currentCatalogInnerS
           13 => "PRICE_SALE",
           14 => "CHASSIS",
           15 => "DEPRECIATION",
-          16 => "PHOTOS"
+          16 => "PHOTOS",
+          17 => "WORK",
         ),
 	));
 elseif(strlen($_REQUEST['ELEMENT_CODE'])>0 && isset($_GLOBALS['currentCatalogInnerSection'])):

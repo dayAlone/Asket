@@ -220,7 +220,7 @@ $(document).ready ->
 	$('#leasing-select').on 'change', ()->
 		window.location.href = $(this).find('option:selected').data('url')
 
-	$('.tabs .tabs__title .tabs__title-link').click (e)->
+	$('.tabs .tabs__title .tabs__title-link').click (s)->
 		e = $($(this).data('href'))
 		if e.length > 0 
 			active = $(this).parents('.tabs__title').find('.tabs__title-link--active')
@@ -229,8 +229,20 @@ $(document).ready ->
 			e.addClass '.tabs__content--active'
 			$(this).addClass 'tabs__title-link--active'
 
-			e.preventDefault()
+			s.preventDefault()
 			return false
+	$('.sub-tabs_title a').click (e)->
+		el = $($(this).attr('href'))
+		if el.length > 0 
+			active = $(this).parents('.sub-tabs_title').find('.sub-tabs_title__active')
+			
+			active.removeClass 'sub-tabs_title__active'
+			$(this).addClass 'sub-tabs_title__active'
+
+			$(active.attr('href')).removeClass 'sub-tabs_content--active'
+			el.addClass 'sub-tabs_content--active'
+
+		e.preventDefault()
 
 	$('.block.main .content').css
 		'min-height': $('.block.main .sidebar').height()

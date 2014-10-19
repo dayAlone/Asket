@@ -26,43 +26,90 @@ $props = &$item["PROPS"];
     </div>
     <div class="col-md-8 col-xs-8">
         <div class="params">
-            <?if(isset($props['YEAR'])):?>
-            <div class="params-item">
-              <div class="params-item-title">
-                <div class="params-item-title_content"><?=svg('i-1')?><br> Год выпуска</div>
+            <?
+              $list = array(
+                "YEAR"         => array("icon"=>1, "name"=> "Год выпуска"),
+                "STATUS"       => array("icon"=>2, "name"=> "Состояние"),
+                "WORK"         => array("icon"=>3, "name"=> "Наработка"),
+                "PLACE"        => array("icon"=>4, "name"=> "Нахождение"),
+                "AVAILABILITY" => array("icon"=>5, "name"=> "Наличие")
+              );
+              $i=1;
+            ?>
+            <?foreach ($list as $key => $value):?>
+              <?if(isset($props[$key])):?>
+                <div class="params-item">
+                  <div class="params-item-title">
+                    <div class="params-item-title_content"><?=svg('i-'.$value["icon"])?><br><?=$value["name"]?></div>
+                  </div>
+                  <div class="params-item-value"><?=$props[$key]?></div>
+                </div>
+              <?endif;?>
+            <?endforeach;?>
+        </div>
+        <div class="price">
+        <?if($props['PRICE_SALE']):?>
+          <div class="price-title">Новая цена по акции</div>
+          <div class="price-value"><?=number_format($props['PRICE_SALE'], 0, '.', ' ')?> р.</div>
+          <div class="price-old"><?=number_format($props['PRICE'], 0, '.', ' ')?> р.</div>
+        <?else:?>
+            <div class="price-value"><?=number_format($props['PRICE'], 0, '.', ' ')?> р.</div>
+        <?endif;?>
+            <a href="/leasing/" class="price-button">Выгодно в лизинг</a>
+        </div>
+        <div class="sub-tabs">
+            <div class="sub-tabs_title">
+              <a href="#params" class="sub-tabs_title__active">Характеристики</a>
+              <?if(strlen($props['DEPRECIATION']['TEXT'])>0):?><a href="#depreciation">Износ</a><?endif;?>
+            </div>
+            <?
+              $list = array(
+                "BODY"         => "Кузов",
+                "MASS"         => "Масса",
+                "ENGINE"       => "Двигатель",
+                "TRANSMISSION" => "Трансмиссия",
+                "CHASSIS"      => "Шасси",
+                "CABINE"       => "Кабина"
+              );
+            ?>
+            <div class="sub-tabs_content sub-tabs_content--active" id="params">
+              <?foreach ($list as $key => $value):?>
+                <?if(count($props[$key])>0&&count($props[$key][0])>0):?>
+                <div class="param-block">
+                  <div class="param-block_title"><?=$value?></div>
+                  <?foreach ($props[$key] as $item):?>
+                    <div class="row">
+                      <div class="col-md-5 col-xs-5"><?=$item['property_name']?>:</div>
+                      <div class="col-md-7 col-xs-7"><?=$item['property_value']?></div>
+                    </div>
+                  <?endforeach;?>
+                </div>
+                <?endif;?>
+              <?endforeach;?>
+              <?if(strlen($props['COMPLECT'])>0):?>
+              <div class="param-block">
+                <div class="param-block_title">Комплектация</div>
+                <div class="row">
+                  <div class="col-md-12 col-xs-12"><?=$props['COMPLECT']?></div>
+                </div>
               </div>
-              <div class="params-item-value"><?=$props['YEAR']?></div>
+              <?endif;?>
+            </div>
+            <?if(strlen($props['DEPRECIATION']['TEXT'])>0):?>
+            <div class="sub-tabs_content" id="depreciation">
+              <div class="param-block param-block--no-title">
+                <?=$props['DEPRECIATION']['TEXT']?>
+              </div>
             </div>
             <?endif;?>
-            <div class="params-item">
-              <div class="params-item-title">
-                <div class="params-item-title_content"><?=svg('i-2')?><br> Состояние
-                </div>
-              </div>
-              <div class="params-item-value">Новый</div>
-            </div>
-            <div class="params-item">
-              <div class="params-item-title">
-                <div class="params-item-title_content"><?=svg('i-3')?><br> Наработка
-                </div>
-              </div>
-              <div class="params-item-value">123 488 км.</div>
-            </div>
-            <div class="params-item">
-              <div class="params-item-title">
-                <div class="params-item-title_content"><?=svg('i-4')?><br> Нахождение
-                </div>
-              </div>
-              <div class="params-item-value">Владивосток</div>
-            </div>
-            <div class="params-item">
-              <div class="params-item-title">
-                <div class="params-item-title_content"><?=svg('i-5')?><br> Наличие
-                </div>
-              </div>
-              <div class="params-item-value">В наличии</div>
-            </div>
           </div>
+          <?
+            $rsPath = GetIBlockSectionPath($arResult['IBLOCK_ID'], $arResult['IBLOCK_SECTION_ID']);
+            $arSections = array();
+            while($arPath = $rsPath->GetNext())
+              $arSections[] = $arPath['CODE']
+          ?>
+          <a href="<?=SITE_URL?>/catalog/<?=end($arSections)?>/" class="news-list_item-back"><img src="/layout/images/back.png">Вернуться в раздел</a>
     </div>
   </div>
 </div>

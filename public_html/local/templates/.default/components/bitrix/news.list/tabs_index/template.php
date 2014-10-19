@@ -9,7 +9,8 @@
           if(is_array($item['PROPERTIES']['ELEMENTS']['VALUE'])):?>
           <div class="tabs__content <?=($key==0?"tabs__content--active":"")?>" id="<?=$item['CODE']?>">
           <?
-            $catalog_filter = array('ID'=>$item['PROPERTIES']['ELEMENTS']['VALUE']);
+            global $catalog_filter;
+            $catalog_filter = array('=ID'=>$item['PROPERTIES']['ELEMENTS']['VALUE']);
             $APPLICATION->IncludeComponent("bitrix:news.list", "catalog", 
             array(
               "IBLOCK_ID"   => 1,

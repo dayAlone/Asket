@@ -22188,8 +22188,8 @@ The biggest cause of both codebase bloat and codepath obfuscation is support for
     $('#leasing-select').on('change', function() {
       return window.location.href = $(this).find('option:selected').data('url');
     });
-    $('.tabs .tabs__title .tabs__title-link').click(function(e) {
-      var active;
+    $('.tabs .tabs__title .tabs__title-link').click(function(s) {
+      var active, e;
       e = $($(this).data('href'));
       if (e.length > 0) {
         active = $(this).parents('.tabs__title').find('.tabs__title-link--active');
@@ -22197,9 +22197,21 @@ The biggest cause of both codebase bloat and codepath obfuscation is support for
         active.removeClass('tabs__title-link--active');
         e.addClass('.tabs__content--active');
         $(this).addClass('tabs__title-link--active');
-        e.preventDefault();
+        s.preventDefault();
         return false;
       }
+    });
+    $('.sub-tabs_title a').click(function(e) {
+      var active, el;
+      el = $($(this).attr('href'));
+      if (el.length > 0) {
+        active = $(this).parents('.sub-tabs_title').find('.sub-tabs_title__active');
+        active.removeClass('sub-tabs_title__active');
+        $(this).addClass('sub-tabs_title__active');
+        $(active.attr('href')).removeClass('sub-tabs_content--active');
+        el.addClass('sub-tabs_content--active');
+      }
+      return e.preventDefault();
     });
     $('.block.main .content').css({
       'min-height': $('.block.main .sidebar').height()

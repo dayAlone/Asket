@@ -7,7 +7,7 @@
         <div class="select"><img src="/layout/images/trigger.png" class="trigger">
           <select name="SORT_BY1">
             <option <?=($arParams["SORT_BY1"]=="PROPERTY_PRICE"?"selected":"")?> value="PROPERTY_PRICE">цене</option>
-            <option <?=($arParams["SORT_BY1"]=="PROPERTY_AVAILABLE"?"selected":"")?> value="PROPERTY_AVAILABLE">наличию</option>
+            <option <?=($arParams["SORT_BY1"]=="PROPERTY_AVAILABILITY"?"selected":"")?> value="PROPERTY_AVAILABILITY">наличию</option>
           </select>
         </div>
       </div>

@@ -754,6 +754,9 @@ select:focus {
   width: 100%;
   margin: 10px 0;
 }
+.banners + .widget {
+  margin-top: 0;
+}
 .banners a {
   float: left;
   width: 100%;
@@ -1806,7 +1809,16 @@ h4 {
   position: relative;
   background-color: #dae1e7;
 }
-.price-value {
+.price-title {
+  font-size: 14px;
+  color: #444f57;
+  float: left;
+  width: 100%;
+  margin-bottom: 2px;
+  text-align: center;
+}
+.price-value,
+.price-old {
   text-align: center;
   font-weight: bold;
   float: left;
@@ -1814,6 +1826,11 @@ h4 {
   font-size: 21px;
   padding-top: 5px;
   text-shadow: 1px 1px 0 rgba(247,250,252,0.5);
+}
+.price-old {
+  font-size: 15px;
+  color: #9da5ab;
+  text-decoration: line-through;
 }
 .price-button {
   float: left;
@@ -1861,6 +1878,9 @@ h4 {
   position: relative;
   font-size: 12px;
 }
+.param-block--no-title {
+  padding-bottom: 10px;
+}
 .param-block .row {
   line-height: 25px;
 }
@@ -1894,6 +1914,10 @@ h4 {
 .sub-tabs_content {
   float: left;
   width: 100%;
+  display: none;
+}
+.sub-tabs_content--active {
+  display: block;
 }
 .sub-tabs a {
   width: 50%;

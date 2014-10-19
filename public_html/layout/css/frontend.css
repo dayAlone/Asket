@@ -8177,6 +8177,9 @@ select:focus {
   width: 100%;
   margin: 10px 0;
 }
+.banners + .widget {
+  margin-top: 0;
+}
 .banners a {
   float: left;
 
@@ -9422,7 +9425,20 @@ h4 {
   border-radius: 5px;
   background-color: #dae1e7;
 }
-.price-value {
+.price-title {
+  float: left;
+
+  width: 100%;
+  margin-bottom: 2px;
+
+  text-align: center;
+
+  color: #444f57;
+
+  font-size: 14px;
+}
+.price-value,
+.price-old {
   float: left;
 
   width: 100%;
@@ -9434,6 +9450,13 @@ h4 {
 
   font-size: 21px;
   font-weight: bold;
+}
+.price-old {
+  text-decoration: line-through;
+
+  color: #9da5ab;
+
+  font-size: 15px;
 }
 .price-button {
   position: absolute;
@@ -9491,6 +9514,9 @@ h4 {
 
   font-size: 12px;
 }
+.param-block--no-title {
+  padding-bottom: 10px;
+}
 .param-block .row {
   line-height: 25px;
 }
@@ -9530,9 +9556,13 @@ h4 {
   border-bottom: 1px solid #5e717e;
 }
 .sub-tabs_content {
+  display: none;
   float: left;
 
   width: 100%;
+}
+.sub-tabs_content--active {
+  display: block;
 }
 .sub-tabs a {
   float: left;
