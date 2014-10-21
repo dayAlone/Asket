@@ -9,6 +9,14 @@ size = ()->
 		if h > $(this).height()
 			return h
 
+getCaptcha = ()->
+	$.get '/include/captcha.php', (data)->
+		setCaptcha data
+
+setCaptcha = (code)->
+	$('input[name=captcha_code]').val(code)
+	$('.captcha').attr 'src', "/include/captcha.php?captcha_sid=#{code}"
+
 autoHeight = (el)->
 	if el.length > 0
 		item    = el.find('.block')
@@ -43,9 +51,14 @@ autoHeight = (el)->
 
 $(document).ready ->
 
+	$('a.refresh').click (e)->
+		console.log 123
+		getCaptcha()
+		e.preventDefault()
+
 	$('.toolbar select').on 'change', (e)->
-		console.log(123)
 		$(this).parents('form').submit()
+
 	$('.promo__banner').hoverIntent
 		over : ()->
 			if !$(this).hasClass 'promo__banner--hover'
@@ -250,6 +263,19 @@ $(document).ready ->
 		$(this).find('input[type="email"], input[type="text"], textarea').removeClass('parsley-error').removeAttr("value").val("")
 		$(this).find('form').trigger('reset').show()
 		$(this).find('.success').hide()
+
+	$('.form').submit (e)->
+		data = $(this).serialize()
+		$.post '/include/send.php', data,
+	        (data) ->
+	        	data = $.parseJSON(data)
+	        	if data.status == "ok"
+	        		$('.form').hide()
+	        		$('.form').parents('.modal').find('.success').show()
+	        	else if data.status == "error"
+	        		$('input[name=captcha_word]').addClass('parsley-error')
+	        		getCaptcha()
+		e.preventDefault()
 
 	delay 300, ()->
 		size()

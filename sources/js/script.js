@@ -1,5 +1,5 @@
 (function() {
-  var autoHeight, delay, size;
+  var autoHeight, delay, getCaptcha, setCaptcha, size;
 
   delay = function(ms, func) {
     return setTimeout(func, ms);
@@ -16,6 +16,17 @@
         return h;
       }
     });
+  };
+
+  getCaptcha = function() {
+    return $.get('/include/captcha.php', function(data) {
+      return setCaptcha(data);
+    });
+  };
+
+  setCaptcha = function(code) {
+    $('input[name=captcha_code]').val(code);
+    return $('.captcha').attr('src', "/include/captcha.php?captcha_sid=" + code);
   };
 
   autoHeight = function(el) {
@@ -55,8 +66,12 @@
 
   $(document).ready(function() {
     var arrows_check, slider, x;
-    $('.toolbar select').on('change', function(e) {
+    $('a.refresh').click(function(e) {
       console.log(123);
+      getCaptcha();
+      return e.preventDefault();
+    });
+    $('.toolbar select').on('change', function(e) {
       return $(this).parents('form').submit();
     });
     $('.promo__banner').hoverIntent({
@@ -270,6 +285,21 @@
       $(this).find('input[type="email"], input[type="text"], textarea').removeClass('parsley-error').removeAttr("value").val("");
       $(this).find('form').trigger('reset').show();
       return $(this).find('.success').hide();
+    });
+    $('.form').submit(function(e) {
+      var data;
+      data = $(this).serialize();
+      $.post('/include/send.php', data, function(data) {
+        data = $.parseJSON(data);
+        if (data.status === "ok") {
+          $('.form').hide();
+          return $('.form').parents('.modal').find('.success').show();
+        } else if (data.status === "error") {
+          $('input[name=captcha_word]').addClass('parsley-error');
+          return getCaptcha();
+        }
+      });
+      return e.preventDefault();
     });
     delay(300, function() {
       return size();

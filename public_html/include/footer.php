@@ -25,8 +25,13 @@
 <div id="callBack" tabindex="-1" role="dialog" aria-hidden="true" class="modal fade">
   <div class="modal-dialog">
     <div class="modal-content">
-      <h3>Заявка на обратный звонок</h3>
-      <form>
+      <div class="success">
+        <h3 class="center">Ваше сообщение успешно отправлено. </h3>
+        <p class="center">В ближайшее время представители нашей компании свяжутся с вами.<br> Благодарим за обращение.</p>
+      </div>
+      <form class="form"  data-parsley-validate>
+        <h3>Заявка на обратный звонок</h3>
+        <input type="hidden" name="group_id" value="5">
         <div class="row">
           <div class="col-md-3">
             <label>Контактное лицо *</label>
@@ -40,7 +45,7 @@
             <label>Телефон *</label>
           </div>
           <div class="col-md-9">
-            <input type="text" name="phone" required>
+            <input type="text" name="phone" required data-parsley-pattern="/^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}/" data-parsley-trigger="change">
           </div>
         </div>
         <div class="row">
@@ -48,7 +53,7 @@
             <label>Эл. почта</label>
           </div>
           <div class="col-md-9">
-            <input type="email" name="email">
+            <input type="email" name="email" data-parsley-trigger="change">
           </div>
         </div>
         <div class="row">
@@ -64,11 +69,19 @@
           <div class="col-md-9">
             <p>Введите код с картинки</p>
             <div class="row">
-              <div class="col-md-5"><img src="/layout/images/captcha.png" class="captcha"></div>
+              <?
+                include_once($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/classes/general/captcha.php");
+                $cpt = new CCaptcha();
+                $cpt->SetCodeLength(4);
+                $cpt->SetCode();
+                $code=$cpt->GetSID();
+              ?>
+              <input type="hidden" name="captcha_code" value="<?=$code?>">
+              <div class="col-md-5"><img src="/include/captcha.php?captcha_sid=<?=$code?>" class="captcha"></div>
               <div class="col-md-2"><a href="#" class="refresh"><img src="/layout/images/refresh.png"></a></div>
               <div class="col-md-1"><span class="here">сюда</span></div>
               <div class="col-md-4">
-                <input name="captcha" type="text">
+                <input name="captcha_word" type="text" required>
               </div>
             </div>
           </div>
@@ -85,8 +98,13 @@
 <div id="sendFaq" tabindex="-1" role="dialog" aria-hidden="true" class="modal fade">
   <div class="modal-dialog">
     <div class="modal-content">
-      <h3>Задайте свой вопрос о технике</h3>
-      <form>
+      <div class="success">
+        <h3 class="center">Ваш вопрос успешно отправлен. </h3>
+        <p class="center">В ближайшее время мы постараемся на него ответить. <br>Благодарим за обращение.</p>
+      </div>
+      <form class="form"  data-parsley-validate>
+        <h3>Задайте свой вопрос о технике</h3>
+        <input type="hidden" name="group_id" value="6">
         <div class="row">
           <div class="col-md-3">
             <label>Контактное лицо *</label>
@@ -97,18 +115,18 @@
         </div>
         <div class="row">
           <div class="col-md-3">
-            <label>Телефон</label>
+            <label>Телефон *</label>
           </div>
           <div class="col-md-9">
-            <input type="text" name="phone">
+            <input type="text" name="phone" required data-parsley-pattern="/^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}/" data-parsley-trigger="change">
           </div>
         </div>
         <div class="row">
           <div class="col-md-3">
-            <label>Эл. почта *</label>
+            <label>Эл. почта</label>
           </div>
           <div class="col-md-9">
-            <input type="email" name="email" required>
+            <input type="email" name="email" data-parsley-trigger="change">
           </div>
         </div>
         <div class="row">
@@ -116,7 +134,7 @@
             <label><span>Сообщение</span></label>
           </div>
           <div class="col-md-9">
-            <textarea name="message" required></textarea>
+            <textarea name="message"></textarea>
           </div>
         </div>
         <div class="row">
@@ -124,11 +142,19 @@
           <div class="col-md-9">
             <p>Введите код с картинки</p>
             <div class="row">
-              <div class="col-md-5"><img src="/layout/images/captcha.png" class="captcha"></div>
+              <?
+                include_once($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/classes/general/captcha.php");
+                $cpt = new CCaptcha();
+                $cpt->SetCodeLength(4);
+                $cpt->SetCode();
+                $code=$cpt->GetSID();
+              ?>
+              <input type="hidden" name="captcha_code" value="<?=$code?>">
+              <div class="col-md-5"><img src="/include/captcha.php?captcha_sid=<?=$code?>" class="captcha"></div>
               <div class="col-md-2"><a href="#" class="refresh"><img src="/layout/images/refresh.png"></a></div>
               <div class="col-md-1"><span class="here">сюда</span></div>
               <div class="col-md-4">
-                <input name="captcha" type="text">
+                <input name="captcha_word" type="text" required>
               </div>
             </div>
           </div>

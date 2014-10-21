@@ -1538,6 +1538,15 @@ h4 {
   border: 0;
   padding: 10px 30px 25px;
 }
+.modal-dialog .modal-content .success {
+  display: none;
+  margin-bottom: 30px;
+  float: left;
+  width: 100%;
+}
+.modal-dialog .modal-content .success h3 {
+  margin-bottom: 15px;
+}
 .modal-dialog .modal-content small {
   line-height: 15px;
   float: left;
@@ -1580,9 +1589,6 @@ h4 {
 }
 .modal-dialog .modal-content .captcha_img {
   border: 1px solid #ccc;
-}
-.modal-dialog .modal-content .success {
-  display: none;
 }
 .modal-dialog .modal-content p {
   font-size: 14px;
@@ -1655,6 +1661,9 @@ h4 {
 .modal-dialog .modal-content input[type="text"].parsley-error,
 .modal-dialog .modal-content textarea.parsley-error {
   border: 1px solid #f00;
+}
+.modal-dialog .modal-content .parsley-errors-list {
+  display: none;
 }
 .modal-dialog .modal-content textarea {
   height: 137px;
