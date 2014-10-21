@@ -21955,10 +21955,12 @@ The biggest cause of both codebase bloat and codepath obfuscation is support for
   };
 
   size = function() {
+    $('.block.main .content').css({
+      'min-height': $('.block.main .sidebar').height()
+    });
     return $('.content').css('minHeight', function() {
       var h;
       h = $(this).parent().find('.side').height();
-      console.log(h, $(this).height());
       if (h > $(this).height()) {
         return h;
       }
@@ -22212,9 +22214,6 @@ The biggest cause of both codebase bloat and codepath obfuscation is support for
         el.addClass('sub-tabs_content--active');
       }
       return e.preventDefault();
-    });
-    $('.block.main .content').css({
-      'min-height': $('.block.main .sidebar').height()
     });
     $('.modal').on('hidden.bs.modal', function() {
       $(this).find('input[type="email"], input[type="text"], textarea').removeClass('parsley-error').removeAttr("value").val("");

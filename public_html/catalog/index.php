@@ -1,7 +1,6 @@
 <?
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
 $APPLICATION->SetTitle('Каталог');
-
 if(strlen($_REQUEST['ELEMENT_CODE'])>0 && !isset($_GLOBALS['currentCatalogInnerSection']) && !isset($_GLOBALS['currentCatalogSection'])):
 	$APPLICATION->SetPageProperty('page_title', 'Каталог');
 	$APPLICATION->IncludeComponent("bitrix:news.detail","catalog",Array(
@@ -68,7 +67,8 @@ elseif(strlen($_REQUEST['ELEMENT_CODE'])>0 && isset($_GLOBALS['currentCatalogInn
          ),
          false
       );
-elseif(strlen($_REQUEST['ELEMENT_CODE'])>0 && isset($_GLOBALS['currentCatalogSection'])):
+elseif(isset($_GLOBALS['currentCatalogSection'])):
+
 	$APPLICATION->IncludeComponent("bitrix:catalog.section.list", "catalog", array(
 	        "IBLOCK_TYPE"  => "content",
 	        "IBLOCK_ID"    => "1",

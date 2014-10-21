@@ -1,9 +1,11 @@
 delay = (ms, func) -> setTimeout func, ms
 
 size = ()->
+	$('.block.main .content').css
+		'min-height': $('.block.main .sidebar').height()
+	
 	$('.content').css 'minHeight', ()->
 		h = $(this).parent().find('.side').height()
-		console.log h, $(this).height()
 		if h > $(this).height()
 			return h
 
@@ -243,9 +245,6 @@ $(document).ready ->
 			el.addClass 'sub-tabs_content--active'
 
 		e.preventDefault()
-
-	$('.block.main .content').css
-		'min-height': $('.block.main .sidebar').height()
 
 	$('.modal').on 'hidden.bs.modal', ()->
 		$(this).find('input[type="email"], input[type="text"], textarea').removeClass('parsley-error').removeAttr("value").val("")
