@@ -12,7 +12,7 @@ module.exports = (grunt)->
 			jquery :
 				js : '/jquery/dist/jquery.js'
 			bootstrap :
-				js  : '/bootstrap/dist/js/bootstrap.js'
+				js  : ['/bootstrap/js/transition.js', '/bootstrap/js/modal.js']
 				css : '/bootstrap/dist/css/bootstrap.css'
 			slick :
 				js  : '/slick/slick/slick.js'
@@ -78,7 +78,7 @@ module.exports = (grunt)->
 			sources : 'sources'
 			layout  : 'public_html/layout'
 
-		use : loadPlugins [ 'jquery', 'bootstrap', 'slick', 'prettyPhoto', 'parsley', 'fotorama', 'chosen', 'mask','hypher', 'cookie', 'velocity', 'browser', 'hoverIntent' ]
+		use : loadPlugins [ 'jquery', 'bootstrap', 'slick', 'prettyPhoto', 'parsley', 'fotorama', 'mask', 'hypher', 'velocity', 'browser', 'hoverIntent' ]
 
 		files:
 			css:

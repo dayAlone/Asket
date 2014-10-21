@@ -28,8 +28,8 @@
   <div class="row no-padding">
     <div class="col-md-2 col-xs-2"><a href="/" class="header__logo"><img src="/layout/images/logo.png"></a></div>
     <div class="col-md-5 col-xs-5">
-      <form class="header__search">
-        <input type="text" placeholder="Я ищу..." class="header__search-text">
+      <form class="header__search" action="/search/">
+        <input type="text" placeholder="Я ищу..." name="q" class="header__search-text">
         <input type="submit" value="" class="header__search-submit"><span class="header__search-description">Введите в поле поиска запрос, например “Автокран”</span>
       </form>
     </div>
@@ -49,7 +49,6 @@
         			endif;
         		endforeach;
         	?>
-        	
         	</div>
       </div>
     </div>
