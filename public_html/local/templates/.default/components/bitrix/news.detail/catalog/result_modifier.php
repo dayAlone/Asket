@@ -20,26 +20,26 @@ function images_sort($a, $b)
 foreach ($arResult["PROPERTIES"] as $key => $prop):
 	switch ($prop['CODE']):
 		case "YEAR":
-		case "ENGINE":
-		case "CABINE":
-		case "BODY":
-		case "MASS":
 		case "PLACE":
 		case "AVAILABILITY":
 		case "STATUS":
 		case "TYPE":
-		case "TRANSMISSION":
 		case "PRICE":
 		case "PRICE_SALE":
-		case "CHASSIS":
 		case "WORK":
 		case "DEPRECIATION":
-			if(strlen($prop["VALUE"])>0||count($prop["VALUE"])>0)
-				
-					$props[$prop["CODE"]] = $prop["VALUE"];
+			if(strlen($prop["VALUE"])>0)
+				$props[$prop["CODE"]] = $prop["VALUE"];
 		break;
+		case "BODY":
+		case "MASS":
+		case "ENGINE":
+		case "TRANSMISSION":
+		case "CHASSIS":
+		case "CABINE":
 		case "COMPLECT":
-			$props[$prop["CODE"]] = $prop["VALUE"]['TEXT'];
+			if(count($prop["VALUE"])>0 && strlen($props[$key][0]['property_name'])>0)
+				$props[$prop["CODE"]] = $prop["VALUE"]['TEXT'];
 		break;	
 		case "PHOTOS":
 			$gallery     = array();
