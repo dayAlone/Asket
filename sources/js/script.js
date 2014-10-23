@@ -255,7 +255,9 @@
       },
       out: function() {}
     });
-    $('#leasing-select').on('change', function() {});
+    $('#leasing-select').on('change', function() {
+      return window.location.href = $(this).find('option:selected').data('url');
+    });
     $('.tabs .tabs__title .tabs__title-link').click(function(s) {
       var active, e;
       e = $($(this).data('href'));

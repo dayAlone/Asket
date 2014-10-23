@@ -235,7 +235,7 @@ $(document).ready ->
 		out : ()->
 	
 	$('#leasing-select').on 'change', ()->
-		#window.location.href = $(this).find('option:selected').data('url')
+		window.location.href = $(this).find('option:selected').data('url')
 
 	$('.tabs .tabs__title .tabs__title-link').click (s)->
 		e = $($(this).data('href'))

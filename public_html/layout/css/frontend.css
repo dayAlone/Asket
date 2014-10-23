@@ -8799,11 +8799,13 @@ h4 {
   width: 100%;
   margin: 35px 0;
   border-bottom: 1px solid #5bc5e7;
+}
+.gallery {
   float: left;
   width: 100%;
   margin-bottom: 5px;
 }
-.divider .big a {
+.gallery .big a {
   float: left;
   width: 100%;
   height: 245px;
@@ -8815,10 +8817,10 @@ h4 {
   background-position: center center;
   display: none;
 }
-.divider .big a.active {
+.gallery .big a.active {
   display: block;
 }
-.divider .slider {
+.gallery .slider {
   float: left;
   width: 100%;
   margin-left: 29px;
@@ -8826,7 +8828,7 @@ h4 {
   width: 272px;
   position: relative;
 }
-.divider .slider button {
+.gallery .slider button {
   width: 29px;
   height: 46px;
   margin: 0;
@@ -8835,26 +8837,26 @@ h4 {
   background-repeat: no-repeat;
   top: 0;
 }
-.divider .slider button.slick-prev {
+.gallery .slider button.slick-prev {
   left: -30px;
   border-bottom-left-radius: 5px;
   background-image: url("../images/slider-arrow-l.png");
 }
-.divider .slider button.slick-next {
+.gallery .slider button.slick-next {
   right: -31px;
   border-bottom-right-radius: 5px;
   background-image: url("../images/slider-arrow-r.png");
 }
-.divider .slider button:before {
+.gallery .slider button:before {
   content: "";
 }
-.divider .slider .item {
+.gallery .slider .item {
   float: left;
   width: 62px;
   height: 46px;
   padding: 0 1px;
 }
-.divider .slider .item .image {
+.gallery .slider .item .image {
   float: left;
   width: 100%;
   cursor: pointer;
@@ -8864,7 +8866,7 @@ h4 {
   background-size: cover;
   background-position: center center;
 }
-.divider .slider .item .image.active {
+.gallery .slider .item .image.active {
   -webkit-box-shadow: inset 0 0 0 2px #0059c8;
   box-shadow: inset 0 0 0 2px #0059c8;
 }
