@@ -24,14 +24,14 @@
         <option <? if($arParams['SECTIONS_LIST'][0]==$item['CODE']) {
                     echo "selected";
                     $second = $item['ID'];
-                  }?>><?=$item['NAME']?></option>
+                  }?> value="<?=$item['URL']?>"><?=$item['NAME']?></option>
       <?endforeach;?>
     </select>
   </div>
   <div class="col-md-3 col-xs-3">
     <select>
       <?foreach ($arSections[2][$second] as $item):?>
-        <option <?=($arParams['SECTIONS_LIST'][1]==$item['CODE']?"selected":"")?>><?=$item['NAME']?></option>
+        <option <?=($arParams['SECTIONS_LIST'][1]==$item['CODE']?"selected":"")?> value="<?=$item['URL']?>"><?=$item['NAME']?></option>
       <?endforeach;?>
     </select>
   </div>

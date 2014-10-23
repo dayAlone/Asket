@@ -22134,6 +22134,8 @@ The biggest cause of both codebase bloat and codepath obfuscation is support for
     $('.breadcrumbs select').chosen({
       disable_search: true,
       width: "100%"
+    }).change(function() {
+      return console.log($(this).val());
     }).on("chosen:showing_dropdown", function() {
       var drop;
       drop = $(this).parent().find('.chosen-drop');

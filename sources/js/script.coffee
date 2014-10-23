@@ -173,6 +173,8 @@ $(document).ready ->
 		.chosen
 			disable_search: true
 			width: "100%"
+		.change ()->
+			console.log($(this).val())
 		.on "chosen:showing_dropdown", ()->
 			drop = $(this).parent().find('.chosen-drop')
 			drop.velocity
