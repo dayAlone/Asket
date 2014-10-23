@@ -59,7 +59,13 @@ $props = &$item["PROPS"];
           <div class="price-value"><?=number_format($props['PRICE_SALE'], 0, '.', ' ')?> р.</div>
           <div class="price-old"><?=number_format($props['PRICE'], 0, '.', ' ')?> р.</div>
         <?else:?>
-            <div class="price-value"><?=number_format($props['PRICE'], 0, '.', ' ')?> р.</div>
+            <div class="price-value">
+              <?if(intval($props['PRICE'])>0):?>
+                <?=number_format($props['PRICE'], 0, '.', ' ')?> р.
+              <?else:
+                echo $props['PRICE'];
+              endif;?>
+            </div>
         <?endif;?>
             <a href="/leasing/" class="price-button">Выгодно в лизинг</a>
         </div>

@@ -3,10 +3,16 @@
   <div class="select"><img src="./layout/images/trigger.png" class="trigger">
     <select id="leasing-select">
       <?foreach ($arResult['ITEMS'] as $item):?>
-      <option data-url="<?=$item['PROPERTIES']['LINK']['VALUE']?>"><?=$item['NAME']?></option>
+      <option data-url="leasing-content-<?=$item['ID']?>"><?=$item['NAME']?></option>
       <?endforeach;?>
     </select>
   </div>
-  <p class="big-line-height">Наша компания готова предложить вам лизинг техники на выгодных условиях. Срок договора лизинга до 3 лет, авансовый платёж от 20%, равномерные или убывающие платежи.</p>
-  <p class="big-line-height"><a href="/leasing/">Подробнее</a></p>
+  <?foreach ($arResult['ITEMS'] as $key=>$item):?>
+    <div class="leasing-content <?=($key==0?"leasing-content--active":"")?>" id="leasing-content-<?=$item['ID']?>">
+      <p class="big-line-height"><?=$item['PREVIEW_TEXT']?></p>
+      <p class="big-line-height"><a href="<?=$item['PROPERTIES']['LINK']['VALUE']?>">Подробнее</a></p>    
+    </div>
+  <?endforeach;?>
+
+  
 </div>
