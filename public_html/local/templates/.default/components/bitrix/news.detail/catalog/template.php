@@ -107,9 +107,25 @@ $props = &$item["PROPS"];
             $rsPath = GetIBlockSectionPath($arResult['IBLOCK_ID'], $arResult['IBLOCK_SECTION_ID']);
             $arSections = array();
             while($arPath = $rsPath->GetNext())
-              $arSections[] = $arPath['CODE']
+              $arSections[] = $arPath['CODE'];
           ?>
           <a href="<?=SITE_URL?>/catalog/<?=end($arSections)?>/" class="news-list_item-back"><img src="/layout/images/back.png">Вернуться в раздел</a>
     </div>
   </div>
 </div>
+<?$this->SetViewTarget('nav');
+$APPLICATION->IncludeComponent("bitrix:catalog.section.list", "nav", array(
+    "IBLOCK_TYPE"  => "content",
+    "IBLOCK_ID"    => "1",
+    "SECTION_ID"   => "",
+    "SECTION_CODE" => "",
+    "TOP_DEPTH"    => "2",
+    "CACHE_TYPE"   => "A",
+    "CACHE_TIME"   => "36000",
+    "NAME"         => $arResult['NAME'],
+    "SECTIONS_LIST"=> json_encode($arSections),
+    "CACHE_NOTES"  => $arParams['PARENT_SECTION']
+),
+false
+);
+$this->EndViewTarget();?> 

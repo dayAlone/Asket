@@ -35,8 +35,10 @@ foreach ($arResult["PROPERTIES"] as $key => $prop):
 		case "CHASSIS":
 		case "WORK":
 		case "DEPRECIATION":
-			if(strlen($prop["VALUE"])>0||count($prop["VALUE"])>0)
+			if(strlen($prop["VALUE"])>0)
 				$props[$prop["CODE"]] = $prop["VALUE"];
+			if(count($prop["VALUE"])>1)
+				$props[$prop["CODE"]] = $prop["VALUE"]['TEXT'];
 		break;
 		case "PHOTOS":
 			$gallery     = array();
