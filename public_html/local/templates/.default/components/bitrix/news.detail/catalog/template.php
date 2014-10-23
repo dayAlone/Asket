@@ -71,9 +71,11 @@ $props = &$item["PROPS"];
             <div class="sub-tabs_content sub-tabs_content--active" id="params">
               
             <?
+            $title = false;
             if(count($props['BODY'])>0):?>
               <?foreach ($props['BODY'] as $key=>$item):?>
                 <?if($item['property_title']=="Y"):
+                  if(!$title) $title = true;
                   if($key!=0) echo "</div>";
                   ?>
                   <div class="param-block">
@@ -87,8 +89,10 @@ $props = &$item["PROPS"];
                 <?
                 endif;
                 endforeach;
-            endif;?>
-            </div>
+                if($title) echo "</div>";
+            endif;
+            ?>
+            
               
 
 

@@ -8,8 +8,8 @@
       $arSections[$item['DEPTH_LEVEL']] = array();
     if($item['DEPTH_LEVEL']==2) {
       if(!isset($arSections[$item['DEPTH_LEVEL']]))
-        $arSections[$item['DEPTH_LEVEL']][$item['SECTION_ID']] = array();
-      $arSections[$item['DEPTH_LEVEL']][$item['SECTION_ID']][] = $array;
+        $arSections[$item['DEPTH_LEVEL']][$item['IBLOCK_SECTION_ID']] = array();
+      $arSections[$item['DEPTH_LEVEL']][$item['IBLOCK_SECTION_ID']][] = $array;
     }
     else
       $arSections[$item['DEPTH_LEVEL']][] = $array;
@@ -30,10 +30,6 @@
   </div>
   <div class="col-md-3 col-xs-3">
     <select>
-      <option>Краны-манипуляторы</option>
-      <option>Автокраны</option>
-      <option>Мусоровозы, бункеровозы</option>
-      <option>Легкие коммерческие автомобили</option>
       <?foreach ($arSections[2][$second] as $item):?>
         <option <?=($arParams['SECTIONS_LIST'][1]==$item['CODE']?"selected":"")?>><?=$item['NAME']?></option>
       <?endforeach;?>
