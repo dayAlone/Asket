@@ -17,11 +17,13 @@ $props = &$item["PROPS"];
                 <a id="big-<?=$key?>" style="background-image: url(<?=$value['small']?>)" rel="prettyPhoto[]" href="<?=$value['value']?>" <?=($key==0?'class="active"':'')?>></a>
                 <?endforeach;?>
             </div>
+            <? if(count($props['PHOTOS'])>1):?>
             <div class="slider">
                 <?foreach ($props['PHOTOS'] as $key => $value):?>
                     <div class="item"><a style="background-image: url(<?=$value['small']?>)" data-id="big-<?=$key?>" class="image"></a></div>
                 <?endforeach;?>
             </div>
+            <?endif;?>
         </div>
         <p>
           <?=$item['PREVIEW_TEXT']?>
