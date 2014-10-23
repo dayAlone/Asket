@@ -48,8 +48,8 @@
               <div class="catalog__list-item_name"><?=$item['NAME']?></div>
               <div class="catalog__list-item_props">
                   <?=($props['YEAR']?"Год выпуска: ".$props['YEAR']."<br>":"")?>
-                  <?=($props['STATUS']?"Состояние ".$props['STATUS']."<br>":"")?>
-                  <?=($props['PRICE']?"Цена:":"")?>
+                  <?=($props['STATUS']?"Состояние: ".$props['STATUS']."<br>":"")?>
+                  <?=($props['PRICE']?"Цена: ":"")?>
                   <?
                   if(intval($props['PRICE'])>0):
                     if(($props['PRICE']/1000000)>1):
