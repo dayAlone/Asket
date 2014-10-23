@@ -25,6 +25,7 @@
 <div id="callBack" tabindex="-1" role="dialog" aria-hidden="true" class="modal fade">
   <div class="modal-dialog">
     <div class="modal-content">
+      <a data-dismiss="modal" href="#" class="close"><img src="/layout/images/close.jpg" alt=""></a>
       <div class="success">
         <h3 class="center">Ваше сообщение успешно отправлено. </h3>
         <p class="center">В ближайшее время представители нашей компании свяжутся с вами.<br> Благодарим за обращение.</p>
@@ -98,6 +99,7 @@
 <div id="sendFaq" tabindex="-1" role="dialog" aria-hidden="true" class="modal fade">
   <div class="modal-dialog">
     <div class="modal-content">
+      <a data-dismiss="modal" href="#" class="close"><img src="/layout/images/close.jpg" alt=""></a>
       <div class="success">
         <h3 class="center">Ваш вопрос успешно отправлен. </h3>
         <p class="center">В ближайшее время мы постараемся на него ответить. <br>Благодарим за обращение.</p>

@@ -8347,6 +8347,14 @@ h4 {
   border: 0;
   padding: 10px 30px 25px;
 }
+.modal-dialog .modal-content .close {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
 .modal-dialog .modal-content .success {
   display: none;
   margin-bottom: 30px;
