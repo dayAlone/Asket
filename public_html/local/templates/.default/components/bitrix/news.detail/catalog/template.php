@@ -70,28 +70,33 @@ $props = &$item["PROPS"];
             </div>
             <?
               $list = array(
-                "BODY"         => "Кузов",
-                "MASS"         => "Масса",
-                "ENGINE"       => "Двигатель",
-                "TRANSMISSION" => "Трансмиссия",
-                "CHASSIS"      => "Шасси",
-                "CABINE"       => "Кабина"
+                "BODY"         => "Кузов"
               );
             ?>
             <div class="sub-tabs_content sub-tabs_content--active" id="params">
-              <?foreach ($list as $key => $value):?>
-                <?if(count($props[$key])>0):?>
-                <div class="param-block">
-                  <div class="param-block_title"><?=$value?></div>
-                  <?foreach ($props[$key] as $item):?>
-                    <div class="row">
-                      <div class="col-md-5 col-xs-5"><?=$item['property_name']?>:</div>
-                      <div class="col-md-7 col-xs-7"><?=$item['property_value']?></div>
-                    </div>
-                  <?endforeach;?>
+              
+                <?
+                $i=0;
+                if(count($props['BODY'])>0):?>
+                  <?foreach ($props[$key] as $key=>$item):?>
+                    <?if($item['property_title']=="Y"):
+                      if($key!=0) echo "</div>";
+                      ?>
+                      <div class="param-block">
+                        <div class="param-block_title"><?=$item['property_name']?></div>
+                      <?
+                    else:?>
+                      <div class="row">
+                        <div class="col-md-5 col-xs-5"><?=$item['property_name']?>:</div>
+                        <div class="col-md-7 col-xs-7"><?=$item['property_value']?></div>
+                      </div>
+                    <?endif;?>
+                  <?endforeach;
+                endif;?>
                 </div>
-                <?endif;?>
-              <?endforeach;?>
+              
+
+
               <?if(strlen($props['COMPLECT'])>0):?>
               <div class="param-block">
                 <div class="param-block_title">Комплектация</div>

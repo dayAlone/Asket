@@ -1,8 +1,9 @@
 
 <?
   $arSections = array();
+  $second = false;
   foreach ($arResult['SECTIONS'] as $key => $item):
-    $array = array('NAME'=>$item['NAME'], 'URL'=>$item['SECTION_PAGE_URL'], "CODE"=>$item['CODE']);
+    $array = array('NAME'=>$item['NAME'], 'URL'=>$item['SECTION_PAGE_URL'], "CODE"=>$item['CODE'], 'ID' => $item['ID']);
     if(!isset($arSections[$item['DEPTH_LEVEL']]))
       $arSections[$item['DEPTH_LEVEL']] = array();
     if($item['DEPTH_LEVEL']==2) {
@@ -20,7 +21,10 @@
   <div class="col-md-2 col-xs-2">
     <select>
       <?foreach ($arSections[1] as $item):?>
-        <option <?=($arParams['SECTIONS_LIST'][0]==$item['CODE']?"selected":"")?>><?=$item['NAME']?></option>
+        <option <? if($arParams['SECTIONS_LIST'][0]==$item['CODE']) {
+                    echo "selected";
+                    $second = $item['ID'];
+                  }?>><?=$item['NAME']?></option>
       <?endforeach;?>
     </select>
   </div>
@@ -30,6 +34,9 @@
       <option>Автокраны</option>
       <option>Мусоровозы, бункеровозы</option>
       <option>Легкие коммерческие автомобили</option>
+      <?foreach ($arSections[2][$second] as $item):?>
+        <option <?=($arParams['SECTIONS_LIST'][1]==$item['CODE']?"selected":"")?>><?=$item['NAME']?></option>
+      <?endforeach;?>
     </select>
   </div>
   <div class="col-md-7 col-xs-7"><?=$arParams['NAME']?></div>
