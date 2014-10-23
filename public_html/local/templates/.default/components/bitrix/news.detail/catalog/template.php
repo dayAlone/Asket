@@ -101,10 +101,10 @@ $props = &$item["PROPS"];
               </div>
               <?endif;?>
             </div>
-            <?if(strlen($props['DEPRECIATION']['TEXT'])>0):?>
+            <?if(strlen($props['DEPRECIATION'])>0):?>
             <div class="sub-tabs_content" id="depreciation">
               <div class="param-block param-block--no-title">
-                <?=$props['DEPRECIATION']['TEXT']?>
+                <?=$props['DEPRECIATION']?>
               </div>
             </div>
             <?endif;?>
