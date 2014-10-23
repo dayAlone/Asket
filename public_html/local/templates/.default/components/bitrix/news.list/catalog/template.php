@@ -50,11 +50,13 @@
                   <?=($props['YEAR']?"Год выпуска: ".$props['YEAR']."<br>":"")?>
                   <?=($props['STATUS']?"Состояние ".$props['STATUS']."<br>":"")?>
                   <?if($props['PRICE']?"Цена:":"")?>
-                  <?if(intval($props['PRICE'])>0):
-                    if(($props['PRICE']/1000000)>1)
+                  <?
+                  if(intval($props['PRICE'])>0):
+                    if(($props['PRICE']/1000000)>1):
                       echo ($props['PRICE']/1000000)." млн. руб.<br>";
-                    elseif(($props['PRICE']/1000)>1)
+                    elseif(($props['PRICE']/1000)>1):
                       echo ($props['PRICE']/100000)." тыс. руб.<br>";
+                    endif;
                   elseif($props['PRICE']):
                     echo $props['PRICE'];
                   endif;?>
