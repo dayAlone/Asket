@@ -22,7 +22,6 @@ foreach ($arResult["PROPERTIES"] as $key => $prop):
 		case "YEAR":
 		case "ENGINE":
 		case "CABINE":
-		case "COMPLECT":
 		case "BODY":
 		case "MASS":
 		case "PLACE":
@@ -36,11 +35,12 @@ foreach ($arResult["PROPERTIES"] as $key => $prop):
 		case "WORK":
 		case "DEPRECIATION":
 			if(strlen($prop["VALUE"])>0||count($prop["VALUE"])>0)
-				if(isset($prop["VALUE"]['TEXT']))
-					$props[$prop["CODE"]] = $prop["VALUE"]['TEXT'];
-				else
+				
 					$props[$prop["CODE"]] = $prop["VALUE"];
 		break;
+		case "COMPLECT":
+			$props[$prop["CODE"]] = $prop["VALUE"]['TEXT'];
+		break;	
 		case "PHOTOS":
 			$gallery     = array();
 			$description = $prop['DESCRIPTION'];
