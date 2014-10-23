@@ -27,7 +27,6 @@ foreach ($arResult["PROPERTIES"] as $key => $prop):
 		case "PRICE":
 		case "PRICE_SALE":
 		case "WORK":
-		case "DEPRECIATION":
 			if(strlen($prop["VALUE"])>0)
 				$props[$prop["CODE"]] = $prop["VALUE"];
 		break;
@@ -37,11 +36,11 @@ foreach ($arResult["PROPERTIES"] as $key => $prop):
 		case "TRANSMISSION":
 		case "CHASSIS":
 		case "CABINE":
-		case "COMPLECT":
 			if(count($prop["VALUE"])>0)
 				if(strlen($prop["VALUE"][0]['property_name'])>0)
 					$props[$prop["CODE"]] = $prop["VALUE"];
 		break;
+		case "DEPRECIATION":
 		case "COMPLECT":
 			$props[$prop["CODE"]] = $prop["VALUE"]['TEXT'];
 		break;	
