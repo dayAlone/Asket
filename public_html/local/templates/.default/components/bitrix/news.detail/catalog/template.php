@@ -23,6 +23,9 @@ $props = &$item["PROPS"];
                 <?endforeach;?>
             </div>
         </div>
+        <p>
+          <?=$item['PREVIEW_TEXT']?>
+        </p>
     </div>
     <div class="col-md-8 col-xs-8">
         <div class="params">

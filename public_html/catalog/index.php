@@ -11,6 +11,7 @@ if(strlen($_REQUEST['ELEMENT_CODE'])>0 && !isset($_GLOBALS['currentCatalogInnerS
 		"SET_TITLE"     => "Y",
 		"CACHE_TYPE"    => "A",
 		"CACHE_TIME"    => "36000",
+    "FIELD_CODE"    => array("PREVIEW_TEXT"),
     "PROPERTY_CODE" => array(
           1 => "YEAR",
           2 => "ENGINE",
