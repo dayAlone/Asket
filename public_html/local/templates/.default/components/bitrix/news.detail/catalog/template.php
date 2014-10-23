@@ -68,32 +68,27 @@ $props = &$item["PROPS"];
               <a href="#params" class="sub-tabs_title__active">Характеристики</a>
               <?if(strlen($props['DEPRECIATION']['TEXT'])>0):?><a href="#depreciation">Износ</a><?endif;?>
             </div>
-            <?
-              $list = array(
-                "BODY"         => "Кузов"
-              );
-            ?>
             <div class="sub-tabs_content sub-tabs_content--active" id="params">
               
+            <?
+            if(count($props['BODY'])>0):?>
+              <?foreach ($props['BODY'] as $key=>$item):?>
+                <?if($item['property_title']=="Y"):
+                  if($key!=0) echo "</div>";
+                  ?>
+                  <div class="param-block">
+                    <div class="param-block_title"><?=$item['property_name']?></div>
+                  <?
+                else:?>
+                  <div class="row">
+                    <div class="col-md-5 col-xs-5"><?=$item['property_name']?>:</div>
+                    <div class="col-md-7 col-xs-7"><?=$item['property_value']?></div>
+                  </div>
                 <?
-                $i=0;
-                if(count($props['BODY'])>0):?>
-                  <?foreach ($props[$key] as $key=>$item):?>
-                    <?if($item['property_title']=="Y"):
-                      if($key!=0) echo "</div>";
-                      ?>
-                      <div class="param-block">
-                        <div class="param-block_title"><?=$item['property_name']?></div>
-                      <?
-                    else:?>
-                      <div class="row">
-                        <div class="col-md-5 col-xs-5"><?=$item['property_name']?>:</div>
-                        <div class="col-md-7 col-xs-7"><?=$item['property_value']?></div>
-                      </div>
-                    <?endif;?>
-                  <?endforeach;
-                endif;?>
-                </div>
+                endif;
+                endforeach;
+            endif;?>
+            </div>
               
 
 
