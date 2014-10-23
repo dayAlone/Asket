@@ -186,7 +186,7 @@
       disable_search: true,
       width: "100%"
     }).change(function() {
-      return console.log($(this).val());
+      return window.location.href = $(this).val();
     }).on("chosen:showing_dropdown", function() {
       var drop;
       drop = $(this).parent().find('.chosen-drop');
