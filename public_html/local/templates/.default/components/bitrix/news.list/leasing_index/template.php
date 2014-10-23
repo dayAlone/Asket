@@ -3,7 +3,7 @@
   <div class="select"><img src="./layout/images/trigger.png" class="trigger">
     <select id="leasing-select">
       <?foreach ($arResult['ITEMS'] as $item):?>
-      <option data-url="leasing-content-<?=$item['ID']?>"><?=$item['NAME']?></option>
+      <option value="#leasing-content-<?=$item['ID']?>"><?=$item['NAME']?></option>
       <?endforeach;?>
     </select>
   </div>

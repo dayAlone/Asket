@@ -256,7 +256,8 @@
       out: function() {}
     });
     $('#leasing-select').on('change', function() {
-      return window.location.href = $(this).find('option:selected').data('url');
+      $('.leasing-content').removeClass('leasing-content--active');
+      return $($(this).val()).addClass('leasing-content--active');
     });
     $('.tabs .tabs__title .tabs__title-link').click(function(s) {
       var active, e;
