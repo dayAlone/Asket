@@ -582,9 +582,28 @@ a, input, select
 			
 	.resp_slider
 		full-width()
-		background-size cover
+		
+		background white !important
 		height 290px
-		border-radius 7px
+		.item
+			border-radius 7px
+			background-size cover
+			font-family 'MainFont', 'Helvetica Neue', 'Arial', sans-serif
+			.content
+				width 90%
+				h1
+					max-width 300px
+					font-size 23px
+					line-height 23px
+					font-weight normal
+				.button
+					blue-gradient()
+					text-transform normal
+					padding: 11px 20px;
+					text-transform: none
+					min-width 144px
+
+	/*
 		.content
 			float left
 			width 300px
@@ -593,9 +612,7 @@ a, input, select
 			margin-left 38px
 			margin-top 50px
 			h1
-				font-size 23px
-				line-height 23px
-				font-weight normal
+				
 			.button
 				position absolute
 				left 0
@@ -604,6 +621,7 @@ a, input, select
 				width 144px
 				height 41px
 				line-height 41px
+	*/
 	&-slide
 		position absolute
 		width 800px

@@ -78,7 +78,7 @@ module.exports = (grunt)->
 			sources : 'sources'
 			layout  : 'public_html/layout'
 
-		use : loadPlugins [ 'jquery', 'bootstrap', 'slick', 'prettyPhoto', 'parsley', 'fotorama', 'mask', 'hypher', 'velocity', 'browser', 'hoverIntent' ]
+		use : loadPlugins [ 'jquery', 'bootstrap', 'slick', 'prettyPhoto', 'parsley', 'chosen', 'mask', 'hypher', 'velocity', 'browser', 'hoverIntent' ]
 
 		files:
 			css:

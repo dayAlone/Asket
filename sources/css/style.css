@@ -766,6 +766,25 @@ select:focus {
   float: left;
   width: 100%;
   position: relative;
+/*
+		.content
+			float left
+			width 300px
+			height 175px
+			position relative
+			margin-left 38px
+			margin-top 50px
+			h1
+				
+			.button
+				position absolute
+				left 0
+				bottom 0
+				blue-gradient()
+				width 144px
+				height 41px
+				line-height 41px
+	*/
 }
 .promo > .row {
   overflow: hidden;
@@ -838,30 +857,27 @@ select:focus {
 .promo .resp_slider {
   float: left;
   width: 100%;
+  background: #fff !important;
+  height: 290px;
+}
+.promo .resp_slider .item {
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
-  height: 290px;
-  -webkit-border-radius: 7px;
-  border-radius: 7px;
+  font-family: 'MainFont', 'Helvetica Neue', 'Arial', sans-serif;
 }
-.promo .resp_slider .content {
-  float: left;
-  width: 300px;
-  height: 175px;
-  position: relative;
-  margin-left: 38px;
-  margin-top: 50px;
+.promo .resp_slider .item .content {
+  width: 90%;
 }
-.promo .resp_slider .content h1 {
+.promo .resp_slider .item .content h1 {
+  max-width: 300px;
   font-size: 23px;
   line-height: 23px;
   font-weight: normal;
 }
-.promo .resp_slider .content .button {
-  position: absolute;
-  left: 0;
-  bottom: 0;
+.promo .resp_slider .item .content .button {
   color: #fff;
   text-align: center;
   -webkit-border-radius: 3px;
@@ -876,17 +892,18 @@ select:focus {
   background: linear-gradient(to top, #1055c7 0%, #3f88ec 100%);
   -webkit-box-shadow: inset 0 2px 1px 0 rgba(255,255,255,0.1), inset 0 -2px 1px 0 rgba(0,0,0,0.1);
   box-shadow: inset 0 2px 1px 0 rgba(255,255,255,0.1), inset 0 -2px 1px 0 rgba(0,0,0,0.1);
-  width: 144px;
-  height: 41px;
-  line-height: 41px;
+  text-transform: normal;
+  padding: 11px 20px;
+  text-transform: none;
+  min-width: 144px;
 }
-.promo .resp_slider .content .button:hover {
+.promo .resp_slider .item .content .button:hover {
   text-decoration: none;
   color: #fff;
   -webkit-box-shadow: inset 0 10px 15px rgba(101,166,255,0.5);
   box-shadow: inset 0 10px 15px rgba(101,166,255,0.5);
 }
-.promo .resp_slider .content .button:focus {
+.promo .resp_slider .item .content .button:focus {
   color: #fff;
 }
 .promo-slide {
