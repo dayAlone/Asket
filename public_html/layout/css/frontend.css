@@ -8573,6 +8573,9 @@ h4 {
   font-size: 12px;
   color: #515050;
 }
+.product .side ul {
+  padding-left: 20px;
+}
 .product .side ul li {
   font-size: 12px;
 }
