@@ -42,7 +42,7 @@ foreach ($arResult["PROPERTIES"] as $key => $prop):
 		break;
 		case "DEPRECIATION":
 		case "COMPLECT":
-			$props[$prop["CODE"]] = $prop["VALUE"]['TEXT'];
+			$props[$prop["CODE"]] = html_entity_decode($prop["VALUE"]['TEXT']);
 		break;	
 		case "PHOTOS":
 			$gallery     = array();

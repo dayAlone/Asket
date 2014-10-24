@@ -8594,10 +8594,12 @@ h4 {
   font-size: 12px;
   color: #515050;
 }
-.product .side ul {
+.product .side ul,
+.product .side ol {
   padding-left: 20px;
 }
-.product .side ul li {
+.product .side ul li,
+.product .side ol li {
   font-size: 12px;
 }
 .product h1 {
@@ -8839,6 +8841,7 @@ h4 {
   -moz-background-size: contain;
   background-size: contain;
   background-position: center center;
+  background-repeat: no-repeat;
   display: none;
 }
 .gallery .big a.active {
