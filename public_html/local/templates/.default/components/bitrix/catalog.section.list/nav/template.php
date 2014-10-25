@@ -38,5 +38,5 @@
       <?endforeach;?>
     </select>
   </div>
-  <div class="col-xs-<?=($length>=30?"6":"7")?>"><?=$arParams['NAME']?></div>
+  <div class="col-xs-<?=($length>=30?"6":"7")?>"><?=$arParams['NAME']?> <?=$length?></div>
 </div>
