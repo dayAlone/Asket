@@ -53,7 +53,7 @@
                   <?=($props['PRICE']?"Цена: ":"")?>
                   <?
                   if($props['PRICE_ORDER']!='Y'):
-                    if(intval($props['PRICE_SALE'])>0):
+                    if(intval($props['PRICE_SALE'])>0)
                       $price = $props['PRICE_SALE'];
                     else
                       $price = $props['PRICE'];
