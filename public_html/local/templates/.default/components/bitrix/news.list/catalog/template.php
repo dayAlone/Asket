@@ -55,7 +55,7 @@
                     if(($props['PRICE']/1000000)>1):
                       echo ($props['PRICE']/1000000)." млн. руб.<br>";
                     elseif(($props['PRICE']/1000)>1):
-                      echo ($props['PRICE']/100000)." тыс. руб.<br>";
+                      echo ($props['PRICE']/1000)." тыс. руб.<br>";
                     endif;
                   elseif($props['PRICE']):
                     echo $props['PRICE']."<br>";
