@@ -52,15 +52,23 @@
                   <?=($props['STATUS']?"Состояние: ".$props['STATUS']."<br>":"")?>
                   <?=($props['PRICE']?"Цена: ":"")?>
                   <?
-                  if(intval($props['PRICE'])>0):
-                    if(($props['PRICE']/1000000)>1):
-                      echo ($props['PRICE']/1000000)." млн. руб.<br>";
-                    elseif(($props['PRICE']/1000)>1):
-                      echo ($props['PRICE']/1000)." тыс. руб.<br>";
+                  if($props['PRICE_ORDER']!='Y'):
+                    if(intval($props['PRICE_SALE'])>0):
+                      $price = $props['PRICE_SALE'];
+                    else
+                      $price = $props['PRICE'];
+                    
+                    if(intval($price)>0):
+                      if(($price/1000000)>1):
+                        echo ($price/1000000)." млн. руб.<br>";
+                      elseif(($price/1000)>1):
+                        echo ($price/1000)." тыс. руб.<br>";
+                      endif;
                     endif;
-                  elseif($props['PRICE']):
-                    echo $props['PRICE']."<br>";
-                  endif;?>
+                  else:
+                    echo "По запросу";
+                  endif;
+                  ?>
                   <?=($props['PLACE']?"Местонахождение: ".$props['PLACE']."<br>":"")?>
               </div>
             </a>

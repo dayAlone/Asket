@@ -55,19 +55,23 @@ $props = &$item["PROPS"];
             <?endforeach;?>
         </div>
         <div class="price">
-        <?if($props['PRICE_SALE']):?>
-          <div class="price-title">Новая цена по акции</div>
-          <div class="price-value"><?=number_format($props['PRICE_SALE'], 0, '.', ' ')?> р.</div>
-          <div class="price-old"><?=number_format($props['PRICE'], 0, '.', ' ')?> р.</div>
-        <?else:?>
-            <div class="price-value">
-              <?if(intval($props['PRICE'])>0):?>
-                <?=number_format($props['PRICE'], 0, '.', ' ')?> р.
-              <?else:
-                echo $props['PRICE'];
-              endif;?>
-            </div>
-        <?endif;?>
+        <?
+        if($props['PRICE_ORDER']!='Y'):
+          if($props['PRICE_SALE']):?>
+            <div class="price-title">Новая цена по акции</div>
+            <div class="price-value"><?=number_format($props['PRICE_SALE'], 0, '.', ' ')?> р.</div>
+            <div class="price-old"><?=number_format($props['PRICE'], 0, '.', ' ')?> р.</div>
+          <?else:?>
+              <div class="price-value">
+                <?if(intval($props['PRICE'])>0):?>
+                  <?=number_format($props['PRICE'], 0, '.', ' ')?> р.
+                <?
+                endif;?>
+              </div>
+          <?endif;
+        else:
+          echo "По запросу";
+        endif;?>
             <a href="/leasing/" class="price-button">Выгодно в лизинг</a>
         </div>
         <div class="sub-tabs">

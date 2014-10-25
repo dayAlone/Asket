@@ -21,8 +21,8 @@
 				case "DEPRECIATION":
 					$props[$prop["CODE"]] = $prop["VALUE"];
 				break;
-				case "PRICE_ORDED":
-					$props[$prop["CODE"]] = $prop["VALUE"];
+				case "PRICE_ORDER":
+					$props[$prop["CODE"]] = $prop["VALUE_XML_ID"];
 				break;
 			endswitch;
 		endforeach;
