@@ -3,6 +3,8 @@
   $arSections = array();
   $second = false;
   $length = 0;
+  $arParams['SECTIONS_LIST'] = json_decode(htmlspecialchars_decode($arParams['SECTIONS_LIST']));
+
   foreach ($arResult['SECTIONS'] as $key => $item):
     $array = array('NAME'=>$item['NAME'], 'URL'=>$item['SECTION_PAGE_URL'], "CODE"=>$item['CODE'], 'ID' => $item['ID']);
     if(!isset($arSections[$item['DEPTH_LEVEL']]))
@@ -17,7 +19,6 @@
     else
       $arSections[$item['DEPTH_LEVEL']][] = $array;
   endforeach;
-  $arParams['SECTIONS_LIST'] = json_decode(htmlspecialchars_decode($arParams['SECTIONS_LIST']));
 
 ?>
 <div class="breadcrumbs left">
@@ -38,5 +39,5 @@
       <?endforeach;?>
     </select>
   </div>
-  <div class="col-xs-<?=($length>=30?"6":"7")?>"><?=$arParams['NAME']?> <?=$length?></div>
+  <div class="col-xs-<?=($length>=30?"6":"7")?>"><?=$arParams['NAME']?></div>
 </div>
