@@ -33,7 +33,7 @@
                 <div class="row">
             <?endif;?>
             <div class="col-xs-<?=12/$z?>">
-              <a class="promo-slide-item <?=($count[$item['IBLOCK_SECTION_ID']]>8?"promo-slide-item--small":"")?> href="<?=SITE_URL?><?=$item['SECTION_PAGE_URL']?>">
+              <a class="promo-slide-item <?=($count[$item['IBLOCK_SECTION_ID']]>8?'promo-slide-item--small':'')?>" href="<?=SITE_URL?><?=$item['SECTION_PAGE_URL']?>">
               <div style="background-image: url(<?=$item['PICTURE']['SRC']?>)" class="promo-slide-item_image"></div>
               <div class="promo-slide-item_title"><span><?=$item['NAME']?></span></div></a>
             </div>
