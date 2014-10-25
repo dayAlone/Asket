@@ -70,7 +70,7 @@ $props = &$item["PROPS"];
               </div>
           <?endif;
         else:
-          echo "По запросу";
+          ?><div class="price-value">По запросу</div><?
         endif;?>
             <a href="/leasing/" class="price-button">Выгодно в лизинг</a>
         </div>
