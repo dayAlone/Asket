@@ -12,7 +12,7 @@ module.exports = (grunt)->
 			jquery :
 				js : '/jquery/dist/jquery.js'
 			bootstrap :
-				js  : ['/bootstrap/js/transition.js', '/bootstrap/js/modal.js']
+				js  : ['/bootstrap/js/transition.js', '/bootstrap/js/tab.js','/bootstrap/js/modal.js']
 				css : '/bootstrap/dist/css/bootstrap.css'
 			slick :
 				js  : '/slick/slick/slick.js'
@@ -290,5 +290,7 @@ module.exports = (grunt)->
 	grunt.registerTask 'default', ['watch']
 
 	grunt.registerTask 'compile', ['copy', 'imagemin', 'stylus', 'coffee', 'concat', 'csscomb', 'cssmin', 'uglify', 'jade']
+
+	grunt.registerTask 'front', ['copy', 'concat', 'stylus', 'coffee', 'concat:js_plugins', 'concat:css_frontend', 'csscomb', 'cssmin', 'uglify']#, 'jade']
 
 	grunt.task.run 'notify_hooks'

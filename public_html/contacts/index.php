@@ -56,7 +56,7 @@ $APPLICATION->SetTitle('О компании');
   myMap.geoObjects.add(myPlacemark);
   
   var myMap2 = new ymaps.Map('map_2', { center: [55.336631,   86.132159], zoom: 15 });
-  var myPlacemark2 = new ymaps.Placemark(myMap.getCenter(), { hintContent: '' }, {
+  var myPlacemark2 = new ymaps.Placemark(myMap2.getCenter(), { hintContent: '' }, {
       iconLayout:      'default#image',
       iconImageHref:   '/layout/images/pointer.png',
       iconImageSize:   [47, 48],
