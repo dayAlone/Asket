@@ -7009,6 +7009,7 @@ select:focus {
   float: left;
   width: 100%;
   background: #616d80;
+  overflow: hidden;
   height: 53px;
   color: #fff;
   font-size: 13px;
