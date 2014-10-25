@@ -19,6 +19,9 @@
       <div class="col-md-3 col-xs-3">© 1993—<?=date("Y")?> ООО Аскет Авто» <br> Все права защищены</div>
       <div class="col-md-5 col-xs-5"><?=COption::GetOptionString("grain.customsettings","footer_contacts")?></div>
       <div class="col-md-3 col-xs-3"><?=COption::GetOptionString("grain.customsettings","footer_seo")?> </div>
+      <div class="col-xs-1">
+        <div id="bx-composite-banner"></div>
+      </div>
     </div>
   </div>
 </footer>
