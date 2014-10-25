@@ -34,6 +34,7 @@
                 12 => "PRICE",
                 13 => "PRICE_SALE",
                 14 => "CHASSIS",
+                15 => "PRICE_ORDER"
               ),
               "DISPLAY_BOTTOM_PAGER" => "N",
               "FILTER_NAME" => "catalog_filter",

@@ -30,6 +30,7 @@ if(strlen($_REQUEST['ELEMENT_CODE'])>0 && !isset($_GLOBALS['currentCatalogInnerS
           15 => "DEPRECIATION",
           16 => "PHOTOS",
           17 => "WORK",
+          18 => "PRICE_ORDER"
         ),
 	));
 elseif(strlen($_REQUEST['ELEMENT_CODE'])>0 && isset($_GLOBALS['currentCatalogInnerSection'])):
@@ -59,7 +60,8 @@ elseif(strlen($_REQUEST['ELEMENT_CODE'])>0 && isset($_GLOBALS['currentCatalogInn
           12 => "PRICE",
           13 => "PRICE_SALE",
           14 => "CHASSIS",
-          15 => "DEPRECIATION"
+          15 => "DEPRECIATION",
+          16 => "PRICE_ORDER"
         ),
         "CACHE_FILTER"  => "Y",
         "CACHE_TYPE"  => "A",

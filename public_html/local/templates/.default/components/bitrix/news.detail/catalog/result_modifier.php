@@ -44,6 +44,10 @@ foreach ($arResult["PROPERTIES"] as $key => $prop):
 		case "COMPLECT":
 			$props[$prop["CODE"]] = html_entity_decode($prop["VALUE"]['TEXT']);
 		break;	
+		case "PRICE_ORDED":
+			var_dump($prop);
+			$props[$prop["CODE"]] = $prop["VALUE"];
+		break;
 		case "PHOTOS":
 			$gallery     = array();
 			$description = $prop['DESCRIPTION'];
