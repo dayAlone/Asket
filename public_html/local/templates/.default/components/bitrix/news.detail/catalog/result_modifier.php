@@ -44,7 +44,7 @@ foreach ($arResult["PROPERTIES"] as $key => $prop):
 		case "COMPLECT":
 			$props[$prop["CODE"]] = html_entity_decode($prop["VALUE"]['TEXT']);
 		break;	
-		case "PRICE_ORDED":
+		case "PRICE_ORDER":
 			var_dump($prop);
 			$props[$prop["CODE"]] = $prop["VALUE"];
 		break;
