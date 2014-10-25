@@ -1,3 +1,4 @@
+<?$this->setFrameMode(true);?>
 <div class="frame clearfix">
   <div class="features fotorama" data-width="100%" data-height="360" data-loop="true" data-autoplay="true" data-click="false" data-stopautoplayontouch="false">
     <?foreach ($arResult['ITEMS'] as $key=>$item):?>

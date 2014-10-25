@@ -1,3 +1,4 @@
+<?$this->setFrameMode(true);?>
 <nav class="catalog-sections">
   <div class="container">
     <div class="row">

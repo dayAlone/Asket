@@ -1,3 +1,4 @@
+<?$this->setFrameMode(true);?>
 <div class="news-list">
   <div class="news-list_item news-list_item__text">
     <div class="news-list_item-date"><?=r_date($arResult['ACTIVE_FROM'])?></div>

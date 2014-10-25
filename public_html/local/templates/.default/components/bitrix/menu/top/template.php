@@ -1,3 +1,4 @@
+<?$this->setFrameMode(true);?>
 <nav class="navbar">
   <div class="row no-padding">
     <div class="col-md-12 col-xs-12">

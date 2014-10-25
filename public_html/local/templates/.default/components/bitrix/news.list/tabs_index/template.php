@@ -1,3 +1,4 @@
+<?$this->setFrameMode(true);?>
 <div class="tabs">
   <div class="tabs__frame clearfix">
     <div class="tabs__title">

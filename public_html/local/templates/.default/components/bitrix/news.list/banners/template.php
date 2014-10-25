@@ -1,4 +1,4 @@
-<?
+<?$this->setFrameMode(true);
   require_once($_SERVER['DOCUMENT_ROOT'].'/include/petrovich-php/petrovich.php');
 ?>
 <div class="banners center">

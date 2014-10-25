@@ -1,3 +1,4 @@
+<?$this->setFrameMode(true);?>
 <div class="catalog-sections__side">
     <?
     foreach ($arResult['SECTIONS'] as $key => $item):?>

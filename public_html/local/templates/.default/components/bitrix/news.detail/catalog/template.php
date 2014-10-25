@@ -1,3 +1,4 @@
+<?$this->setFrameMode(true);?>
 <?
 $item = $arResult;
 $props = &$item["PROPS"];

@@ -1,3 +1,4 @@
+<?$this->setFrameMode(true);?>
 <div class="frame clearfix fixed-height">
   <div class="row">
   	<?foreach ($arResult['ITEMS'] as $item):?>

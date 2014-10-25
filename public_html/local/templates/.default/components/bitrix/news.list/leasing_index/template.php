@@ -1,3 +1,4 @@
+<?$this->setFrameMode(true);?>
 <div class="block faq">
   <h3>Мы найдем решение, если у вас:</h3>
   <div class="select"><img src="./layout/images/trigger.png" class="trigger">

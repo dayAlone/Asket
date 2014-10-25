@@ -1,3 +1,4 @@
+<?$this->setFrameMode(true);?>
 <div class="years">
 	<a href="<?=SITE_URL?>/news/" class="years-link <?=(intval($arParams["CACHE_NOTES"])>0?'':'years-link__active')?>">Все новости</a>
 	<?foreach ($arResult['SECTIONS'] as $key => $item):?>

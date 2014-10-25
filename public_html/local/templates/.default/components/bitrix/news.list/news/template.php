@@ -1,3 +1,4 @@
+<?$this->setFrameMode(true);?>
 <div class="news-list">
   <?foreach ($arResult['ITEMS'] as $item):?>
     <div class="news-list_item">

@@ -1,3 +1,4 @@
+<?$this->setFrameMode(true);?>
 <?=(isset($arParams['SECTION_NAME'])?'<div class="row--title"><div class="row"><div class="col-xs-12"><h2>'.$arParams['SECTION_NAME'].'</h2></div></div></div>':'')?>
 <?if($arParams['SHOW_FILTER']=='Y'):?>
   <div class="toolbar">

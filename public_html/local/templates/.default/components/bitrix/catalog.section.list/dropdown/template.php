@@ -1,3 +1,4 @@
+<?$this->setFrameMode(true);?>
 <section class="dropdown__catalog">
   <a href="/catalog/" class="dropdown__catalog-trigger">Каталог техники</a>
   <div class="dropdown__catalog-frame">

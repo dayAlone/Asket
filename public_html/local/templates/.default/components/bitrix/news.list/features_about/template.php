@@ -1,3 +1,4 @@
+<?$this->setFrameMode(true);?>
 <?
   $i   = 0;
   $col = 2;
