@@ -1,4 +1,4 @@
-
+<?$this->setFrameMode(true);?>
 <?
   $arSections = array();
   $second = false;
@@ -18,7 +18,7 @@
 
 ?>
 <div class="breadcrumbs left">
-  <div class="col-md-2 col-xs-2">
+  <div class="col-xs-2">
     <select>
       <?foreach ($arSections[1] as $item):?>
         <option <? if($arParams['SECTIONS_LIST'][0]==$item['CODE']) {
@@ -28,7 +28,7 @@
       <?endforeach;?>
     </select>
   </div>
-  <div class="col-md-3 col-xs-3">
+  <div class="col-xs-4">
     <select>
       <?foreach ($arSections[2][$second] as $item):?>
         <option <?=($arParams['SECTIONS_LIST'][1]==$item['CODE']?"selected":"")?> value="<?=$item['URL']?>"><?=$item['NAME']?></option>
