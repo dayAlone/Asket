@@ -4,6 +4,10 @@
     <div class="news-list_item-date"><?=r_date($arResult['ACTIVE_FROM'])?></div>
     <div class="news-list_item-title"><?=$arResult['NAME']?></div>
     <div class="news-list_item-text">
+        <?if(strlen($arResult['DETAIL_PICTURE']['SRC'])>0):?>
+        <img src="<?=$arResult['DETAIL_PICTURE']['SRC']?>" alt="">
+        <br>
+        <?endif;?>
     	<?=$arResult['DETAIL_TEXT']?>
     	<?
 			$rsPath = GetIBlockSectionPath($arResult['IBLOCK_ID'], $arResult['IBLOCK_SECTION_ID']);
