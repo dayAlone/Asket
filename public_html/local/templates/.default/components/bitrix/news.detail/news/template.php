@@ -9,7 +9,8 @@
 			$rsPath = GetIBlockSectionPath($arResult['IBLOCK_ID'], $arResult['IBLOCK_SECTION_ID']);
 			$arPath = $rsPath->GetNext();
 		?>
-    	<a href="<?=SITE_URL?>/news/<?=$arPath['NAME']?>/" class="news-list_item-back"><img src="/layout/images/back.png">Вернуться к списку новостей</a>
+        <br><br>
+        <a href="<?=SITE_URL?>/news/<?=$arPath['NAME']?>/" class="news-list_item-back"><img src="/layout/images/back.png">Вернуться к списку новостей</a>
     </div>
   </div>
 </div>
