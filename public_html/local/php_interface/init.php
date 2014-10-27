@@ -57,5 +57,5 @@ function r_date($date = '') {
 		"nd"       => "",
 		"rd"       => ""
 	);
-   	return strtr(date('d F Y'), $treplace);
+   	return strtr(date('d F Y', $date), $treplace);
 }
