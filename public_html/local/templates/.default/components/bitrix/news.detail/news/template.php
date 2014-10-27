@@ -6,7 +6,7 @@
     <div class="news-list_item-text">
         <?if(strlen($arResult['DETAIL_PICTURE']['SRC'])>0):?>
         <img src="<?=$arResult['DETAIL_PICTURE']['SRC']?>" alt="">
-        <br>
+        <br><br>
         <?endif;?>
     	<?=$arResult['DETAIL_TEXT']?>
     	<?
