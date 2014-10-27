@@ -1,7 +1,4 @@
 <?$this->setFrameMode(true);?>
-<?
-  require_once($_SERVER['DOCUMENT_ROOT'].'/include/petrovich-php/petrovich.php');
-?>
 <div class="faq-list">
   <?foreach ($arResult['ITEMS'] as $item):?>
     <div class="faq-list_item">
@@ -10,11 +7,7 @@
           <div class="faq-list_item-date"><?=r_date($item['ACTIVE_FROM'])?></div>
         </div>
         <div class="col-md-6 col-xs-6">
-          <?
-            $petrovich = new Petrovich(Petrovich::GENDER_MALE);
-            $name = $petrovich->firstname($item['PROPERTIES']['AUTHOR']['VALUE'], Petrovich::CASE_GENITIVE);
-          ?>
-          <div class="faq-list_item-author">Вопрос от <?=$name?>:</div>
+          <div class="faq-list_item-author">Вопрос от <?=$item['PROPERTIES']['AUTHOR']['VALUE']?>:</div>
         </div>
       </div>
       <div class="faq-list_item-title"><?=$item['NAME']?></div><a href="#" class="faq-list_item-trigger"><span class="shown">Показать ответ</span><span class="hiden">Скрыть ответ</span></a>
