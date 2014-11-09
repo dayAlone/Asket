@@ -523,7 +523,7 @@
 			"file": "sources/css/style.styl",
 			"settings":
 			{
-				"buffer_size": 26200,
+				"buffer_size": 28234,
 				"line_ending": "Unix"
 			}
 		},
@@ -531,7 +531,7 @@
 			"file": "sources/js/script.coffee",
 			"settings":
 			{
-				"buffer_size": 5975,
+				"buffer_size": 7684,
 				"line_ending": "Unix"
 			}
 		},
@@ -544,10 +544,10 @@
 			}
 		},
 		{
-			"file": "Gruntfile.coffee",
+			"file": "public_html/local/templates/.default/components/bitrix/news.detail/catalog/result_modifier.php",
 			"settings":
 			{
-				"buffer_size": 7002,
+				"buffer_size": 1929,
 				"line_ending": "Unix"
 			}
 		}
@@ -587,6 +587,9 @@
 	},
 	"expanded_folders":
 	[
+		"/Users/slider/Documents/Projects/Asket/HTML/public_html/local/templates/.default/components/bitrix",
+		"/Users/slider/Documents/Projects/Asket/HTML/public_html/local/templates/.default/components/bitrix/news.detail",
+		"/Users/slider/Documents/Projects/Asket/HTML/public_html/local/templates/.default/components/bitrix/news.detail/catalog",
 		"/Users/slider/Documents/Projects/Asket/HTML",
 		"/Users/slider/Documents/Projects/Asket/HTML/bower_components",
 		"/Users/slider/Documents/Projects/Asket/HTML/bower_components/hypher_lib",
@@ -964,19 +967,20 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 26200,
+						"buffer_size": 28234,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								22271,
-								22274
+								0,
+								0
 							]
 						],
 						"settings":
 						{
+							"buffer_scroll_name": "93d3f2cb",
 							"codeintel": true,
 							"codeintel_config":
 							{
@@ -1100,19 +1104,20 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5975,
+						"buffer_size": 7684,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4697,
-								4665
+								0,
+								0
 							]
 						],
 						"settings":
 						{
+							"buffer_scroll_name": "7ed108bf",
 							"codeintel": true,
 							"codeintel_config":
 							{
@@ -1249,6 +1254,7 @@
 						],
 						"settings":
 						{
+							"buffer_scroll_name": "6b011b15",
 							"codeintel": true,
 							"codeintel_config":
 							{
@@ -1369,31 +1375,30 @@
 				},
 				{
 					"buffer": 3,
-					"file": "Gruntfile.coffee",
+					"file": "public_html/local/templates/.default/components/bitrix/news.detail/catalog/result_modifier.php",
 					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 7002,
+						"buffer_size": 1929,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1008,
-								1048
+								0,
+								1929
 							]
 						],
 						"settings":
 						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage",
+							"bs_sintax": "php",
+							"buffer_scroll_name": "1ed973aa",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 239.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,

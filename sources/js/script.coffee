@@ -243,9 +243,9 @@ $(document).ready ->
 		e = $($(this).data('href'))
 		if e.length > 0 
 			active = $(this).parents('.tabs__title').find('.tabs__title-link--active')
-			$(active.data('href')).removeClass '.tabs__content--active'
+			$(active.data('href')).removeClass 'tabs__content--active'
 			active.removeClass 'tabs__title-link--active'
-			e.addClass '.tabs__content--active'
+			e.addClass 'tabs__content--active'
 			$(this).addClass 'tabs__title-link--active'
 
 			s.preventDefault()
