@@ -28,5 +28,16 @@
 		endforeach;
 
 	endforeach;
+
+	if(isset($arParams['INDEX']))
+	{
+		$items = array();
+		foreach ($arParams['INDEX'] as $id)
+			foreach ($arResult['ITEMS'] as &$item)
+				if($item['ID'] == $id)
+					$items[] = $item;
+				
+		$arResult['ITEMS'] = $items;
+	}
 	
 ?>
