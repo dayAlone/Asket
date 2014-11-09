@@ -9046,3 +9046,55 @@ ul.nav > li.active > a {
 .search-page__form-submit:focus {
   color: #fff;
 }
+@media print {
+  .header__search,
+  .header__call,
+  a.print,
+  .footer,
+  .back,
+  .sub-tabs_title,
+  .price-button,
+  .news-list_item-back {
+    display: none;
+  }
+  .sub-tabs_content {
+    display: block !important;
+  }
+  .params-item-title {
+    border-bottom: 1px solid #dae1e7;
+  }
+  .params-item {
+    background: transparent;
+    color: #000 !important;
+    border: 1px solid #dae1e7;
+  }
+  .header__contacts {
+    position: relative;
+    left: 220px;
+  }
+  .catalog-sections_call {
+    margin: 0 !important;
+    border: 0 !important;
+  }
+  .catalog-sections {
+    padding-top: 30px;
+    background: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  .navbar,
+  .catalog-sections > .container {
+    display: none;
+  }
+  body {
+    background: transparent;
+  }
+  .block,
+  .tabs__frame,
+  .promo > .row,
+  .price {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: transparent;
+  }
+}
