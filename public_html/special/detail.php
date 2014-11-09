@@ -10,6 +10,7 @@ if(strlen($_REQUEST['ELEMENT_CODE'])>0):
 		"PROPERTY_CODE"  => array("ELEMENTS"),
 		"SET_TITLE"     => "Y",
 		"CACHE_TYPE"    => "A",
+		"COLS"        => 3
 	));
 endif;
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/footer.php');

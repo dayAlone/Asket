@@ -11,6 +11,12 @@ $arUrlRewrite = array(
 		"RULE" => "&ELEMENT_CODE=\$1&\$2",
 		"ID" => "",
 		"PATH" => "/catalog/index.php",
+	),
+	array(
+		"CONDITION" => "#^/special/([\w-_]+)/.*#",
+		"RULE" => "&ELEMENT_CODE=\$1&\$2",
+		"ID" => "",
+		"PATH" => "/special/detail.php",
 	)
 );
 
