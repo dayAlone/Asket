@@ -8225,6 +8225,7 @@ h4 {
   -ms-transition-duration: 0.3s;
   transition-duration: 0.3s;
   padding: 15px;
+  text-decoration: none !important;
 }
 .catalog__list-item:hover {
   text-decoration: none;
