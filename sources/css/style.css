@@ -2070,6 +2070,9 @@ h4 {
   background-repeat: no-repeat;
   display: none;
 }
+.gallery .big a img {
+  display: none;
+}
 .gallery .big a.active {
   display: block;
 }
@@ -2301,12 +2304,16 @@ ul.nav > li.active > a {
     -webkit-box-shadow: none;
     box-shadow: none;
   }
+  .param-block_title {
+    background: #fff !important;
+  }
   .navbar,
   .catalog-sections > .container {
     display: none;
   }
   body {
     background: transparent;
+    color: #000 !important;
   }
   .block,
   .tabs__frame,
@@ -2315,5 +2322,11 @@ ul.nav > li.active > a {
     -webkit-box-shadow: none;
     box-shadow: none;
     background: transparent;
+  }
+  .gallery .big {
+    display: block;
+  }
+  .gallery .big a img {
+    display: block;
   }
 }

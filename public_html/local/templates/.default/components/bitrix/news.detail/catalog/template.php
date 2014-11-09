@@ -15,7 +15,9 @@ $props = &$item["PROPS"];
         <div class="gallery">
             <div class="big">
                 <?foreach ($props['PHOTOS'] as $key => $value):?>
-                <a id="big-<?=$key?>" style="background-image: url(<?=$value['small']?>)" rel="prettyPhoto[]" href="<?=$value['value']?>" <?=($key==0?'class="active"':'')?>></a>
+                <a id="big-<?=$key?>" style="background-image: url(<?=$value['small']?>)" rel="prettyPhoto[]" href="<?=$value['value']?>" <?=($key==0?'class="active"':'')?>>
+                  <img src="<?=$value['small']?>" alt="">
+                </a>
                 <?endforeach;?>
             </div>
             
