@@ -1,5 +1,7 @@
 <?$this->setFrameMode(true);?>
-<?=$arResult['PREVIEW_TEXT']?>
+<div class="row">
+        <div class="col-xs-12"><?=$arResult['PREVIEW_TEXT']?></div>
+    </div>    
 <div class="insert">
 <?
     global $catalog_filter;
@@ -39,4 +41,7 @@
     );
   ?>
 </div>
-<?=$arResult['DETAIL_TEXT']?>
+
+<div class="row">
+        <div class="col-xs-12"><?=$arResult['DETAIL_TEXT']?></div>
+    </div>    
