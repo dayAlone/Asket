@@ -1547,10 +1547,13 @@ ul.nav
 
 
 @media print
-	.header__search, .header__call, a.print, .footer, .back, .sub-tabs_title, .price-button, .news-list_item-back
+	.container
+		max-width none
+	.header__search, .header__call, a.print, .back, .sub-tabs_title, .price-button, .news-list_item-back
 		display none
-	a:after
-		content "" !important
+	a:after, a:before
+		content none !important
+		display none !important
 	.sub-tabs_content
 		display block !important
 	.params-item-title
@@ -1562,7 +1565,9 @@ ul.nav
 	.header__contacts
 		position relative
 		left 220px
-	.catalog-sections_call
+		
+	.catalog-sections
+		display none
 		margin 0 !important
 		border 0 !important
 	.catalog-sections
@@ -1576,9 +1581,13 @@ ul.nav
 	body
 		background transparent
 		color black !important
-	.block, .tabs__frame, .promo > .row, .price
+	.block, .tabs__frame, .promo > .row, .price, .footer
 		box-shadow none
 		background transparent
+	.catalog-sections_call
+		a, span
+			text-align center
+			full-width()
 	.gallery
 		.big
 			a

@@ -255,6 +255,12 @@
       },
       out: function() {}
     });
+    $('a.print').click(function(e) {
+      ({
+        javascript: window.print()
+      });
+      return e.preventDefault();
+    });
     $('#leasing-select').on('change', function() {
       $('.leasing-content').removeClass('leasing-content--active');
       return $($(this).val()).addClass('leasing-content--active');
