@@ -5,7 +5,7 @@ $APPLICATION->SetTitle('Ваши вопросы о технике');
 $APPLICATION->IncludeComponent("bitrix:news.list", "faq", 
 array(
 	"IBLOCK_ID"   => 5,
-	"NEWS_COUNT"  => "3",
+	"NEWS_COUNT"  => "10",
 	"SORT_BY1"    => "ACTIVE_FROM",
 	"SORT_ORDER1" => "DESC",
   "PROPERTY_CODE" => array('AUTHOR'),
