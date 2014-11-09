@@ -2265,7 +2265,92 @@ ul.nav > li.active > a {
 .search-page__form-submit:focus {
   color: #fff;
 }
+body.print {
+  background: transparent;
+  color: #000 !important;
+}
+body.print .container {
+  max-width: none;
+}
+body.print .header__search,
+body.print .header__call,
+body.print a.print,
+body.print .back,
+body.print .sub-tabs_title,
+body.print .price-button,
+body.print .news-list_item-back {
+  display: none;
+}
+body.print a:after,
+body.print a:before {
+  content: none !important;
+  display: none !important;
+}
+body.print .sub-tabs_content {
+  display: block !important;
+}
+body.print .params-item-title {
+  border-bottom: 1px solid #dae1e7;
+}
+body.print .params-item {
+  background: transparent;
+  color: #000 !important;
+  border: 1px solid #dae1e7;
+}
+body.print .header__contacts {
+  position: relative;
+  left: 220px;
+}
+body.print .catalog-sections {
+  display: none;
+  margin: 0 !important;
+  border: 0 !important;
+}
+body.print .catalog-sections {
+  padding-top: 30px;
+  background: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+body.print .param-block_title {
+  background: #fff !important;
+}
+body.print .navbar,
+body.print .catalog-sections > .container {
+  display: none;
+}
+body.print .footer {
+  border-top: 1px solid #dae1e7;
+}
+body.print .block,
+body.print .tabs__frame,
+body.print .promo > .row,
+body.print .price,
+body.print .footer {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: transparent;
+}
+body.print .catalog-sections_call a,
+body.print .catalog-sections_call span {
+  text-align: center;
+  float: left;
+  width: 100%;
+}
+body.print .gallery .big a:nth-child(0),
+body.print .gallery .big a:nth-child(1),
+body.print .gallery .big a:nth-child(2),
+body.print .gallery .big a:nth-child(3) {
+  display: block;
+}
+body.print .gallery .big a img {
+  display: block;
+}
 @media print {
+  body {
+    background: transparent;
+    color: #000 !important;
+  }
   .container {
     max-width: none;
   }
@@ -2318,10 +2403,6 @@ ul.nav > li.active > a {
   }
   .footer {
     border-top: 1px solid #dae1e7;
-  }
-  body {
-    background: transparent;
-    color: #000 !important;
   }
   .block,
   .tabs__frame,
