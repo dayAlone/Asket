@@ -3,7 +3,7 @@
 <div class="insert">
 <?
     global $catalog_filter;
-    $catalog_filter = array('=ID'=>$item['PROPERTIES']['ELEMENTS']['VALUE']);
+    $catalog_filter = array('=ID'=>$arResult['PROPERTIES']['ELEMENTS']['VALUE']);
     $APPLICATION->IncludeComponent("bitrix:news.list", "catalog", 
     array(
       "IBLOCK_ID"   => 1,

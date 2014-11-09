@@ -1415,6 +1415,11 @@ h4 {
   padding-top: 30px;
   border-top: 1px solid #5bc5e7;
 }
+.insert {
+  float: left;
+  width: 100%;
+  margin: 30px 0;
+}
 .catalog__list {
   float: left;
   width: 100%;
