@@ -9057,6 +9057,9 @@ ul.nav > li.active > a {
   .news-list_item-back {
     display: none;
   }
+  a:after {
+    content: "" !important;
+  }
   .sub-tabs_content {
     display: block !important;
   }
