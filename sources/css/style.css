@@ -2316,6 +2316,9 @@ ul.nav > li.active > a {
   .catalog-sections > .container {
     display: none;
   }
+  .footer {
+    border-top: 1px solid #dae1e7;
+  }
   body {
     background: transparent;
     color: #000 !important;
