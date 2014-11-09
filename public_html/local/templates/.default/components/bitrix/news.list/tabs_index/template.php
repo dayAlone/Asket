@@ -40,7 +40,7 @@
               "FILTER_NAME" => "catalog_filter",
               "CACHE_FILTER"  => "Y",
               "CACHE_TYPE"  => "A",
-              "INDEX"                => $item['PROPERTIES']['ELEMENTS']['VALUE']
+              "INDEX"                => $item['PROPERTIES']['ELEMENTS']['VALUE'],
               "SET_TITLE"   => "N"
                ),
                false
