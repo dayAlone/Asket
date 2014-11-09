@@ -7,10 +7,10 @@ if(strlen($_REQUEST['ELEMENT_CODE'])>0):
 		"CHECK_DATES"   => "N",
 		"IBLOCK_TYPE"   => "content",
 		"FIELD_CODE"    => array("PREVIEW_TEXT"),
-		"PROPERTY_CODE"  => array("ELEMENTS"),
+		"PROPERTY_CODE" => array("ELEMENTS"),
 		"SET_TITLE"     => "Y",
 		"CACHE_TYPE"    => "A",
-		"COLS"        => 3
+		"COLS"          => 3
 	));
 endif;
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/footer.php');
