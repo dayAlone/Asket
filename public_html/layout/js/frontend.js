@@ -20487,6 +20487,7 @@ The biggest cause of both codebase bloat and codepath obfuscation is support for
         active.removeClass('tabs__title-link--active');
         e.addClass('tabs__content--active');
         $(this).addClass('tabs__title-link--active');
+        autoHeight($('.catalog__list'), '.catalog__list-item');
         s.preventDefault();
         return false;
       }
@@ -20500,6 +20501,7 @@ The biggest cause of both codebase bloat and codepath obfuscation is support for
         $(this).addClass('sub-tabs_title__active');
         $(active.attr('href')).removeClass('sub-tabs_content--active');
         el.addClass('sub-tabs_content--active');
+        autoHeight($('.catalog__list'), '.catalog__list-item');
       }
       return e.preventDefault();
     });

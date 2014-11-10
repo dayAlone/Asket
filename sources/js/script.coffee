@@ -265,7 +265,7 @@ $(document).ready ->
 			active.removeClass 'tabs__title-link--active'
 			e.addClass 'tabs__content--active'
 			$(this).addClass 'tabs__title-link--active'
-
+			autoHeight($('.catalog__list'), '.catalog__list-item')
 			s.preventDefault()
 			return false
 	$('.sub-tabs_title a').click (e)->
@@ -278,7 +278,7 @@ $(document).ready ->
 
 			$(active.attr('href')).removeClass 'sub-tabs_content--active'
 			el.addClass 'sub-tabs_content--active'
-
+			autoHeight($('.catalog__list'), '.catalog__list-item')
 		e.preventDefault()
 
 	$('.modal').on 'hidden.bs.modal', ()->
