@@ -31,7 +31,7 @@ $props = &$item["PROPS"];
           <?foreach ($list as $key => $value):?>
             <?if(isset($props[$key])):?>
               <tr>
-                <td width="30"><img src="/layout/images/svg/i-<?=$value["icon"]?>.svg" width="<?=$value["icon"]?>" height="<?=$value["height"]?>"></td>
+                <td width="30"><img src="/layout/images/svg/i-<?=$value["icon"]?>.svg" width="<?=$value["width"]?>" height="<?=$value["height"]?>"></td>
                 <td class="title"><?=$value["name"]?></td>
                 <td><?=$props[$key]?></td>
               </tr>
