@@ -16,7 +16,7 @@ $props = &$item["PROPS"];
       </td>
       <td width="50%">
         
-        <div class="params">
+        
           <?
             $list = array(
               "YEAR"         => array("icon"=>1, "name"=> "Год выпуска"),
@@ -27,17 +27,17 @@ $props = &$item["PROPS"];
             );
             $i=1;
           ?>
+          <table>
           <?foreach ($list as $key => $value):?>
             <?if(isset($props[$key])):?>
-              <div class="params-item">
-                <div class="params-item-title">
-                  <div class="params-item-title_content"><?=svg('i-'.$value["icon"])?><br><?=$value["name"]?></div>
-                </div>
-                <div class="params-item-value"><?=$props[$key]?></div>
-              </div>
+              <tr>
+                <td><img src="/layout/images/svg/i-<?=$value["icon"]?>.svg" width="33"></td>
+                <td><?=$value["name"]?></td>
+                <td><?=$props[$key]?></td>
+              </tr>
             <?endif;?>
           <?endforeach;?>
-        </div>
+          </table>
         <div class="price">
         <?
         if($props['PRICE_ORDER']!='Y'):
@@ -74,8 +74,8 @@ $props = &$item["PROPS"];
             <?
           else:?>
             <tr>
-              <td width="40%"><?=$item['property_name']?>:</td>
-              <td width="60%"><?=$item['property_value']?></td>
+              <td width="200"><?=$item['property_name']?>:</td>
+              <td width=""><?=$item['property_value']?></td>
             </tr>
           <?
           endif;
