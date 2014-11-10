@@ -6,7 +6,7 @@
 			<strong>Наш адрес</strong>: 117105, г. Москва, ул. Нагатинская, д. 1, стр. 1
 		</div>
 		<div class="col-xs-4 right">
-			<img src="/layout/images/" alt="">
+			<img src="/layout/images/logo.png" alt="">
 		</div>
 	</div>
 </div>
