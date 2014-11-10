@@ -2102,7 +2102,7 @@ body {
   padding-right: 0;
   padding-left: 0;
 }
-img {
-  max-width: 20px;
-  max-height: 20px;
+.title {
+  font-weight: bold;
+  text-transform: uppercase;
 }

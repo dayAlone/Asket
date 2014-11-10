@@ -19,11 +19,11 @@ $props = &$item["PROPS"];
         
           <?
             $list = array(
-              "YEAR"         => array("icon"=>1, "name"=> "Год выпуска"),
-              "STATUS"       => array("icon"=>2, "name"=> "Состояние"),
-              "WORK"         => array("icon"=>3, "name"=> "Наработка"),
-              "PLACE"        => array("icon"=>4, "name"=> "Нахождение"),
-              "AVAILABILITY" => array("icon"=>5, "name"=> "Наличие")
+              "YEAR"         => array("icon"=>1, "name"=> "Год выпуска", "width"=>17, "height"=>17),
+              "STATUS"       => array("icon"=>2, "name"=> "Состояние",   "width"=>17, "height"=>17),
+              "WORK"         => array("icon"=>3, "name"=> "Наработка",   "width"=>17, "height"=>17),
+              "PLACE"        => array("icon"=>4, "name"=> "Нахождение",  "width"=>17, "height"=>17),
+              "AVAILABILITY" => array("icon"=>5, "name"=> "Наличие",     "width"=>17, "height"=>17)
             );
             $i=1;
           ?>
@@ -31,8 +31,8 @@ $props = &$item["PROPS"];
           <?foreach ($list as $key => $value):?>
             <?if(isset($props[$key])):?>
               <tr>
-                <td><img src="/layout/images/svg/i-<?=$value["icon"]?>.svg"></td>
-                <td><?=$value["name"]?></td>
+                <td width="30"><img src="/layout/images/svg/i-<?=$value["icon"]?>.svg" width="<?=$value["icon"]?>" height="<?=$value["height"]?>"></td>
+                <td class="title"><?=$value["name"]?></td>
                 <td><?=$props[$key]?></td>
               </tr>
             <?endif;?>
