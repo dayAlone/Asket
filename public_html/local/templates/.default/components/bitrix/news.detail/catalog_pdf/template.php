@@ -16,12 +16,9 @@ $props = &$item["PROPS"];
     <div class="col-xs-6 side">
         <div class="gallery">
             <div class="big">
-              <img src="<?=$props['PHOTOS'][0]['small']?>" alt="">
+              <img src="<?=$props['PHOTOS'][0]['value']?>" alt="">
             </div>
         </div>
-        <p>
-          <?=$item['PREVIEW_TEXT']?>
-        </p>
     </div>
     <div class="col-xs-6">
         <div class="params">
@@ -69,6 +66,9 @@ $props = &$item["PROPS"];
         
     </div>
   </div>
+  <p>
+    <?=$item['PREVIEW_TEXT']?>
+  </p>
   <div class="sub-tabs">
             <div class="sub-tabs_title">
               <a href="#params" class="sub-tabs_title__active">Характеристики</a>
