@@ -8856,6 +8856,7 @@ a.print svg path {
 }
 .gallery .big a img {
   display: none;
+  max-width: 100%;
 }
 .gallery .big a.active {
   display: block;
