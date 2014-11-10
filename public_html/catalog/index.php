@@ -3,7 +3,7 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
 $APPLICATION->SetTitle('Каталог');
 if(strlen($_REQUEST['ELEMENT_CODE'])>0 && !isset($_GLOBALS['currentCatalogInnerSection']) && !isset($_GLOBALS['currentCatalogSection'])):
 	$APPLICATION->SetPageProperty('page_title', 'Каталог');
-	$APPLICATION->IncludeComponent("bitrix:news.detail","catalog".(isset($_REQUEST['pdf'])?"_pdf":""),Array(
+	$APPLICATION->IncludeComponent("bitrix:news.detail","catalog",Array(
 		"IBLOCK_ID"     => 1,
 		"ELEMENT_CODE"  => $_REQUEST['ELEMENT_CODE'],
 		"CHECK_DATES"   => "N",
