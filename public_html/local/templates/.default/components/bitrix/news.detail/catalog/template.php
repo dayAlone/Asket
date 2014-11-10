@@ -128,6 +128,7 @@ $props = &$item["PROPS"];
             </div>
             <?endif;?>
           </div>
+          <? if(!isset($_REQUEST['pdf'])):?>
           <?
             $rsPath = GetIBlockSectionPath($arResult['IBLOCK_ID'], $arResult['IBLOCK_SECTION_ID']);
             $arSections = array();
@@ -135,6 +136,7 @@ $props = &$item["PROPS"];
               $arSections[] = $arPath['CODE'];
           ?>
           <a href="<?=SITE_URL?>/catalog/<?=end($arSections)?>/" class="news-list_item-back"><img src="/layout/images/back.png">Вернуться в раздел</a>
+          <?endif;?>
     </div>
   </div>
 </div>
