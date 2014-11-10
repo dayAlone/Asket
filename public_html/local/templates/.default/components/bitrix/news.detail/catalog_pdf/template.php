@@ -60,35 +60,32 @@ $props = &$item["PROPS"];
       </td>
     </tr>
   </table>
-        <div class="sub-tabs">
-            <div class="sub-tabs_title">
-              <a href="#params" class="sub-tabs_title__active">Характеристики</a>
-              <?if(strlen($props['DEPRECIATION']['TEXT'])>0):?><a href="#depreciation">Износ</a><?endif;?>
-            </div>
+  <table>
+    <?
+      $title = false;
+      if(count($props['BODY'])>0):?>
+        <?foreach ($props['BODY'] as $key=>$item):?>
+          <?if($item['property_title']=="Y"):
+            if(!$title) $title = true;
+            ?>
+            <tr>
+              <td colspan="2"><?=$item['property_name']?></td>
+            </tr>
+            <?
+          else:?>
+            <tr>
+              <td width="40%"><?=$item['property_name']?>:</td>
+              <td width="60%"><?=$item['property_value']?></td>
+            </tr>
+          <?
+          endif;
+          endforeach;
+      endif;
+      ?>
+  </table>
             <div class="sub-tabs_content sub-tabs_content--active" id="params">
               
-            <?
-            $title = false;
-            if(count($props['BODY'])>0):?>
-              <?foreach ($props['BODY'] as $key=>$item):?>
-                <?if($item['property_title']=="Y"):
-                  if(!$title) $title = true;
-                  if($key!=0) echo "</div>";
-                  ?>
-                  <div class="param-block">
-                    <div class="param-block_title"><?=$item['property_name']?></div>
-                  <?
-                else:?>
-                  <div class="row">
-                    <div class="col-md-5 col-xs-5"><?=$item['property_name']?>:</div>
-                    <div class="col-md-7 col-xs-7"><?=$item['property_value']?></div>
-                  </div>
-                <?
-                endif;
-                endforeach;
-                if($title) echo "</div>";
-            endif;
-            ?>
+            
             
               
 
@@ -110,31 +107,3 @@ $props = &$item["PROPS"];
             </div>
             <?endif;?>
           </div>
-  <div class="row <?=(isset($_REQUEST['pdf'])?"no-gutter":"")?>">
-    <div class="col-xs-4 side">
-        <div class="gallery">
-            <div class="big">
-                <?foreach ($props['PHOTOS'] as $key => $value):?>
-                <a id="big-<?=$key?>" style="background-image: url(<?=$value['small']?>)" rel="prettyPhoto[]" href="<?=$value['value']?>" <?=($key==0?'class="active"':'')?>>
-                  <img src="<?=$value['small']?>" alt="">
-                </a>
-                <?endforeach;?>
-            </div>
-            
-            <div class="slider">
-                <? if(count($props['PHOTOS'])>1):?>
-                <?foreach ($props['PHOTOS'] as $key => $value):?>
-                    <div class="item"><a style="background-image: url(<?=$value['small']?>)" data-id="big-<?=$key?>" class="image"></a></div>
-                <?endforeach;?>
-                <?endif;?>
-            </div>
-        </div>
-        <p>
-          <?=$item['PREVIEW_TEXT']?>
-        </p>
-    </div>
-    <div class="col-xs-8">
-        
-    </div>
-  </div>
-</div>
