@@ -5,7 +5,7 @@ $props = &$item["PROPS"];
 ?>
 <div class="product">
   <h1><?=$item['NAME']?></h1>
-  <table>
+  <table cellpadding="10">
     <tr>
       <td width="50%">
         <div class="big">
@@ -27,11 +27,11 @@ $props = &$item["PROPS"];
             );
             $i=1;
           ?>
-          <table>
+          <table cellpadding="5">
           <?foreach ($list as $key => $value):?>
             <?if(isset($props[$key])):?>
               <tr>
-                <td><img src="/layout/images/svg/i-<?=$value["icon"]?>.svg" height="33"></td>
+                <td><img src="/layout/images/svg/i-<?=$value["icon"]?>.svg" height="15" width="15"></td>
                 <td><?=$value["name"]?></td>
                 <td><?=$props[$key]?></td>
               </tr>
