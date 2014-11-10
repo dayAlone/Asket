@@ -31,7 +31,7 @@ $props = &$item["PROPS"];
           <?foreach ($list as $key => $value):?>
             <?if(isset($props[$key])):?>
               <tr>
-                <td><img src="/layout/images/svg/i-<?=$value["icon"]?>.svg" width="33"></td>
+                <td><img src="/layout/images/svg/i-<?=$value["icon"]?>.svg" height="33"></td>
                 <td><?=$value["name"]?></td>
                 <td><?=$props[$key]?></td>
               </tr>
@@ -60,7 +60,7 @@ $props = &$item["PROPS"];
       </td>
     </tr>
   </table>
-  <table>
+  <table cellpadding="10">
     <?
       $title = false;
       if(count($props['BODY'])>0):?>
@@ -74,7 +74,7 @@ $props = &$item["PROPS"];
             <?
           else:?>
             <tr>
-              <td width="200"><?=$item['property_name']?>:</td>
+              <td width="180"><?=$item['property_name']?>:</td>
               <td width=""><?=$item['property_value']?></td>
             </tr>
           <?
