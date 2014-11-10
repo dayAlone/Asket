@@ -16,7 +16,7 @@ $props = &$item["PROPS"];
     <div class="col-xs-6 side">
         <div class="gallery">
             <div class="big">
-              <img src="<?=$props['PHOTOS'][0]['value']?>" alt="">
+              <img src="<?=$props['PHOTOS'][0]['value']?>" alt="" width="100%">
             </div>
         </div>
     </div>
