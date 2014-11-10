@@ -1852,7 +1852,6 @@ select[multiple].input-lg {
 }
 body {
   width: 100%;
-  font-size: 11px !important;
 }
 .print {
   display: none;
