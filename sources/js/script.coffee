@@ -20,46 +20,48 @@ setCaptcha = (code)->
 autoHeight = (el, selector='', height_selector = false, use_padding=false, debug=false)->
 	if el.length > 0
 		
-		item = el.find(selector)
+		el.each ()->
+			el = $(this)
+			item = el.find(selector)
 
-		if height_selector
-			el.find(height_selector).removeAttr 'style'
-		else
-			el.find(selector).removeAttr 'style'
-		
-		step = Math.round(el.outerWidth()/item.outerWidth())
-
-		console.log step
-		
-		count = item.length-1
-		loops = Math.ceil(count/step)
-		i     = 0
-		
-		if debug
-			console.log count, step, item_padding, padding, el.width(), item.width()
-
-		while i < count
-			items = {}
-			for x in [0..step-1]
-				items[x] = item[i+x] if item[i+x]
+			if height_selector
+				el.find(height_selector).removeAttr 'style'
+			else
+				el.find(selector).removeAttr 'style'
 			
-			heights = []
-			$.each items, ()->
-				if height_selector
-					heights.push($(this).find(height_selector).height())
-				else
-					heights.push($(this).height())
+			step = Math.round(el.outerWidth()/item.outerWidth())
+
+			console.log step
+			
+			count = item.length-1
+			loops = Math.ceil(count/step)
+			i     = 0
 			
 			if debug
-				console.log heights
+				console.log count, step, item_padding, padding, el.width(), item.width()
 
-			$.each items, ()->
-				if height_selector
-					$(this).find(height_selector).height Math.max.apply(Math,heights)
-				else
-					$(this).height Math.max.apply(Math,heights)
+			while i < count
+				items = {}
+				for x in [0..step-1]
+					items[x] = item[i+x] if item[i+x]
+				
+				heights = []
+				$.each items, ()->
+					if height_selector
+						heights.push($(this).find(height_selector).height())
+					else
+						heights.push($(this).height())
+				
+				if debug
+					console.log heights
 
-			i += step
+				$.each items, ()->
+					if height_selector
+						$(this).find(height_selector).height Math.max.apply(Math,heights)
+					else
+						$(this).height Math.max.apply(Math,heights)
+
+				i += step
 
 $(document).ready ->
 
