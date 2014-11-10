@@ -2102,7 +2102,7 @@ body {
   padding-right: 0;
   padding-left: 0;
 }
-svg {
-  width: 33px;
-  height: 33px;
+img {
+  max-width: 20px;
+  max-height: 20px;
 }
