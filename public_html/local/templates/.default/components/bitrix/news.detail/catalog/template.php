@@ -9,7 +9,7 @@ $props = &$item["PROPS"];
       <h1><?=$item['NAME']?></h1>
     </div>
     <? if(!isset($_REQUEST['pdf'])):?>
-    <div class="col-xs-2"><a href="#" class="print"><?=svg('print')?>Версия для печати</a></div>
+    <div class="col-xs-2"><a href="http://s0s0.ru/pdf.php?url=<?=full_path()?>" target="_blank" class="print"><?=svg('print')?>Версия для печати</a></div>
     <?endif;?>
   </div>
   <div class="row <?=(isset($_REQUEST['pdf'])?"no-gutter":"")?>">
