@@ -9059,6 +9059,9 @@ body.print .note {
   width: 100%;
   margin: 20px 0 0;
 }
+body.print.contacts hr {
+  margin: 30px 0 35px;
+}
 body.print hr {
   background: #bfbfbf;
   float: left;

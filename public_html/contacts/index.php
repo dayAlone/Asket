@@ -1,7 +1,9 @@
 <?
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
 $APPLICATION->SetTitle('О компании');
+$APPLICATION->SetPageProperty('body_class', 'contacts');
 ?>
+<?if(!isset($_REQUEST['pdf'])):?>
 <div class="row">
   <div class="col-md-3 col-xs-3"><img src="/layout/images/office.png" width="100%"></div>
   <div class="col-md-5 col-xs-5">
@@ -19,6 +21,7 @@ $APPLICATION->SetTitle('О компании');
   </div>
 </div>
 <div class="divider"></div>
+
 <ul role="tablist" id="mapTabs" class="nav nav-tabs">
   <li class="active"><a href="#map-1" role="tab" data-toggle="tab">Центральный офис </a></li>
   <li><a href="#map-2" role="tab" data-toggle="tab">Филиал в г. Кемерово</a></li>
@@ -72,5 +75,30 @@ $APPLICATION->SetTitle('О компании');
   })
   </script>
 <?
+else:?>
+  <h1>Контакты</h1>
+  <div class="row">
+    <div class="col-xs-6">
+      <h2 class="no-margin-top small-margin-bottom">Центральный офис</h2>
+      <p><strong>Телефоны:</strong><br>+7 (495) 781-50-78 - секретарь;<br>+7 (915) 071-17-74 - отдел автотранспорта, <br>спецтехники и оборудования.</p>
+      <p><strong>E-mail:</strong> info@asket-auto.ru</p>
+      <p><strong>Наш адрес:</strong> 117105, г. Москва, ул. Нагатинская, д. 1, стр. 1</p>
+      <p><strong>Координаты для GPS:</strong> 55.683065, 37.624655</p>
+      
+    </div>
+    <div class="col-xs-6">
+      <h2 class="no-margin-top">Филиал в г. Кемерово <br>(продажа автокранов "Ивановец")</h2>
+      <p><strong>Телефон: </strong>+7 (3842) 33-54-03</p>
+      <p>Деменок Дмитрий Алексеевич</p>
+      <p><strong>Адрес: </strong>г. Кемерово, ул. Тухачевского, <br>д.22а, офис 223</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-6"><img src="http://static-maps.yandex.ru/1.x/?ll=37.625612,55.682737&z=15&l=map&size=600,450&pt=37.625612,55.682737,pm2rdm" alt="" width="100%"></div>
+    <div class="col-xs-6"><img src="http://static-maps.yandex.ru/1.x/?ll=86.132159,55.336631&z=15&l=map&size=600,450&pt=86.132159,55.336631,pm2rdm" alt="" width="100%"></div>
+  </div>
+  
+<?
+endif;
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/footer.php');
 ?>
