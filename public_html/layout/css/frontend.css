@@ -8616,7 +8616,7 @@ h4 {
   font-size: 23px;
   margin-top: -8px;
 }
-.print {
+a.print {
   float: left;
   width: 100%;
   -webkit-border-radius: 4px;
@@ -8630,7 +8630,7 @@ h4 {
   margin-top: -10px;
   text-decoration: none !important;
 }
-.print svg {
+a.print svg {
   max-width: 16px;
   position: relative;
   top: -1px;
@@ -8639,8 +8639,8 @@ h4 {
   display: inline-block;
   vertical-align: middle;
 }
-.print svg g,
-.print svg path {
+a.print svg g,
+a.print svg path {
   fill: #8896a0;
 }
 .price {
