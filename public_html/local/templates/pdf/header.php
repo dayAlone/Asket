@@ -22,5 +22,5 @@
         return $url;
     }
   ?>
-  Ссылка на объявление: <?=full_path()?>
+  <div class="note">Ссылка на объявление: <a href="<?=full_path()?>"><?=full_path()?></a> </div>
   <hr>

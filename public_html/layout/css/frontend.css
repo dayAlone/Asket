@@ -9054,6 +9054,11 @@ body.print {
   background: transparent;
   color: #000 !important;
 }
+body.print .note {
+  float: left;
+  width: 100%;
+  margin: 20px 0 0;
+}
 body.print hr {
   background: #bfbfbf;
   float: left;
