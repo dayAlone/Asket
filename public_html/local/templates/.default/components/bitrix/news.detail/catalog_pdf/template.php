@@ -13,7 +13,7 @@ $props = &$item["PROPS"];
     <?endif;?>
   </div>
   <div class="row <?=(isset($_REQUEST['pdf'])?"no-gutter":"")?>">
-    <div class="col-xs-4 side">
+    <div class="col-xs-6 side">
         <div class="gallery">
             <div class="big">
                 <?foreach ($props['PHOTOS'] as $key => $value):?>
@@ -35,7 +35,7 @@ $props = &$item["PROPS"];
           <?=$item['PREVIEW_TEXT']?>
         </p>
     </div>
-    <div class="col-xs-8">
+    <div class="col-xs-6">
         <div class="params">
             <?
               $list = array(
@@ -78,7 +78,10 @@ $props = &$item["PROPS"];
         endif;?>
             <a href="/leasing/" class="price-button">Выгодно в лизинг</a>
         </div>
-        <div class="sub-tabs">
+        
+    </div>
+  </div>
+  <div class="sub-tabs">
             <div class="sub-tabs_title">
               <a href="#params" class="sub-tabs_title__active">Характеристики</a>
               <?if(strlen($props['DEPRECIATION']['TEXT'])>0):?><a href="#depreciation">Износ</a><?endif;?>
@@ -128,31 +131,4 @@ $props = &$item["PROPS"];
             </div>
             <?endif;?>
           </div>
-          <? if(!isset($_REQUEST['pdf'])):?>
-          <?
-            $rsPath = GetIBlockSectionPath($arResult['IBLOCK_ID'], $arResult['IBLOCK_SECTION_ID']);
-            $arSections = array();
-            while($arPath = $rsPath->GetNext())
-              $arSections[] = $arPath['CODE'];
-          ?>
-          <a href="<?=SITE_URL?>/catalog/<?=end($arSections)?>/" class="news-list_item-back"><img src="/layout/images/back.png">Вернуться в раздел</a>
-          <?endif;?>
-    </div>
-  </div>
 </div>
-<?$this->SetViewTarget('nav');
-$APPLICATION->IncludeComponent("bitrix:catalog.section.list", "nav", array(
-    "IBLOCK_TYPE"  => "content",
-    "IBLOCK_ID"    => "1",
-    "SECTION_ID"   => "",
-    "SECTION_CODE" => "",
-    "TOP_DEPTH"    => "2",
-    "CACHE_TYPE"   => "A",
-    "CACHE_TIME"   => "36000",
-    "NAME"         => $arResult['NAME'],
-    "SECTIONS_LIST"=> json_encode($arSections),
-    "CACHE_NOTES"  => $arParams['PARENT_SECTION']
-),
-false
-);
-$this->EndViewTarget();?> 
