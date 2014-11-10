@@ -51,6 +51,7 @@
         el.find(selector).removeAttr('style');
       }
       step = Math.round(el.outerWidth() / item.outerWidth());
+      console.log(step);
       count = item.length - 1;
       loops = Math.ceil(count / step);
       i = 0;
@@ -233,6 +234,7 @@
     });
     autoHeight($('.fixed-height'), '.block');
     autoHeight($('.catalog__list'), '.catalog__list-item');
+    autoHeight($('.frame'), '.block.faq');
     $('.faq-list_item-trigger').click(function(e) {
       var item, text;
       item = $(this).parents('.faq-list_item');
