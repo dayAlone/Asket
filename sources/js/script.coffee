@@ -249,9 +249,7 @@ $(document).ready ->
 			$('.bg-fade')
 				.addClass 'in'
 		out : ()->
-	$('a.print').click (e)->
-		javascript:window.print()
-		e.preventDefault()
+	
 	$('#leasing-select').on 'change', ()->
 		$('.leasing-content').removeClass 'leasing-content--active'
 		$($(this).val()).addClass 'leasing-content--active'
