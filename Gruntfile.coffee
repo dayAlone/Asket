@@ -182,6 +182,8 @@ module.exports = (grunt)->
 				files: 
 					'<%= path.sources %>/js/script.js' : ['<%= files.js.develop %>']
 
+		
+
 		# Собираем JS и CSS в один файл
 		concat:
 			js_plugins:
@@ -253,6 +255,14 @@ module.exports = (grunt)->
 					dest   : '<%= path.layout %>/fonts/'
 				}]
 
+
+		less:
+		  bootstrap:
+		    options:
+		      paths: ['<%= path.sources %>/css/bootstrap/']
+		    files:
+		      "<%= path.layout %>/css/print.css": "<%= path.sources %>/css/print.less"
+
 		# Бдим за изменениями и все пересобираем при необходимости
 		watch:
 			js_frontend:
@@ -268,6 +278,11 @@ module.exports = (grunt)->
 			images:
 				files: ['<%= path.sources %>/images/**/*.jpg', '<%= path.sources %>/images/**/*.png']
 				tasks   : ['newer:copy', 'newer:imagemin', 'notify:image' ]
+				options :
+						livereload: true
+			less2:
+				files   : ["<%= path.sources %>/css/print.less"]
+				tasks   : ['less' ]
 				options :
 						livereload: true
 			###
