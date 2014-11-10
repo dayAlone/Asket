@@ -2086,12 +2086,14 @@ select[multiple].input-lg {
 }
 body {
   width: 100%;
+  font-size: 13px;
 }
 .print {
   display: none;
 }
 .product h1 {
   font-weight: bold;
+  font-size: 24px;
 }
 .no-gutter > [class*='col-'] {
   padding-right: 0;
