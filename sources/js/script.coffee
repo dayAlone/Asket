@@ -189,6 +189,7 @@ $(document).ready ->
 						duration: 300
 
 	autoHeight($('.fixed-height'))
+	autoHeight($('.catalog__list-item'))
 
 	$('.faq-list_item-trigger').click (e)->
 		item = $(this).parents('.faq-list_item')

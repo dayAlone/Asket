@@ -207,6 +207,7 @@
       });
     });
     autoHeight($('.fixed-height'));
+    autoHeight($('.catalog__list-item'));
     $('.faq-list_item-trigger').click(function(e) {
       var item, text;
       item = $(this).parents('.faq-list_item');
