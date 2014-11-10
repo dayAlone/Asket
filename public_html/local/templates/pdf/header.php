@@ -4,4 +4,6 @@
   <link rel="stylesheet" href="/layout/css/frontend.css">
 </head>
 <body class="print">
-<div class="container">
+  <div class="container">
+
+  <hr>

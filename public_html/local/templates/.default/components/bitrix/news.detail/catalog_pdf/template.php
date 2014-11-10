@@ -66,7 +66,7 @@ $props = &$item["PROPS"];
         
     </div>
   </div>
-  <p>
+  <p class="small">
     <?=$item['PREVIEW_TEXT']?>
   </p>
   <div class="sub-tabs">
