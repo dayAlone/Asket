@@ -1,9 +1,10 @@
 <?
-//error_reporting(0);
+error_reporting(0);
 ini_set('xdebug.max_nesting_level', 20000); 
 set_time_limit(0);
 include($_SERVER['DOCUMENT_ROOT']."/include/pdf/mpdf.php");
 $html = '
+<style>*{font-family:"DejaVuSans"}</style>
 <h1><a name="top"></a>mPDF</h1>
 <h2>Basic HTML Example</h2>
 This file demonstrates most of the HTML elements.
