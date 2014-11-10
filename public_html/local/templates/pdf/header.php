@@ -3,5 +3,5 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="/layout/css/frontend.css">
 </head>
-<body>
+<body class="print">
 <div class="container">
