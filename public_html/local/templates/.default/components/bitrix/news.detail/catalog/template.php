@@ -5,13 +5,15 @@ $props = &$item["PROPS"];
 ?>
 <div class="product">
   <div class="row">
-    <div class="col-xs-10">
+    <div class="<? if(!isset($_REQUEST['pdf'])):?>col-xs-10<?else:?>col-xs-12<?endif;?>">
       <h1><?=$item['NAME']?></h1>
     </div>
+    <? if(!isset($_REQUEST['pdf'])):?>
     <div class="col-xs-2"><a href="#" class="print"><?=svg('print')?>Версия для печати</a></div>
+    <?endif;?>
   </div>
   <div class="row">
-    <div class="col-md-4 col-xs-4 side">
+    <div class="col-xs-4 side">
         <div class="gallery">
             <div class="big">
                 <?foreach ($props['PHOTOS'] as $key => $value):?>
@@ -33,7 +35,7 @@ $props = &$item["PROPS"];
           <?=$item['PREVIEW_TEXT']?>
         </p>
     </div>
-    <div class="col-md-8 col-xs-8">
+    <div class="col-xs-8">
         <div class="params">
             <?
               $list = array(
