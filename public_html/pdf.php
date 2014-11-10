@@ -773,7 +773,7 @@ class Command extends BaseCommand
     }
 }
 $pdf = new Pdf;
-$pdf->addPage($_REQUEST['url'].'?pdf=1');
+$pdf->addPage($_REQUEST['url'].'?pdf=1&1');
 $pdf->send();
 var_dump($pdf);
 /*
