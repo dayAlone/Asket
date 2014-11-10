@@ -27,12 +27,7 @@ autoHeight = (el, selector='', height_selector = false, use_padding=false, debug
 		else
 			el.find(selector).removeAttr 'style'
 		
-		item_padding = item.css('padding-left').split('px')[0]*2
-		padding      = el.css('padding-left').split('px')[0]*2
-		if debug
-			step = Math.round((el.width()-padding)/(item.width()+item_padding))
-		else
-			step = Math.round(el.width()/item.width())
+		step = Math.round(el.outerWidth()/item.outerWidth())
 		
 		count = item.length-1
 		loops = Math.ceil(count/step)

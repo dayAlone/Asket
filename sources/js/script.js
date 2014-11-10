@@ -30,7 +30,7 @@
   };
 
   autoHeight = function(el, selector, height_selector, use_padding, debug) {
-    var count, heights, i, item, item_padding, items, loops, padding, step, x, _i, _ref, _results;
+    var count, heights, i, item, items, loops, step, x, _i, _ref, _results;
     if (selector == null) {
       selector = '';
     }
@@ -50,13 +50,7 @@
       } else {
         el.find(selector).removeAttr('style');
       }
-      item_padding = item.css('padding-left').split('px')[0] * 2;
-      padding = el.css('padding-left').split('px')[0] * 2;
-      if (debug) {
-        step = Math.round((el.width() - padding) / (item.width() + item_padding));
-      } else {
-        step = Math.round(el.width() / item.width());
-      }
+      step = Math.round(el.outerWidth() / item.outerWidth());
       count = item.length - 1;
       loops = Math.ceil(count / step);
       i = 0;
