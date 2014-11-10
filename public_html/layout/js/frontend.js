@@ -20211,7 +20211,6 @@ The biggest cause of both codebase bloat and codepath obfuscation is support for
   };
 
   autoHeight = function(el, selector, height_selector, use_padding, debug) {
-    var count, heights, i, item, items, loops, step, x, _i, _ref, _results;
     if (selector == null) {
       selector = '';
     }
@@ -20225,49 +20224,53 @@ The biggest cause of both codebase bloat and codepath obfuscation is support for
       debug = false;
     }
     if (el.length > 0) {
-      item = el.find(selector);
-      if (height_selector) {
-        el.find(height_selector).removeAttr('style');
-      } else {
-        el.find(selector).removeAttr('style');
-      }
-      step = Math.round(el.outerWidth() / item.outerWidth());
-      console.log(step);
-      count = item.length - 1;
-      loops = Math.ceil(count / step);
-      i = 0;
-      if (debug) {
-        console.log(count, step, item_padding, padding, el.width(), item.width());
-      }
-      _results = [];
-      while (i < count) {
-        items = {};
-        for (x = _i = 0, _ref = step - 1; 0 <= _ref ? _i <= _ref : _i >= _ref; x = 0 <= _ref ? ++_i : --_i) {
-          if (item[i + x]) {
-            items[x] = item[i + x];
-          }
+      return el.each(function() {
+        var count, heights, i, item, items, loops, step, x, _i, _ref, _results;
+        el = $(this);
+        item = el.find(selector);
+        if (height_selector) {
+          el.find(height_selector).removeAttr('style');
+        } else {
+          el.find(selector).removeAttr('style');
         }
-        heights = [];
-        $.each(items, function() {
-          if (height_selector) {
-            return heights.push($(this).find(height_selector).height());
-          } else {
-            return heights.push($(this).height());
-          }
-        });
+        step = Math.round(el.outerWidth() / item.outerWidth());
+        console.log(step);
+        count = item.length - 1;
+        loops = Math.ceil(count / step);
+        i = 0;
         if (debug) {
-          console.log(heights);
+          console.log(count, step, item_padding, padding, el.width(), item.width());
         }
-        $.each(items, function() {
-          if (height_selector) {
-            return $(this).find(height_selector).height(Math.max.apply(Math, heights));
-          } else {
-            return $(this).height(Math.max.apply(Math, heights));
+        _results = [];
+        while (i < count) {
+          items = {};
+          for (x = _i = 0, _ref = step - 1; 0 <= _ref ? _i <= _ref : _i >= _ref; x = 0 <= _ref ? ++_i : --_i) {
+            if (item[i + x]) {
+              items[x] = item[i + x];
+            }
           }
-        });
-        _results.push(i += step);
-      }
-      return _results;
+          heights = [];
+          $.each(items, function() {
+            if (height_selector) {
+              return heights.push($(this).find(height_selector).height());
+            } else {
+              return heights.push($(this).height());
+            }
+          });
+          if (debug) {
+            console.log(heights);
+          }
+          $.each(items, function() {
+            if (height_selector) {
+              return $(this).find(height_selector).height(Math.max.apply(Math, heights));
+            } else {
+              return $(this).height(Math.max.apply(Math, heights));
+            }
+          });
+          _results.push(i += step);
+        }
+        return _results;
+      });
     }
   };
 
