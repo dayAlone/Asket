@@ -4,7 +4,7 @@ $item = $arResult;
 $props = &$item["PROPS"];
 ?>
 <div class="product">
-  <div class="row">
+  <div class="row <?=(isset($_REQUEST['pdf'])?"no-gutter":"")?>">
     <div class="<? if(!isset($_REQUEST['pdf'])):?>col-xs-10<?else:?>col-xs-12<?endif;?>">
       <h1><?=$item['NAME']?></h1>
     </div>
@@ -12,7 +12,7 @@ $props = &$item["PROPS"];
     <div class="col-xs-2"><a href="#" class="print"><?=svg('print')?>Версия для печати</a></div>
     <?endif;?>
   </div>
-  <div class="row">
+  <div class="row <?=(isset($_REQUEST['pdf'])?"no-gutter":"")?>">
     <div class="col-xs-4 side">
         <div class="gallery">
             <div class="big">

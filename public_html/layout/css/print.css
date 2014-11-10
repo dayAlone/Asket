@@ -2093,3 +2093,7 @@ body {
 .product h1 {
   font-weight: bold;
 }
+.no-gutter > [class*='col-'] {
+  padding-right: 0;
+  padding-left: 0;
+}
