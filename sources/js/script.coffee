@@ -17,37 +17,52 @@ setCaptcha = (code)->
 	$('input[name=captcha_code]').val(code)
 	$('.captcha').attr 'src', "/include/captcha.php?captcha_sid=#{code}"
 
-autoHeight = (el)->
+autoHeight = (el, selector='', height_selector = false, use_padding=false, debug=false)->
 	if el.length > 0
-		item    = el.find('.block')
-		console.log item.width()
-		item_padding = item.css('padding-left').split('px')[0]*2
-		padding = el.css('padding-left').split('px')[0]*2
-		step    = Math.ceil((el.width()-padding*2)/item.width())
-		count   = item.length
-		loops   = Math.ceil(count/step)
-		i       = 0
+		
+		item = el.find(selector)
 
-		el.find('.block').removeAttr 'style'
+		if height_selector
+			el.find(height_selector).removeAttr 'style'
+		else
+			el.find(selector).removeAttr 'style'
+		
+		item_padding = item.css('padding-left').split('px')[0]*2
+		padding      = el.css('padding-left').split('px')[0]*2
+		if debug
+			step = Math.round((el.width()-padding)/(item.width()+item_padding))
+		else
+			step = Math.round(el.width()/item.width())
+		
+		count = item.length-1
+		loops = Math.ceil(count/step)
+		i     = 0
+		
+		if debug
+			console.log count, step, item_padding, padding, el.width(), item.width()
 
 		while i < count
 			items = {}
 			for x in [0..step-1]
 				items[x] = item[i+x] if item[i+x]
 			
-			console.log items
-
 			heights = []
 			$.each items, ()->
-				heights.push($(this).height())
+				if height_selector
+					heights.push($(this).find(height_selector).height())
+				else
+					heights.push($(this).height())
 			
-			$.each items, ()->
-				$(this).height Math.max.apply(Math,heights)
-			
-			i += step
+			if debug
+				console.log heights
 
-		if el.hasClass 'one-row'
-			el.height Math.max.apply(Math,heights)
+			$.each items, ()->
+				if height_selector
+					$(this).find(height_selector).height Math.max.apply(Math,heights)
+				else
+					$(this).height Math.max.apply(Math,heights)
+
+			i += step
 
 $(document).ready ->
 
@@ -188,8 +203,8 @@ $(document).ready ->
 					options:
 						duration: 300
 
-	autoHeight($('.fixed-height'))
-	autoHeight($('.catalog__list-item'))
+	autoHeight($('.fixed-height'), '.block')
+	autoHeight($('.catalog__list'), '.catalog__list-item')
 
 	$('.faq-list_item-trigger').click (e)->
 		item = $(this).parents('.faq-list_item')

@@ -20210,18 +20210,41 @@ The biggest cause of both codebase bloat and codepath obfuscation is support for
     return $('.captcha').attr('src', "/include/captcha.php?captcha_sid=" + code);
   };
 
-  autoHeight = function(el) {
-    var count, heights, i, item, item_padding, items, loops, padding, step, x, _i, _ref;
+  autoHeight = function(el, selector, height_selector, use_padding, debug) {
+    var count, heights, i, item, item_padding, items, loops, padding, step, x, _i, _ref, _results;
+    if (selector == null) {
+      selector = '';
+    }
+    if (height_selector == null) {
+      height_selector = false;
+    }
+    if (use_padding == null) {
+      use_padding = false;
+    }
+    if (debug == null) {
+      debug = false;
+    }
     if (el.length > 0) {
-      item = el.find('.block');
-      console.log(item.width());
+      item = el.find(selector);
+      if (height_selector) {
+        el.find(height_selector).removeAttr('style');
+      } else {
+        el.find(selector).removeAttr('style');
+      }
       item_padding = item.css('padding-left').split('px')[0] * 2;
       padding = el.css('padding-left').split('px')[0] * 2;
-      step = Math.ceil((el.width() - padding * 2) / item.width());
-      count = item.length;
+      if (debug) {
+        step = Math.round((el.width() - padding) / (item.width() + item_padding));
+      } else {
+        step = Math.round(el.width() / item.width());
+      }
+      count = item.length - 1;
       loops = Math.ceil(count / step);
       i = 0;
-      el.find('.block').removeAttr('style');
+      if (debug) {
+        console.log(count, step, item_padding, padding, el.width(), item.width());
+      }
+      _results = [];
       while (i < count) {
         items = {};
         for (x = _i = 0, _ref = step - 1; 0 <= _ref ? _i <= _ref : _i >= _ref; x = 0 <= _ref ? ++_i : --_i) {
@@ -20229,19 +20252,27 @@ The biggest cause of both codebase bloat and codepath obfuscation is support for
             items[x] = item[i + x];
           }
         }
-        console.log(items);
         heights = [];
         $.each(items, function() {
-          return heights.push($(this).height());
+          if (height_selector) {
+            return heights.push($(this).find(height_selector).height());
+          } else {
+            return heights.push($(this).height());
+          }
         });
+        if (debug) {
+          console.log(heights);
+        }
         $.each(items, function() {
-          return $(this).height(Math.max.apply(Math, heights));
+          if (height_selector) {
+            return $(this).find(height_selector).height(Math.max.apply(Math, heights));
+          } else {
+            return $(this).height(Math.max.apply(Math, heights));
+          }
         });
-        i += step;
+        _results.push(i += step);
       }
-      if (el.hasClass('one-row')) {
-        return el.height(Math.max.apply(Math, heights));
-      }
+      return _results;
     }
   };
 
@@ -20387,8 +20418,8 @@ The biggest cause of both codebase bloat and codepath obfuscation is support for
         }
       });
     });
-    autoHeight($('.fixed-height'));
-    autoHeight($('.catalog__list-item'));
+    autoHeight($('.fixed-height'), '.block');
+    autoHeight($('.catalog__list'), '.catalog__list-item');
     $('.faq-list_item-trigger').click(function(e) {
       var item, text;
       item = $(this).parents('.faq-list_item');
