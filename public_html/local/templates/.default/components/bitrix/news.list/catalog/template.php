@@ -66,7 +66,7 @@
                       endif;
                     endif;
                   else:
-                    echo "По запросу";
+                    echo "По запросу <br>";
                   endif;
                   ?>
                   <?=($props['PLACE']?"Местонахождение: ".$props['PLACE']."<br>":"")?>
