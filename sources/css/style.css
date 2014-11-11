@@ -1452,7 +1452,7 @@ h4 {
   -o-transition-duration: 0.3s;
   -ms-transition-duration: 0.3s;
   transition-duration: 0.3s;
-  padding: 15px;
+  padding: 15px 15px 217px 15px;
   text-decoration: none !important;
 }
 .catalog__list-item:hover {
@@ -1478,6 +1478,11 @@ h4 {
   font-size: 12px;
   line-height: 14px;
   color: #7a7a7a;
+}
+.catalog__list-item_props {
+  position: absolute;
+  left: 30px;
+  bottom: 15px;
 }
 .catalog__list-item_name {
   margin-top: 3px;
