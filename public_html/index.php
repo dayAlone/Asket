@@ -41,7 +41,7 @@ $APPLICATION->SetTitle('Аскет-Авто');
     "ARROWS_TYPE"         => "small",
     "ARROWS_PREVIEW_SHOW" => "N",
     "EFFECT_TYPE"         => "crossfade",
-    "SLIDE_AUTOPLAY"      => "N",
+    "SLIDE_AUTOPLAY"      => "Y",
     "CACHE_TYPE"          => "A",
     "CACHE_TIME"          => "360000",
     "SLIDE_SPEED"         => "4"
