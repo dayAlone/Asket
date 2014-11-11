@@ -7644,6 +7644,9 @@ select:focus {
   background: #fff !important;
   height: 290px;
 }
+.promo .resp_slider .fotorama__arr {
+  width: 50px !important;
+}
 .promo .resp_slider .item {
   -webkit-border-radius: 7px;
   border-radius: 7px;
@@ -7683,7 +7686,7 @@ select:focus {
   padding: 7px 10px;
   text-transform: none;
   min-width: 114px;
-  margin-top: 10px;
+  margin-top: 7px;
 }
 .promo .resp_slider .item .content .button:hover {
   text-decoration: none;
