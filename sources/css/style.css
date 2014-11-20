@@ -383,6 +383,9 @@ select:focus {
   top: 35px;
   right: 15px;
 }
+.bx-ie8 .block .select .trigger {
+  display: none;
+}
 .block .select select {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -406,6 +409,9 @@ select:focus {
   background: -o-linear-gradient(bottom, #b5c1cd 0%, #d3dde7 100%);
   background: -ms-linear-gradient(bottom, #b5c1cd 0%, #d3dde7 100%);
   background: linear-gradient(to top, #b5c1cd 0%, #d3dde7 100%);
+}
+.bx-ie8 .block .select select {
+  line-height: initial;
 }
 .block h1 {
   font-size: 28px;
