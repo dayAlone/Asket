@@ -657,6 +657,9 @@ select:focus {
   right: 10px;
   max-width: 11px;
 }
+.toolbar .select .trigger .bx-ie8 {
+  display: none;
+}
 .toolbar .select select {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -680,6 +683,9 @@ select:focus {
   background: -o-linear-gradient(bottom, #b5c1cd 0%, #d3dde7 100%);
   background: -ms-linear-gradient(bottom, #b5c1cd 0%, #d3dde7 100%);
   background: linear-gradient(to top, #b5c1cd 0%, #d3dde7 100%);
+}
+.bx-ie8 .toolbar .select select {
+  line-height: initial;
 }
 .catalog-sections__side {
   float: left;
