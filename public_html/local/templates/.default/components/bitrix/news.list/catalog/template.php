@@ -29,7 +29,7 @@
   </div>
 <?endif;?>
 <?if(count($arResult['ITEMS'])>0):?>
-<div class="catalog__list" id="<?=($arParams['ID']?$arParams['ID']:"")?>">
+<div class="catalog__list" <?=($arParams['ID']?'id="'.$arParams['ID'].'"':"")?>>
   <?php
   $i   = 0;
   $col = 4;
