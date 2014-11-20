@@ -110,6 +110,9 @@ select:focus {
   -moz-background-size: cover;
   background-size: cover;
 }
+.bx-ie8 .header__search-submit {
+  background: #3276da;
+}
 .header__search-description {
   float: left;
   width: 100%;
@@ -2071,7 +2074,7 @@ a.print svg path {
   margin-right: 3px;
 }
 .bx-ie8 .params-item {
-  height: 56px;
+  height: 90px;
 }
 .params-item-value {
   height: 28px;
@@ -2100,6 +2103,9 @@ a.print svg path {
 .params-item-title svg {
   max-width: 36px;
   height: 36px;
+}
+.bx-ie8 .params-item-title svg {
+  display: none;
 }
 .params-item-title svg g,
 .params-item-title svg path {
