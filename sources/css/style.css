@@ -103,6 +103,9 @@ select:focus {
   -moz-appearance: none;
   appearance: none;
   background: transparent url("../images/search.png") center center no-repeat;
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  background-size: 100% auto;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -124,6 +127,9 @@ select:focus {
   margin-left: 5px;
   height: 37px;
   background: transparent url("../images/phone.png") center center no-repeat;
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  background-size: 100% auto;
   -webkit-background-size: 100% auto;
   -moz-background-size: 100% auto;
   background-size: 100% auto;
@@ -819,6 +825,9 @@ select:focus {
   padding-left: 27px;
   padding-top: 20px;
   background: #00519f url("../images/promo-bg.jpg") center center no-repeat;
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  background-size: 100% auto;
   -webkit-background-size: 100% auto;
   -moz-background-size: 100% auto;
   background-size: 100% auto;
