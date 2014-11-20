@@ -173,5 +173,8 @@
   </div>
 </div>
 <div class="bg-fade"></div>
+<!--[if lte IE 9]>
+<script type="text/javascript" src = "/layout/js/bse.js"></script>
+<![endif]-->
 </body>
 </html>

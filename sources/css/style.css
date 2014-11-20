@@ -103,7 +103,6 @@ select:focus {
   -moz-appearance: none;
   appearance: none;
   background: transparent url("../images/search.png") center center no-repeat;
-  -ms-behavior: url("/backgroundsize.min.htc");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -125,7 +124,6 @@ select:focus {
   margin-left: 5px;
   height: 37px;
   background: transparent url("../images/phone.png") center center no-repeat;
-  -ms-behavior: url("/backgroundsize.min.htc");
   -webkit-background-size: 100% auto;
   -moz-background-size: 100% auto;
   background-size: 100% auto;
@@ -824,7 +822,6 @@ select:focus {
   padding-left: 27px;
   padding-top: 20px;
   background: #00519f url("../images/promo-bg.jpg") center center no-repeat;
-  -ms-behavior: url("/backgroundsize.min.htc");
   -webkit-background-size: 100% auto;
   -moz-background-size: 100% auto;
   background-size: 100% auto;
@@ -875,7 +872,6 @@ select:focus {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
-  -ms-behavior: url("/backgroundsize.min.htc");
   font-family: 'MainFont', 'Helvetica Neue', 'Arial', sans-serif;
 }
 .promo .resp_slider .item .content {
@@ -986,7 +982,6 @@ select:focus {
   -webkit-background-size: auto 65%;
   -moz-background-size: auto 65%;
   background-size: auto 65%;
-  -ms-behavior: url("/backgroundsize.min.htc");
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -1004,7 +999,6 @@ select:focus {
   -webkit-background-size: 85% auto;
   -moz-background-size: 85% auto;
   background-size: 85% auto;
-  -ms-behavior: url("/backgroundsize.min.htc");
   left: 5px;
   position: relative;
 }
@@ -1236,7 +1230,6 @@ select:focus {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
-  -ms-behavior: url("/backgroundsize.min.htc");
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
@@ -1490,7 +1483,6 @@ h4 {
   -webkit-background-size: contain;
   -moz-background-size: contain;
   background-size: contain;
-  -ms-behavior: url("/backgroundsize.min.htc");
   background-position: center center;
   background-repeat: no-repeat;
   -webkit-border-radius: 5px;
@@ -2101,7 +2093,6 @@ a.print svg path {
   -webkit-background-size: contain;
   -moz-background-size: contain;
   background-size: contain;
-  -ms-behavior: url("/backgroundsize.min.htc");
   background-position: center center;
   background-repeat: no-repeat;
   display: none;
@@ -2157,7 +2148,6 @@ a.print svg path {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
-  -ms-behavior: url("/backgroundsize.min.htc");
   background-position: center center;
 }
 .gallery .slider .item .image.active {
