@@ -383,7 +383,7 @@ select:focus {
   top: 35px;
   right: 15px;
 }
-.block .select .trigger .bx-ie8 {
+.bx-ie8 .block .select .trigger {
   display: none;
 }
 .block .select select {
@@ -410,7 +410,7 @@ select:focus {
   background: -ms-linear-gradient(bottom, #b5c1cd 0%, #d3dde7 100%);
   background: linear-gradient(to top, #b5c1cd 0%, #d3dde7 100%);
 }
-.block .select select .bx-ie8 {
+.bx-ie8 .block .select select {
   line-height: initial;
 }
 .block h1 {
@@ -657,7 +657,7 @@ select:focus {
   right: 10px;
   max-width: 11px;
 }
-.toolbar .select .trigger .bx-ie8 {
+.bx-ie8 .toolbar .select .trigger {
   display: none;
 }
 .toolbar .select select {
@@ -684,10 +684,16 @@ select:focus {
   background: -ms-linear-gradient(bottom, #b5c1cd 0%, #d3dde7 100%);
   background: linear-gradient(to top, #b5c1cd 0%, #d3dde7 100%);
 }
-.toolbar .select select .bx-ie8 {
+.bx-ie8 .toolbar .select select {
   line-height: initial;
   padding: 0 0 0 10px;
   line-height: 18px;
+}
+.bx-ie8 .toolbar .select select {
+  line-height: initial;
+}
+.bx-ie8 .toolbar .select .trigger {
+  display: none;
 }
 .catalog-sections__side {
   float: left;
