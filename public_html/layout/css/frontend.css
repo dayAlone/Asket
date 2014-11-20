@@ -7603,7 +7603,7 @@ select:focus {
 .bx-ie8 .toolbar .select select {
   line-height: 1;
   padding: 5px 0 5px 10px;
-  height: 21px;
+  height: 31px;
 }
 .catalog-sections__side {
   float: left;
