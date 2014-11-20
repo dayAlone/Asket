@@ -19,7 +19,7 @@ full-width()
 b(name=null, position=null, color=null, size=null)
 	background color url(../images/name) position
 	if size
-		background-size 100% auto
+		-ms-behavior: url(/backgroundsize.min.htc);
 		background-size size
 
 .fotorama__arr,.fotorama__fullscreen-icon,.fotorama__video-close,.fotorama__video-play
@@ -591,6 +591,7 @@ a, input, select
 		.item
 			border-radius 7px
 			background-size cover
+			-ms-behavior: url(/backgroundsize.min.htc);
 			font-family 'MainFont', 'Helvetica Neue', 'Arial', sans-serif
 			.content
 				width 82%
@@ -674,6 +675,7 @@ a, input, select
 				height 67px
 				margin-top 10px
 				background-size auto 65%
+				-ms-behavior: url(/backgroundsize.min.htc);
 				&--height
 					background-size auto 90% 
 				background-position center center
@@ -684,6 +686,7 @@ a, input, select
 				.promo-slide-item_image
 					width 35%
 					background-size 85% auto
+					-ms-behavior: url(/backgroundsize.min.htc);
 					left 5px
 					position relative
 				.promo-slide-item_title
@@ -825,6 +828,7 @@ a, input, select
 			height 360px
 			background-position top left
 			background-size cover
+			-ms-behavior: url(/backgroundsize.min.htc);
 			border-top-right-radius 10px
 			border-bottom-right-radius 10px
 		&-content
@@ -992,6 +996,7 @@ h1, h2, h3, h4
 			full-width()
 			height 147px
 			background-size contain
+			-ms-behavior: url(/backgroundsize.min.htc);
 			background-position center center
 			background-repeat no-repeat
 			border-radius 5px
@@ -1428,6 +1433,7 @@ a.print
 			height 245px
 			border-radius 5px 5px 0 0
 			background-size contain
+			-ms-behavior: url(/backgroundsize.min.htc);
 			background-position center center
 			background-repeat no-repeat
 			display none
@@ -1472,6 +1478,7 @@ a.print
 				cursor pointer
 				height 46px
 				background-size cover
+				-ms-behavior: url(/backgroundsize.min.htc);
 				background-position center center
 				&.active
 					box-shadow inset 0 0 0 2px #0059c8
