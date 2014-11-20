@@ -46,3 +46,4 @@
         endswitch;
       ?>
     <?endforeach;?>
+</div>
