@@ -14,40 +14,7 @@ $APPLICATION->SetTitle('Аскет-Авто');
       </a>
     </div>
     <div class="col-md-9 col-xs-9">
-      <?/*
-      <div style="background-image: url(./layout/images/slider-bg.jpg)" class="resp_slider">
-        <div class="content">
-          <h1>Специальное предложение <br>на автокраны “Ивановец” <br>25 тонн. Скидки!</h1><a class="button">Подробнее</a>
-        </div>
-      </div>
-      */?>
-      <?$APPLICATION->IncludeComponent(
-      	"radia:resp_slider", 
-      	".default", 
-      	array(
-          "IBLOCK_TYPE"         => "content",
-          "IBLOCK_ID"           => "3",
-          "ENABLE_JQUERY"       => "N",
-          "MY_DATA"             => "",
-          "SIZES_HEIGHT"        => "291",
-          "SIZES_WIDTH"         => "783",
-          "EFFECT_SPEED"        => "600",
-          "BACKGROUND_COLOR"    => "#000000",
-          "DARK_COLOR"          => "#000000",
-          "BRIGHT_COLOR"        => "#FFFFFF",
-          "BUTTON_COLOR"        => "#02b6ed",
-          "DOTS_SHOW"           => "N",
-          "ARROWS_SHOW"         => "Y",
-          "ARROWS_TYPE"         => "small",
-          "ARROWS_PREVIEW_SHOW" => "N",
-          "EFFECT_TYPE"         => "crossfade",
-          "SLIDE_AUTOPLAY"      => "Y",
-          "CACHE_TYPE"          => "A",
-          "CACHE_TIME"          => "360000",
-          "SLIDE_SPEED"         => "4"
-      	),
-      	false
-      );?>
+      
     </div>
   </div>
     <?
