@@ -412,6 +412,7 @@ select:focus {
 }
 .bx-ie8 .block .select select {
   line-height: initial;
+  padding: 0 0 10px 15px;
 }
 .block h1 {
   font-size: 28px;
