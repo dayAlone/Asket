@@ -8837,6 +8837,9 @@ a.print svg path {
   position: relative;
   background-color: #dae1e7;
 }
+.bx-ie8 .price {
+  height: 56px;
+}
 .price-title {
   font-size: 14px;
   color: #444f57;
@@ -8983,6 +8986,9 @@ a.print svg path {
   color: #8a94a1;
   margin-right: 3px;
 }
+.bx-ie8 .params-item {
+  height: 56px;
+}
 .params-item-value {
   height: 28px;
   line-height: 28px;
@@ -8997,6 +9003,10 @@ a.print svg path {
   border-bottom: 1px solid #fff;
   text-transform: uppercase;
   font-weight: bold;
+}
+.bx-ie8 .params-item-title {
+  height: 28px;
+  line-height: 28px;
 }
 .params-item-title_content {
   line-height: 20px;
