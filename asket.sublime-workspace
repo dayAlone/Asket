@@ -523,7 +523,7 @@
 			"file": "sources/css/style.styl",
 			"settings":
 			{
-				"buffer_size": 28234,
+				"buffer_size": 31470,
 				"line_ending": "Unix"
 			}
 		},
@@ -531,7 +531,7 @@
 			"file": "sources/js/script.coffee",
 			"settings":
 			{
-				"buffer_size": 7684,
+				"buffer_size": 8218,
 				"line_ending": "Unix"
 			}
 		},
@@ -540,14 +540,6 @@
 			"settings":
 			{
 				"buffer_size": 1052,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "public_html/local/templates/.default/components/bitrix/news.detail/catalog/result_modifier.php",
-			"settings":
-			{
-				"buffer_size": 1929,
 				"line_ending": "Unix"
 			}
 		}
@@ -591,17 +583,29 @@
 		"/Users/slider/Documents/Projects/Asket/HTML/public_html/local/templates/.default/components/bitrix/news.detail",
 		"/Users/slider/Documents/Projects/Asket/HTML/public_html/local/templates/.default/components/bitrix/news.detail/catalog",
 		"/Users/slider/Documents/Projects/Asket/HTML",
-		"/Users/slider/Documents/Projects/Asket/HTML/bower_components",
-		"/Users/slider/Documents/Projects/Asket/HTML/bower_components/hypher_lib",
-		"/Users/slider/Documents/Projects/Asket/HTML/bower_components/hypher_lib/dist",
-		"/Users/slider/Documents/Projects/Asket/HTML/bower_components/hypher_lib/dist/browser",
-		"/Users/slider/Documents/Projects/Asket/HTML/sources",
-		"/Users/slider/Documents/Projects/Asket/HTML/sources/html",
-		"/Users/slider/Documents/Projects/Asket/HTML/sources/html/includes",
-		"/Users/slider/Documents/Projects/Asket/HTML/sources/js"
+		"/Users/slider/Documents/Projects/Asket/HTML/public_html",
+		"/Users/slider/Documents/Projects/Asket/HTML/sources"
 	],
 	"file_history":
 	[
+		"/Users/slider/Documents/Projects/Asket/HTML/public_html/layout/images/svg/bus.svg",
+		"/Users/slider/Documents/Projects/Asket/HTML/public_html/layout/images/svg/i-1.svg",
+		"/Users/slider/Documents/Projects/Asket/HTML/public_html/layout/images/svg/i-2.svg",
+		"/Users/slider/Documents/Projects/Asket/HTML/public_html/layout/images/svg/i-3.svg",
+		"/Users/slider/Documents/Projects/Asket/HTML/public_html/layout/images/svg/i-4.svg",
+		"/Users/slider/Documents/Projects/Asket/HTML/public_html/layout/images/svg/i-5.svg",
+		"/Users/slider/Documents/Projects/Asket/HTML/public_html/layout/images/svg/p-1.svg",
+		"/Users/slider/Documents/Projects/Asket/HTML/public_html/layout/images/svg/p-10.svg",
+		"/Users/slider/Documents/Projects/Asket/HTML/public_html/layout/images/svg/p-2.svg",
+		"/Users/slider/Documents/Projects/Asket/HTML/public_html/layout/images/svg/p-3.svg",
+		"/Users/slider/Documents/Projects/Asket/HTML/public_html/layout/images/svg/p-4.svg",
+		"/Users/slider/Documents/Projects/Asket/HTML/public_html/layout/images/svg/p-5.svg",
+		"/Users/slider/Documents/Projects/Asket/HTML/public_html/layout/images/svg/p-6.svg",
+		"/Users/slider/Documents/Projects/Asket/HTML/public_html/layout/images/svg/p-7.svg",
+		"/Users/slider/Documents/Projects/Asket/HTML/public_html/layout/images/svg/p-8.svg",
+		"/Users/slider/Documents/Projects/Asket/HTML/public_html/layout/images/svg/p-9.svg",
+		"/Users/slider/Documents/Projects/Asket/HTML/public_html/layout/images/svg/print.svg",
+		"/Users/slider/Documents/Projects/Asket/HTML/public_html/include/header.php",
 		"/Users/slider/Documents/Projects/Asket/HTML/sources/html/index.jade",
 		"/Users/slider/Documents/Projects/Asket/HTML/sources/html/catalog-section.jade",
 		"/Users/slider/Documents/Projects/Asket/HTML/sources/html/catalog-list.jade",
@@ -711,25 +715,7 @@
 		"/Users/slider/Documents/Projects/MarsGraduates/HTML/sources/html/academy.jade",
 		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bitrix/local/templates/mars_graduates/components/bitrix/news.list/academy_list/result_modifier.php",
 		"/Users/slider/Documents/Projects/MarsGraduates/HTML/sources/html/career.jade",
-		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bitrix/local/templates/mars_graduates/components/bitrix/news.list/career_vacancy/result_modifier.php",
-		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bitrix/local/templates/mars_graduates/components/bitrix/news.list/career_sections/template.php",
-		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bitrix/local/templates/mars_graduates/components/bitrix/news.list/career_sections/result_modifier.php",
-		"/Users/slider/Documents/Projects/MarsGraduates/HTML/sources/html/includes/toolbar.jade",
-		"/Users/slider/Documents/Projects/MarsGraduates/HTML/sources/html/index.jade",
-		"/Users/slider/Documents/Projects/MarsGraduates/HTML/public_html/index.html",
-		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bitrix/local/templates/mars_graduates/components/bitrix/news.list/career_index/result_modifier.php",
-		"/Users/slider/Documents/Projects/MarsGraduates/HTML/sources/css/style.styl",
-		"/Users/slider/Documents/Projects/MarsGraduates/HTML/public_html/fonts.html",
-		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bitrix/.top.menu.php",
-		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bitrix/bitrix/.settings.php",
-		"/Users/slider/Documents/Projects/Lilly/public_html/bitrix/.settings.php",
-		"/Users/slider/Documents/Projects/Lilly/public_html/layout/js/main.coffee",
-		"/Users/slider/Documents/DNS",
-		"/Users/slider/Documents/Projects/Lilly/public_html/test/symptoms/questions.json",
-		"/Users/slider/Documents/Projects/MarsGraduates/HTML/sources/html/fonts.jade",
-		"/Users/slider/Documents/Projects/MarsGraduates/HTML/sources/html/about.jade",
-		"/Users/slider/Documents/Projects/MarsGraduates/HTML/sources/html/month.jade",
-		"/Users/slider/Documents/Projects/MarsGraduates/HTML/sources/html/includes/nav.jade"
+		"/Users/slider/Documents/Projects/MarsGraduates/HTML/bitrix/local/templates/mars_graduates/components/bitrix/news.list/career_vacancy/result_modifier.php"
 	],
 	"find":
 	{
@@ -958,7 +944,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -967,19 +953,20 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 28234,
+						"buffer_size": 31470,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								18397,
+								18397
 							]
 						],
 						"settings":
 						{
+							"bs_sintax": "stylus",
 							"buffer_scroll_name": "93d3f2cb",
 							"codeintel": true,
 							"codeintel_config":
@@ -1092,10 +1079,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 19386.0,
+						"translation.y": 15345.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -1104,19 +1091,20 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7684,
+						"buffer_size": 8218,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								613,
+								613
 							]
 						],
 						"settings":
 						{
+							"bs_sintax": "coffeescript",
 							"buffer_scroll_name": "7ed108bf",
 							"codeintel": true,
 							"codeintel_config":
@@ -1229,10 +1217,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 3029.0,
+						"translation.y": 127.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -1254,6 +1242,7 @@
 						],
 						"settings":
 						{
+							"bs_sintax": "json",
 							"buffer_scroll_name": "6b011b15",
 							"codeintel": true,
 							"codeintel_config":
@@ -1368,37 +1357,6 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "public_html/local/templates/.default/components/bitrix/news.detail/catalog/result_modifier.php",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 1929,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								1929
-							]
-						],
-						"settings":
-						{
-							"bs_sintax": "php",
-							"buffer_scroll_name": "1ed973aa",
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 239.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
