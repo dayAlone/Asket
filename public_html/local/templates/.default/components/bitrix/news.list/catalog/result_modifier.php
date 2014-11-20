@@ -2,6 +2,8 @@
 	foreach ($arResult['ITEMS'] as &$item):
 		$item["PROPS"] = array();
 		$props = &$item["PROPS"];
+		$small = CFile::ResizeImageGet($item['PREVIEW_PICTURE'], Array("width" => 300, "height" => 300), BX_RESIZE_IMAGE_PROPORTIONAL, false, false, false, 80);
+		$item['PREVIEW_PICTURE']['SRC'] = $small['src'];
 		foreach ($item["PROPERTIES"] as $key => $prop):
 			switch ($prop['CODE']):
 				case "YEAR":
@@ -28,7 +30,6 @@
 		endforeach;
 
 	endforeach;
-
 	if(isset($arParams['INDEX']))
 	{
 		$items = array();
