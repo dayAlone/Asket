@@ -9,7 +9,7 @@
   "homepage": "www.ru",
   "private": true,
   "dependencies": {
-    "jquery": "latest",
+    "jquery": "1.11.1",
     "bootstrap": "latest",
     "fotorama": "latest",
     "slick": "git@github.com:kenwheeler/slick.git",
