@@ -1342,7 +1342,7 @@ h4 {
   content: "";
   background: transparent url("../images/tabs.jpg") top left no-repeat;
 }
-.msie .tabs__title-link:after {
+.bx-ie8 .tabs__title-link:after {
   display: none;
 }
 .tabs__title-link--active {
