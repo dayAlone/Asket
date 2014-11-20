@@ -10,7 +10,7 @@ module.exports = (grunt)->
 
 		plugins =
 			jquery :
-				js : '/jquery/dist/jquery.js'
+				js : ['/jquery/jquery.js', '/jquery/jquery.migrate.js']
 			bootstrap :
 				js  : ['/bootstrap/js/transition.js', '/bootstrap/js/tab.js','/bootstrap/js/modal.js']
 				css : '/bootstrap/dist/css/bootstrap.css'
