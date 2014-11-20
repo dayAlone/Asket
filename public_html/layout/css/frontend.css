@@ -7603,7 +7603,6 @@ select:focus {
 .bx-ie8 .toolbar .select select {
   line-height: initial;
   padding: 0 0 0 10px;
-  line-height: 18px;
 }
 .bx-ie8 .toolbar .select select {
   line-height: initial;
