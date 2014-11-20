@@ -685,14 +685,8 @@ select:focus {
   background: linear-gradient(to top, #b5c1cd 0%, #d3dde7 100%);
 }
 .bx-ie8 .toolbar .select select {
-  line-height: initial;
+  line-height: 1;
   padding: 0 0 0 10px;
-}
-.bx-ie8 .toolbar .select select {
-  line-height: initial;
-}
-.bx-ie8 .toolbar .select .trigger {
-  display: none;
 }
 .catalog-sections__side {
   float: left;
