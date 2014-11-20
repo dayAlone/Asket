@@ -22,6 +22,10 @@
     </div>
     
     </div>
-    <div class="catalog-sections_call"><span>Свяжитесь с нами: <br></span><a href="tel:<?=preg_replace('/[^\dx+]/i', '', COption::GetOptionString("grain.customsettings","contacts_phone"))?>"><?=COption::GetOptionString("grain.customsettings","contacts_phone")?> <br></a><span>E-mail: </span><a href="mailto:<?=COption::GetOptionString("grain.customsettings","contacts_email")?>"><?=COption::GetOptionString("grain.customsettings","contacts_email")?></a></div>
-  </div>
+    <div class="catalog-sections_call">
+    	<span>Свяжитесь с нами: <br></span>
+    	<a href="tel:<?=preg_replace('/[^\dx+]/i', '', COption::GetOptionString("grain.customsettings","contacts_phone"))?>"><?=COption::GetOptionString("grain.customsettings","contacts_phone")?>
+    	<br></a>
+    	<span>E-mail: </span><a href="mailto:<?=COption::GetOptionString("grain.customsettings","contacts_email")?>"><?=COption::GetOptionString("grain.customsettings","contacts_email")?></a>
+    </div>
 </nav>
