@@ -21097,7 +21097,10 @@ The biggest cause of both codebase bloat and codepath obfuscation is support for
       }
       return e.preventDefault();
     });
-    $('p, p strong').hyphenate('ru');
+    $('body').addClass($.browser.name);
+    if (!$.browser.msie) {
+      $('p, p strong').hyphenate('ru');
+    }
     $('.navbar .navbar-item--dropdown').hoverIntent({
       sensitivity: 10,
       over: function() {

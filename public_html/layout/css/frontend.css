@@ -7074,7 +7074,7 @@ select:focus {
   border-radius: 3px;
   cursor: pointer;
   text-decoration: none;
-  background: #3c3c3c;
+  background: #1055c7;
   background: -webkit-linear-gradient(bottom, #1055c7 0%, #3f88ec 100%);
   background: -moz-linear-gradient(bottom, #1055c7 0%, #3f88ec 100%);
   background: -o-linear-gradient(bottom, #1055c7 0%, #3f88ec 100%);
@@ -7244,7 +7244,7 @@ select:focus {
   border-radius: 3px;
   cursor: pointer;
   text-decoration: none;
-  background: #3c3c3c;
+  background: #1055c7;
   background: -webkit-linear-gradient(bottom, #1055c7 0%, #3f88ec 100%);
   background: -moz-linear-gradient(bottom, #1055c7 0%, #3f88ec 100%);
   background: -o-linear-gradient(bottom, #1055c7 0%, #3f88ec 100%);
@@ -7375,7 +7375,7 @@ select:focus {
   border-radius: 3px;
   cursor: pointer;
   text-decoration: none;
-  background: #3c3c3c;
+  background: #1055c7;
   background: -webkit-linear-gradient(bottom, #1055c7 0%, #3f88ec 100%);
   background: -moz-linear-gradient(bottom, #1055c7 0%, #3f88ec 100%);
   background: -o-linear-gradient(bottom, #1055c7 0%, #3f88ec 100%);
@@ -7806,7 +7806,7 @@ select:focus {
   border-radius: 3px;
   cursor: pointer;
   text-decoration: none;
-  background: #3c3c3c;
+  background: #1055c7;
   background: -webkit-linear-gradient(bottom, #1055c7 0%, #3f88ec 100%);
   background: -moz-linear-gradient(bottom, #1055c7 0%, #3f88ec 100%);
   background: -o-linear-gradient(bottom, #1055c7 0%, #3f88ec 100%);
@@ -8083,7 +8083,7 @@ select:focus {
   border-radius: 3px;
   cursor: pointer;
   text-decoration: none;
-  background: #3c3c3c;
+  background: #1055c7;
   background: -webkit-linear-gradient(bottom, #1055c7 0%, #3f88ec 100%);
   background: -moz-linear-gradient(bottom, #1055c7 0%, #3f88ec 100%);
   background: -o-linear-gradient(bottom, #1055c7 0%, #3f88ec 100%);
@@ -8210,6 +8210,7 @@ h4 {
   min-height: 100px;
 }
 .tabs__title-link {
+  background: #c4d2dd;
   background: -webkit-linear-gradient(bottom, #d3dde9 0%, #b1c2cd 100%);
   background: -moz-linear-gradient(bottom, #d3dde9 0%, #b1c2cd 100%);
   background: -o-linear-gradient(bottom, #d3dde9 0%, #b1c2cd 100%);
@@ -8240,6 +8241,9 @@ h4 {
   content: "";
   background: transparent url("../images/tabs.jpg") top left no-repeat;
 }
+.msie .tabs__title-link:after {
+  display: none;
+}
 .tabs__title-link--active {
   background: #f4f6fa;
 }
@@ -8249,21 +8253,25 @@ h4 {
 .tabs__title-link--active:after {
   background-position: 0 -55px;
 }
-.tabs__title-link:first-of-type {
+.tabs__title-link:first-of-type,
+.tabs__title-link--first {
   border-top-left-radius: 10px;
   padding-left: 30px;
 }
-.tabs__title-link:first-of-type:after {
+.tabs__title-link:first-of-type:after,
+.tabs__title-link--first:after {
   display: none;
 }
-.tabs__title-link:first-of-type.tabs__title-link--active:after {
+.tabs__title-link:first-of-type.tabs__title-link--active:after,
+.tabs__title-link--first.tabs__title-link--active:after {
   background-position: 0 -110px !important;
   z-index: 3;
   display: block;
   left: auto;
   right: -25px;
 }
-.tabs__title-link:last-of-type {
+.tabs__title-link:last-of-type,
+.tabs__title-link--last {
   border-top-right-radius: 10px;
 }
 .tabs__title--catalog .tabs__title-link {
@@ -8308,7 +8316,7 @@ h4 {
   border-radius: 3px;
   cursor: pointer;
   text-decoration: none;
-  background: #3c3c3c;
+  background: #1055c7;
   background: -webkit-linear-gradient(bottom, #1055c7 0%, #3f88ec 100%);
   background: -moz-linear-gradient(bottom, #1055c7 0%, #3f88ec 100%);
   background: -o-linear-gradient(bottom, #1055c7 0%, #3f88ec 100%);
@@ -8579,7 +8587,7 @@ h4 {
   border-radius: 3px;
   cursor: pointer;
   text-decoration: none;
-  background: #3c3c3c;
+  background: #1055c7;
   background: -webkit-linear-gradient(bottom, #1055c7 0%, #3f88ec 100%);
   background: -moz-linear-gradient(bottom, #1055c7 0%, #3f88ec 100%);
   background: -o-linear-gradient(bottom, #1055c7 0%, #3f88ec 100%);
@@ -8828,7 +8836,7 @@ a.print svg path {
   border-radius: 3px;
   cursor: pointer;
   text-decoration: none;
-  background: #3c3c3c;
+  background: #1055c7;
   background: -webkit-linear-gradient(bottom, #1055c7 0%, #3f88ec 100%);
   background: -moz-linear-gradient(bottom, #1055c7 0%, #3f88ec 100%);
   background: -o-linear-gradient(bottom, #1055c7 0%, #3f88ec 100%);
@@ -9171,7 +9179,7 @@ ul.nav > li.active > a {
   border-radius: 3px;
   cursor: pointer;
   text-decoration: none;
-  background: #3c3c3c;
+  background: #1055c7;
   background: -webkit-linear-gradient(bottom, #1055c7 0%, #3f88ec 100%);
   background: -moz-linear-gradient(bottom, #1055c7 0%, #3f88ec 100%);
   background: -o-linear-gradient(bottom, #1055c7 0%, #3f88ec 100%);
