@@ -876,6 +876,7 @@ h1, h2, h3, h4
 	&__title
 		
 		&-link
+			background #c4d2dd
 			background linear-gradient(bottom, #d3dde9 0%, #b1c2cd 100%)
 			float left
 			cursor pointer
@@ -891,6 +892,8 @@ h1, h2, h3, h4
 				text-decoration none
 				color #3f5067
 			&:after
+				.msie &
+					display none
 				position absolute
 				height 56px
 				top -14px

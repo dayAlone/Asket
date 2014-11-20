@@ -224,6 +224,8 @@ $(document).ready ->
 			
 		e.preventDefault()
 
+	$('body').addClass $.browser.name
+
 	if !$.browser.msie
 		$('p, p strong').hyphenate('ru')
 
