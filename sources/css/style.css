@@ -43,6 +43,9 @@ body {
   width: 1077px;
   position: relative;
 }
+.bx-ie8 .container {
+  width: 1077px !important;
+}
 a {
   -webkit-transition-property: color, background-color, border-radius, box-shadow, border-radius;
   -moz-transition-property: color, background-color, border-radius, box-shadow, border-radius;
