@@ -686,7 +686,8 @@ select:focus {
 }
 .bx-ie8 .toolbar .select select {
   line-height: 1;
-  padding: 0 0 0 10px;
+  padding: 5px 0 5px 10px;
+  height: 21px;
 }
 .catalog-sections__side {
   float: left;
