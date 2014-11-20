@@ -11,6 +11,7 @@
   "dependencies": {
     "jquery": "1.9",
     "bootstrap": "latest",
+    "jquery.browser": "latest",
     "fotorama": "latest",
     "slick": "git@github.com:kenwheeler/slick.git",
     "hoverIntent": "git@github.com:briancherne/jquery-hoverIntent.git",

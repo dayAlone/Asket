@@ -224,8 +224,8 @@ $(document).ready ->
 			
 		e.preventDefault()
 
-
-	$('p, p strong').hyphenate('ru')
+	if !$.browser.msie
+		$('p, p strong').hyphenate('ru')
 
 	$('.navbar .navbar-item--dropdown').hoverIntent
 		sensitivity : 10

@@ -3,7 +3,7 @@
   <div class="tabs__frame clearfix">
     <div class="tabs__title">
       <?foreach ($arResult['ITEMS'] as $key=>$item):?>
-        <a data-href="#<?=$item['CODE']?>" class="tabs__title-link <?=($key==0?"tabs__title-link--active":"")?>"><?=$item['NAME']?></a>
+        <a data-href="#<?=$item['CODE']?>" class="tabs__title-link <?=($key==0?"tabs__title-link--first":"")?> <?=($key==count($arResult['ITEMS'])-1?"tabs__title-link--last":"")?> <?=($key==0?"tabs__title-link--active":"")?>"><?=$item['NAME']?></a>
       <?endforeach;?>
       <?foreach ($arResult['ITEMS'] as $key=>$item):?>
         <?
