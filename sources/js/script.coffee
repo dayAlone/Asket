@@ -30,8 +30,6 @@ autoHeight = (el, selector='', height_selector = false, use_padding=false, debug
 				el.find(selector).removeAttr 'style'
 			
 			step = Math.round(el.outerWidth()/item.outerWidth())
-
-			console.log step
 			
 			count = item.length-1
 			loops = Math.ceil(count/step)
