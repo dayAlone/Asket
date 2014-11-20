@@ -40,7 +40,7 @@
                            </a>
                          </div>
            <?
-           if(!isset($arResult['SECTIONS'][$key+1])){?></div><?}
+           if(!isset($arResult['SECTIONS'][$key+1])){?></div></div><?}
            $s++;
           break;
         endswitch;
