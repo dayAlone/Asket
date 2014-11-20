@@ -23,7 +23,8 @@
     "parsleyjs": "~2.0.3",
     "jQuery-Mask-Plugin": "~1.6.5",
     "chosen": "https://github.com/harvesthq/chosen/releases/download/v1.1.0/chosen_v1.1.0.zip",
-    "prettyPhoto":"git@github.com:scaron/prettyphoto.git"
+    "prettyPhoto":"git@github.com:scaron/prettyphoto.git",
+    "bsemu" : "git@github.com:Metafalica/background-size-emu.git"
   },
   "moduleType": [
     "amd",

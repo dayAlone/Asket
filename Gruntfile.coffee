@@ -55,6 +55,8 @@ module.exports = (grunt)->
 				js : '/chosen/chosen.jquery.js'
 			browser :
 				js : '/jquery.browser/dist/jquery.browser.js'
+			bseme :
+				js : '/bsemu/background_size_emu.js'
 			hoverIntent :
 				js : '/hoverIntent/jquery.hoverIntent.js'
 			imagesLoaded :
@@ -78,7 +80,7 @@ module.exports = (grunt)->
 			sources : 'sources'
 			layout  : 'public_html/layout'
 
-		use : loadPlugins [ 'jquery', 'bootstrap', 'slick', 'prettyPhoto', 'parsley', 'chosen', 'mask', 'hypher', 'velocity', 'browser', 'hoverIntent' ]
+		use : loadPlugins [ 'jquery', 'bootstrap', 'slick', 'prettyPhoto', 'bseme', 'parsley', 'chosen', 'mask', 'hypher', 'velocity', 'browser', 'hoverIntent' ]
 
 		files:
 			css:
