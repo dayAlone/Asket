@@ -45,4 +45,3 @@
         endswitch;
       ?>
     <?endforeach;?>
-</div>
