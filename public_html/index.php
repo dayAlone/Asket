@@ -22,33 +22,34 @@ $APPLICATION->SetTitle('Аскет-Авто');
       </div>
       */?>
       <?$APPLICATION->IncludeComponent(
-	"radia:resp_slider", 
-	".default", 
-	array(
-    "IBLOCK_TYPE"         => "content",
-    "IBLOCK_ID"           => "3",
-    "ENABLE_JQUERY"       => "N",
-    "MY_DATA"             => "",
-    "SIZES_HEIGHT"        => "291",
-    "SIZES_WIDTH"         => "783",
-    "EFFECT_SPEED"        => "600",
-    "BACKGROUND_COLOR"    => "#000000",
-    "DARK_COLOR"          => "#000000",
-    "BRIGHT_COLOR"        => "#FFFFFF",
-    "BUTTON_COLOR"        => "#02b6ed",
-    "DOTS_SHOW"           => "N",
-    "ARROWS_SHOW"         => "Y",
-    "ARROWS_TYPE"         => "small",
-    "ARROWS_PREVIEW_SHOW" => "N",
-    "EFFECT_TYPE"         => "crossfade",
-    "SLIDE_AUTOPLAY"      => "Y",
-    "CACHE_TYPE"          => "A",
-    "CACHE_TIME"          => "360000",
-    "SLIDE_SPEED"         => "4"
-	),
-	false
-);?>
+      	"radia:resp_slider", 
+      	".default", 
+      	array(
+          "IBLOCK_TYPE"         => "content",
+          "IBLOCK_ID"           => "3",
+          "ENABLE_JQUERY"       => "N",
+          "MY_DATA"             => "",
+          "SIZES_HEIGHT"        => "291",
+          "SIZES_WIDTH"         => "783",
+          "EFFECT_SPEED"        => "600",
+          "BACKGROUND_COLOR"    => "#000000",
+          "DARK_COLOR"          => "#000000",
+          "BRIGHT_COLOR"        => "#FFFFFF",
+          "BUTTON_COLOR"        => "#02b6ed",
+          "DOTS_SHOW"           => "N",
+          "ARROWS_SHOW"         => "Y",
+          "ARROWS_TYPE"         => "small",
+          "ARROWS_PREVIEW_SHOW" => "N",
+          "EFFECT_TYPE"         => "crossfade",
+          "SLIDE_AUTOPLAY"      => "Y",
+          "CACHE_TYPE"          => "A",
+          "CACHE_TIME"          => "360000",
+          "SLIDE_SPEED"         => "4"
+      	),
+      	false
+      );?>
     </div>
+  </div>
     <?
     $APPLICATION->IncludeComponent("bitrix:catalog.section.list", "index", array(
         "IBLOCK_TYPE"  => "content",
@@ -61,7 +62,7 @@ $APPLICATION->SetTitle('Аскет-Авто');
     ),
     false
     );?>
-  </div>
+  
 </section>
 <?
 $APPLICATION->IncludeComponent("bitrix:news.list", "tabs_index", 
