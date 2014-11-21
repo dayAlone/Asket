@@ -5,10 +5,6 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <?
-	$APPLICATION->SetAdditionalCSS("/layout/css/frontend.css", true);
-	$APPLICATION->AddHeadScript('/layout/js/frontend.js');
-  ?>
   <title><?php 
     $APPLICATION->ShowTitle();
     if($APPLICATION->GetCurDir()!='/') {
@@ -19,6 +15,9 @@
     ?></title>
   <?
     $APPLICATION->ShowHead();
+    $APPLICATION->SetAdditionalCSS("/layout/css/frontend.css", true);
+    $APPLICATION->AddHeadScript('/layout/js/frontend.js');
+  
   ?>
   <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
