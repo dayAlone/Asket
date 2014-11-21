@@ -15,7 +15,7 @@
     ?></title>
   <?
     $APPLICATION->SetAdditionalCSS("/layout/css/frontend.css", true);
-    $APPLICATION->AddHeadScript('/layout/js/frontend.js', true);
+    $APPLICATION->AddHeadScript('/layout/js/frontend.js');
     $APPLICATION->ShowMeta("robots"); 
     $APPLICATION->ShowMeta("keywords"); 
     $APPLICATION->ShowMeta("description"); 
