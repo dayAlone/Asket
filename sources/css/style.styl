@@ -579,6 +579,8 @@ a, input, select
 		padding-left 27px
 		padding-top 20px
 		b('promo-bg.jpg', center center no-repeat, #00519f, 100% auto)
+		.bx-ie8 &
+			background #00519f
 		&:first-of-type
 			border-top-left-radius 7px
 			border-top-right-radius 7px
@@ -599,7 +601,7 @@ a, input, select
 			text-decoration none
 			color white
 		&--hover
-			background #97adbb
+			background #97adbb !important
 			color #383b40 !important
 			text-shadow 1px 1px 0 rgba(255,255,255,.3)
 			

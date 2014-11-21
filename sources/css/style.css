@@ -856,6 +856,9 @@ select:focus {
   -moz-background-size: 100% auto;
   background-size: 100% auto;
 }
+.bx-ie8 .promo__banner {
+  background: #00519f;
+}
 .promo__banner:first-of-type {
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
@@ -883,7 +886,7 @@ select:focus {
   color: #fff;
 }
 .promo__banner--hover {
-  background: #97adbb;
+  background: #97adbb !important;
   color: #383b40 !important;
   text-shadow: 1px 1px 0 rgba(255,255,255,0.3);
 }
