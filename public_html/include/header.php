@@ -16,7 +16,7 @@
   <?
     $APPLICATION->ShowHead();
     $APPLICATION->SetAdditionalCSS("/layout/css/frontend.css", true);
-    $APPLICATION->AddHeadScript('/layout/js/frontend.js');
+    $APPLICATION->AddHeadScript('/layout/js/frontend.js', true);
   
   ?>
   <!--[if lt IE 9]>
