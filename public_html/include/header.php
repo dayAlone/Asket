@@ -14,10 +14,14 @@
     }
     ?></title>
   <?
-    $APPLICATION->ShowHead();
     $APPLICATION->SetAdditionalCSS("/layout/css/frontend.css", true);
     $APPLICATION->AddHeadScript('/layout/js/frontend.js', true);
-  
+    $APPLICATION->ShowMeta("robots"); 
+    $APPLICATION->ShowMeta("keywords"); 
+    $APPLICATION->ShowMeta("description"); 
+    $APPLICATION->ShowCSS(); 
+    $APPLICATION->ShowHeadScripts();
+    $APPLICATION->ShowHeadStrings(); 
   ?>
   <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
