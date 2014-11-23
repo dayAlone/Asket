@@ -7018,10 +7018,11 @@ select:focus {
   border: 0;
   right: 10px;
   top: 10px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  -moz-appearance: none;
+  -moz-appearance: button;
+  -webkit-appearance: button;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
   background: transparent url("../images/search.png") center center no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -7313,10 +7314,11 @@ select:focus {
   display: none;
 }
 .block .select select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  -moz-appearance: none;
+  -moz-appearance: button;
+  -webkit-appearance: button;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
   margin: 20px 0 28px 0;
   height: 41px;
   -webkit-border-radius: 3px;
@@ -7589,10 +7591,11 @@ select:focus {
   display: none;
 }
 .toolbar .select select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  -moz-appearance: none;
+  -moz-appearance: button;
+  -webkit-appearance: button;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
   margin: 0;
   height: 31px;
   -webkit-border-radius: 3px;
