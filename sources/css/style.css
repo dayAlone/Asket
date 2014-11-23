@@ -2596,6 +2596,61 @@ body.print .gallery .big a img {
     display: block;
   }
 }
+.protector {
+  float: left;
+  width: 100%;
+}
+.protector__title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 13px;
+  margin: 23px 0 15px;
+}
+.protector__row {
+  float: left;
+  width: 100%;
+  position: relative;
+  margin-bottom: 20px;
+  height: 80px;
+}
+.protector__row--count-2 .protector__item:nth-child(2) {
+  float: right;
+  margin-right: 0;
+}
+.protector__row--count-4 .protector__item:nth-child(3),
+.protector__row--count-4 .protector__item:nth-child(4) {
+  margin-right: 0;
+  margin-left: 7px;
+}
+.protector__row--count-4 .protector__item:nth-child(3) {
+  margin-left: 23px;
+}
+.protector__row:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 16px;
+  top: 50%;
+  left: 0;
+  margin-top: -8px;
+  background: #616d80;
+}
+.protector__item {
+  width: 72px;
+  height: 80px;
+  margin-right: 7px;
+  border: 1px solid #616d80;
+  text-align: center;
+  line-height: 80px;
+  font-size: 22px;
+  font-weight: bold;
+  float: left;
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+}
 .resp_slider .fotorama__arr .el svg path,
 .resp_slider .fotorama__arr .el svg g {
   fill: #fff !important;

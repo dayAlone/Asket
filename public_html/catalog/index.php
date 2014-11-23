@@ -62,7 +62,8 @@ elseif(strlen($_REQUEST['ELEMENT_CODE'])>0 && is_array($_GLOBALS['currentCatalog
           13 => "PRICE_SALE",
           14 => "CHASSIS",
           15 => "DEPRECIATION",
-          16 => "PRICE_ORDER"
+          16 => "PRICE_ORDER",
+          17 => "PROTECTOR"
         ),
         "CACHE_FILTER"  => "Y",
         "CACHE_TYPE"  => "A",

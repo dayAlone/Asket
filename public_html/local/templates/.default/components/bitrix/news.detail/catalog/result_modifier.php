@@ -30,6 +30,11 @@ foreach ($arResult["PROPERTIES"] as $key => $prop):
 			if(strlen($prop["VALUE"])>0)
 				$props[$prop["CODE"]] = $prop["VALUE"];
 		break;
+		case "PROTECTOR":
+			if(count($prop["VALUE"])>0)
+					if(strlen($prop["VALUE"][0]['i1'])>0)
+						$props[$prop["CODE"]] = $prop["VALUE"];
+		break;
 		case "BODY":
 		case "MASS":
 		case "ENGINE":

@@ -81,7 +81,7 @@ $props = &$item["PROPS"];
         <div class="sub-tabs">
             <div class="sub-tabs_title">
               <a href="#params" class="sub-tabs_title__active">Характеристики</a>
-              <?if(strlen($props['DEPRECIATION']['TEXT'])>0):?><a href="#depreciation">Износ</a><?endif;?>
+              <?if(strlen($props['DEPRECIATION']['TEXT'])>0||count($props['PROTECTOR'])>0):?><a href="#depreciation">Износ</a><?endif;?>
             </div>
             <div class="sub-tabs_content sub-tabs_content--active" id="params">
               
@@ -120,11 +120,41 @@ $props = &$item["PROPS"];
               </div>
               <?endif;?>
             </div>
-            <?if(strlen($props['DEPRECIATION'])>0):?>
+            <?if(strlen($props['DEPRECIATION'])>0||count($props['PROTECTOR'])>0):?>
             <div class="sub-tabs_content" id="depreciation">
-              <div class="param-block param-block--no-title">
-                <?=$props['DEPRECIATION']?>
+              <div class="row">
+                <?if(count($props['PROTECTOR'])>0):?>
+                <div class="col-xs-6">
+                  <div class="protector">
+                    <div class="protector__title">Остаток протектора:</div>
+                    <?foreach ($props['PROTECTOR'] as $p):?>
+                    <?
+                      $html="";
+                      $a=0;
+                      foreach ($p as $i):
+                        if(strlen($i)>0):
+                          $html.='<div class="protector__item">'.$i.'%</div>';
+                          $a++;
+                        endif;
+                      endforeach;?>
+                    <div class="protector__row protector__row--count-<?=$a?>">
+                      <?=$html?>
+                    </div>
+                    <?endforeach;?>
+                  </div>
+                </div>
+                <div class="col-xs-6">
+                <?else:?>
+                <div class="col-xs-12">
+                <?endif?>
+                  <?if(strlen($props['DEPRECIATION'])>0):?>
+                  <div class="param-block param-block--no-title">
+                    <?=$props['DEPRECIATION']?>
+                  </div>
+                  <?endif;?>
+                </div>
               </div>
+              
             </div>
             <?endif;?>
           </div>
