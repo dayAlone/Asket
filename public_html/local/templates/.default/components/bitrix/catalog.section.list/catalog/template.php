@@ -5,7 +5,7 @@
     <div class="row--title">
       <div class="row">
         <div class="col-xs-9">
-          <h2><?=$item['NAME']?></h2>
+          <h2><?=($item['UF_TITLE']?$item['UF_TITLE']:$item['NAME'])?></h2>
         </div>
         <div class="col-xs-3"><a href="<?=SITE_URL?><?=$item['SECTION_PAGE_URL']?>" class="button">Показать все</a></div>
       </div>

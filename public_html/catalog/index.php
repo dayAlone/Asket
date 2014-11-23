@@ -81,7 +81,7 @@ elseif(isset($_GLOBALS['currentCatalogSection'])):
 	        "CACHE_TYPE"   => "A",
 	        "CACHE_TIME"   => "36000",
 	        "CACHE_NOTES"  => $_REQUEST['ELEMENT_CODE'],
-	        "SECTION_USER_FIELDS" => array("UF_SVG"),
+	        "SECTION_USER_FIELDS" => array("UF_SVG", "UF_TITLE"),
 	    ),
 	    false
 	  );

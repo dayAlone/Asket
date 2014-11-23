@@ -74,7 +74,7 @@
                     echo "По запросу <br>";
                   endif;
                   ?>
-                  <?=($props['PLACE']?"Местонахождение: ".$props['PLACE']."<br>":"")?>
+                  <?=($props['PLACE']?"Наличие: ".$props['AVAILABILITY']."<br>":"")?>
               </div>
             </a>
           </div>

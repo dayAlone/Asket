@@ -21,7 +21,7 @@
 		$Sections   = array();
 		$arSort     = array("DEPTH_LEVEL" => "ASC");
 		$arFilter   = array("IBLOCK_ID" => 1);
-		$rsSections = CIBlockSection::GetList($arSort, $arFilter, false, array('UF_PHONE'));
+		$rsSections = CIBlockSection::GetList($arSort, $arFilter, false, array('UF_PHONE', 'UF_TITLE'));
 		
 		while ($s = $rsSections->Fetch()) {
 			if($s['DEPTH_LEVEL']==1)
@@ -54,7 +54,7 @@
 						$Current = $parent['IBLOCK_SECTION_ID'];
 						$Inner = array(
 							'ID'   => $s['ID'],
-							'NAME' => $s['NAME'],
+							'NAME' => ($s['UF_TITLE']?$s['UF_TITLE']:$s['NAME']),
 							'PHONE' => $s['UF_PHONE']
 						);
 					}
