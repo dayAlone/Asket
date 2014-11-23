@@ -6926,6 +6926,13 @@ button.close {
   src: local('☺'), url("../fonts/ForosWeb-Regular.otf") format('truetype');
   font-weight: normal;
 }
+select {
+  -moz-appearance: button;
+  -webkit-appearance: button;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+}
 .fotorama__arr,
 .fotorama__fullscreen-icon,
 .fotorama__video-close,
