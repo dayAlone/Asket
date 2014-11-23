@@ -66,7 +66,7 @@ elseif(strlen($_REQUEST['ELEMENT_CODE'])>0 && is_array($_GLOBALS['currentCatalog
         ),
         "CACHE_FILTER"  => "Y",
         "CACHE_TYPE"  => "A",
-        "SET_TITLE"   => "N",
+        "SET_TITLE"   => "Y",
         "COLS"        => 3
          ),
          false
