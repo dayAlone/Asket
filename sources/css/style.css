@@ -105,6 +105,7 @@ select:focus {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  -moz-appearance: none;
   background: transparent url("../images/search.png") center center no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -399,6 +400,7 @@ select:focus {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  -moz-appearance: none;
   margin: 20px 0 28px 0;
   height: 41px;
   -webkit-border-radius: 3px;
@@ -674,6 +676,7 @@ select:focus {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  -moz-appearance: none;
   margin: 0;
   height: 31px;
   -webkit-border-radius: 3px;
