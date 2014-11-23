@@ -2,11 +2,13 @@
 <div class="block faq">
   <h3>Мы найдем решение, если у вас:</h3>
   <div class="select"><img src="./layout/images/trigger.png" class="trigger">
+    <div class="select__frame">
     <select id="leasing-select">
       <?foreach ($arResult['ITEMS'] as $item):?>
       <option value="#leasing-content-<?=$item['ID']?>"><?=$item['NAME']?></option>
       <?endforeach;?>
     </select>
+    </div>
   </div>
   <?foreach ($arResult['ITEMS'] as $key=>$item):?>
     <div class="leasing-content <?=($key==0?"leasing-content--active":"")?>" id="leasing-content-<?=$item['ID']?>">

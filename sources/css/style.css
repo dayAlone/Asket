@@ -11,11 +11,21 @@
   font-weight: normal;
 }
 select {
-  -moz-appearance: button;
-  -webkit-appearance: button;
-  -webkit-appearance: button;
-  -moz-appearance: button;
-  appearance: button;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.select__frame {
+  float: left;
+  width: 100%;
+  overflow-x: hidden;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+.select__frame select {
+  width: 110% !important;
 }
 .fotorama__arr,
 .fotorama__fullscreen-icon,
@@ -404,13 +414,15 @@ select:focus {
 .bx-ie8 .block .select .trigger {
   display: none;
 }
+.block .select__frame {
+  margin: 20px 0 28px 0;
+}
 .block .select select {
   -moz-appearance: button;
   -webkit-appearance: button;
   -webkit-appearance: button;
   -moz-appearance: button;
   appearance: button;
-  margin: 20px 0 28px 0;
   height: 41px;
   -webkit-border-radius: 3px;
   border-radius: 3px;

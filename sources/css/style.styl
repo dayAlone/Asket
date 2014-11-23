@@ -23,10 +23,16 @@ b(name=null, position=null, color=null, size=null)
 		background-size size
 
 select 
-	-moz-appearance: button; 
-	-webkit-appearance: button; 
-	appearance: button;
-
+	-moz-appearance: none; 
+	-webkit-appearance: none; 
+	appearance: none;
+.select__frame
+	full-width()
+	overflow-x hidden
+	border-radius 3px
+	select
+		width 110% !important
+		
 .fotorama__arr,.fotorama__fullscreen-icon,.fotorama__video-close,.fotorama__video-play
 	background-image url(../plugins/fotorama.png)
 	@media (-webkit-min-device-pixel-ratio:1.5),(min-resolution:144dpi)
@@ -292,11 +298,13 @@ a, input, select
 			right 15px
 			.bx-ie8 &
 				display none
+		&__frame
+			margin: 20px 0 28px 0;
 		select
 			-moz-appearance    : button 
 			-webkit-appearance : button 
 			appearance         : button
-			margin 20px 0 28px 0
+			
 			height 41px
 			border-radius 3px
 			border 0
