@@ -753,6 +753,10 @@ select:focus {
 .catalog-sections__side-item_icon svg path {
   fill: #2c3b4c;
 }
+.bx-ie8 .catalog-sections__side-item_icon,
+.bx-ie9 .catalog-sections__side-item_icon {
+  display: none;
+}
 .catalog-sections__side-item_text {
   display: inline-block;
   line-height: 16px;
@@ -775,6 +779,10 @@ select:focus {
 .catalog-sections__side-item__active .catalog-sections__side-item_icon svg g,
 .catalog-sections__side-item__active .catalog-sections__side-item_icon svg path {
   fill: #fff;
+}
+.bx-ie8 .catalog-sections__side-item__active .catalog-sections__side-item_icon svg,
+.bx-ie9 .catalog-sections__side-item__active .catalog-sections__side-item_icon svg {
+  display: none;
 }
 .catalog-sections__side-item__active .catalog-sections__side-item_text {
   color: #fff;
@@ -886,7 +894,7 @@ select:focus {
   color: #fff;
 }
 .promo__banner--hover {
-  background: #97adbb !important;
+  background: #fff !important;
   color: #383b40 !important;
   text-shadow: 1px 1px 0 rgba(255,255,255,0.3);
 }
@@ -955,12 +963,12 @@ select:focus {
   display: none;
   padding: 15px 22px 15px 30px !important;
   height: 290px;
-  background: #96adbc;
+  background: #fff;
   top: 10px;
   right: -5px;
   z-index: 200;
-  -webkit-border-radius: 0 7px 7px 0;
-  border-radius: 0 7px 7px 0;
+  -webkit-border-radius: 0 5px 5px 0;
+  border-radius: 0 5px 5px 0;
 }
 .promo-slide .row {
   margin-bottom: 15px;
@@ -1367,7 +1375,8 @@ h4 {
   content: "";
   background: transparent url("../images/tabs.jpg") top left no-repeat;
 }
-.bx-ie8 .tabs__title-link:after {
+.bx-ie8 .tabs__title-link:after,
+.bx-ie9 .tabs__title-link:after {
   display: none;
 }
 .tabs__title-link--active {
@@ -1920,6 +1929,10 @@ a.print svg g,
 a.print svg path {
   fill: #8896a0;
 }
+.bx-ie8 a.print svg,
+.bx-ie9 a.print svg {
+  display: none;
+}
 .price {
   width: 170px;
   float: right;
@@ -2110,7 +2123,8 @@ a.print svg path {
   max-width: 36px;
   height: 36px;
 }
-.bx-ie8 .params-item-title svg {
+.bx-ie8 .params-item-title svg,
+.bx-ie9 .params-item-title svg {
   display: none;
 }
 .params-item-title svg g,
