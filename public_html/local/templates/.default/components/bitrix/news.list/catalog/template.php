@@ -1,5 +1,10 @@
 <?$this->setFrameMode(true);?>
-<?=(isset($arParams['SECTION_NAME'])?'<div class="row--title"><div class="row"><div class="col-xs-12"><h2>'.$arParams['SECTION_NAME'].'</h2></div></div></div>':'')?>
+<?=(isset($arParams['SECTION_NAME'])?'
+  <div class="row--title">
+    <div class="row">
+      '.(strlen($arParams['PHONE'])>0?'<div class="col-xs-8"><h2>'.$arParams['SECTION_NAME'].'</h2></div><div class="col-xs-4 phone right"><h2>'.$arParams['PHONE'].'</h2></div>':'<div class="col-xs-12"><h2>'.$arParams['SECTION_NAME'].'</h2></div>').'
+    </div>
+  </div>':'')?>
 <?if($arParams['SHOW_FILTER']=='Y'):?>
   <div class="toolbar">
     <form action="./" method="POST">

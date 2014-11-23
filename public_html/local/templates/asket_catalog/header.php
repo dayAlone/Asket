@@ -25,15 +25,16 @@ if(strlen($_REQUEST['ELEMENT_CODE'])>0 && !isset($_GLOBALS['currentCatalogInnerS
         <div class="col-xs-3 col-md-3 side">
           <?
             $APPLICATION->IncludeComponent("bitrix:catalog.section.list", "sidebar", array(
-                "IBLOCK_TYPE"  => "content",
-                "IBLOCK_ID"    => "1",
-                "SECTION_ID"   => $_GLOBALS['currentCatalogSection'],
-                "SECTION_CODE" => "",
-                "TOP_DEPTH"    => "2",
-                "CACHE_TYPE"   => "A",
-                "CACHE_TIME"   => "36000",
-                "CACHE_NOTES"  => $_REQUEST['ELEMENT_CODE'],
+                "IBLOCK_TYPE"         => "content",
+                "IBLOCK_ID"           => "1",
+                "SECTION_ID"          => $_GLOBALS['currentCatalogSection'],
+                "SECTION_CODE"        => "",
+                "TOP_DEPTH"           => "3",
+                "CACHE_TYPE"          => "N",
+                "CACHE_TIME"          => "36000",
+                "CACHE_NOTES"         => $_REQUEST['ELEMENT_CODE'],
                 "SECTION_USER_FIELDS" => array("UF_SVG"),
+                "CURRENT"             => $_GLOBALS['currentCatalogSection']
             ),
             false
           );

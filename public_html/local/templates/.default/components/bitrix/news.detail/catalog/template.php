@@ -98,8 +98,8 @@ $props = &$item["PROPS"];
                   <?
                 else:?>
                   <div class="row">
-                    <div class="col-md-5 col-xs-5"><?=$item['property_name']?>:</div>
-                    <div class="col-md-7 col-xs-7"><?=$item['property_value']?></div>
+                    <div class="col-xs-6"><?=$item['property_name']?>:</div>
+                    <div class="col-xs-6"><?=$item['property_value']?></div>
                   </div>
                 <?
                 endif;

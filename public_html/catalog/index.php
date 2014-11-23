@@ -33,8 +33,8 @@ if(strlen($_REQUEST['ELEMENT_CODE'])>0 && !isset($_GLOBALS['currentCatalogInnerS
           18 => "PRICE_ORDER"
         ),
 	));
-elseif(strlen($_REQUEST['ELEMENT_CODE'])>0 && isset($_GLOBALS['currentCatalogInnerSection'])):
-	$APPLICATION->IncludeComponent("bitrix:news.list", "catalog", 
+elseif(strlen($_REQUEST['ELEMENT_CODE'])>0 && is_array($_GLOBALS['currentCatalogInnerSection'])):
+  $APPLICATION->IncludeComponent("bitrix:news.list", "catalog", 
       array(
         "IBLOCK_ID"   => 1,
         "NEWS_COUNT"  => "21",
@@ -44,6 +44,7 @@ elseif(strlen($_REQUEST['ELEMENT_CODE'])>0 && isset($_GLOBALS['currentCatalogInn
         "DETAIL_URL"  => "/catalog/#ELEMENT_CODE#/",
         "PARENT_SECTION"  => $_GLOBALS['currentCatalogInnerSection']['ID'],
         "SECTION_NAME" => $_GLOBALS['currentCatalogInnerSection']['NAME'],
+        "PHONE"=> $_GLOBALS['currentCatalogInnerSection']['PHONE'],
         "DISPLAY_BOTTOM_PAGER" => "Y",
         "PROPERTY_CODE" => array(
           1 => "YEAR",
@@ -71,11 +72,10 @@ elseif(strlen($_REQUEST['ELEMENT_CODE'])>0 && isset($_GLOBALS['currentCatalogInn
          false
       );
 elseif(isset($_GLOBALS['currentCatalogSection'])):
-
 	$APPLICATION->IncludeComponent("bitrix:catalog.section.list", "catalog", array(
 	        "IBLOCK_TYPE"  => "content",
 	        "IBLOCK_ID"    => "1",
-	        "SECTION_ID"   => $_GLOBALS['currentCatalogSection'],
+	        "SECTION_ID"   => ($_GLOBALS['currentCatalogInnerSection']?$_GLOBALS['currentCatalogInnerSection']:$_GLOBALS['currentCatalogSection']),
 	        "SECTION_CODE" => "",
 	        "TOP_DEPTH"    => "2",
 	        "CACHE_TYPE"   => "A",

@@ -21,7 +21,7 @@
 		$Sections   = array();
 		$arSort     = array("DEPTH_LEVEL" => "ASC");
 		$arFilter   = array("IBLOCK_ID" => 1);
-		$rsSections = CIBlockSection::GetList($arSort, $arFilter);
+		$rsSections = CIBlockSection::GetList($arSort, $arFilter, false, array('UF_PHONE'));
 		
 		while ($s = $rsSections->Fetch()) {
 			if($s['DEPTH_LEVEL']==1)
@@ -31,9 +31,32 @@
 					if($s['DEPTH_LEVEL']==1) {
 						$Current = $s['ID'];
 					}
-					else {
+					elseif($s['DEPTH_LEVEL']==2) {
 						$Current = $s['IBLOCK_SECTION_ID'];
-						$Inner = array('ID'=>$s['ID'], 'NAME'=>$s['NAME']);
+						$arFilter = Array(
+					        "IBLOCK_ID"  => 1,
+					        "SECTION_ID" => $s["ID"]
+					    );
+						$counter = CIBlockSection::GetCount($arFilter);
+						if($counter>0):
+							$Inner = $s['ID'];
+						else:
+					    	$Inner = array(
+								'ID'   => $s['ID'],
+								'NAME' => $s['NAME'],
+								'PHONE' => $s['UF_PHONE']
+							);
+						endif;
+					}
+					else {
+						$raw = CIBlockSection::GetByID($s['IBLOCK_SECTION_ID']);
+						$parent = $raw->Fetch();
+						$Current = $parent['IBLOCK_SECTION_ID'];
+						$Inner = array(
+							'ID'   => $s['ID'],
+							'NAME' => $s['NAME'],
+							'PHONE' => $s['UF_PHONE']
+						);
 					}
 				}	
 			endif;

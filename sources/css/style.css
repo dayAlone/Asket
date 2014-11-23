@@ -733,6 +733,24 @@ select:focus {
   border-radius: 6px;
   margin-bottom: 5px;
 }
+.catalog-sections__side-item ul {
+  list-style: none;
+  float: right;
+  width: 89%;
+  margin-bottom: 15px;
+  margin-top: -5px;
+}
+.catalog-sections__side-item ul li {
+  line-height: 22px;
+  font-size: 13px;
+  color: #fff;
+}
+.catalog-sections__side-item ul li a.active div {
+  text-decoration: none;
+}
+.catalog-sections__side-item ul li a div {
+  text-decoration: underline;
+}
 .catalog-sections__side-item_icon {
   float: left;
   width: 69px;
@@ -1887,7 +1905,7 @@ h4 {
   width: 100%;
 }
 .product .side p {
-  font-size: 12px;
+  font-size: 13px;
   color: #515050;
 }
 .product .side ul,
@@ -1896,7 +1914,8 @@ h4 {
 }
 .product .side ul li,
 .product .side ol li {
-  font-size: 12px;
+  font-size: 13px;
+  margin-bottom: 5px;
 }
 .product h1 {
   font-size: 23px;
@@ -2013,13 +2032,13 @@ a.print svg path {
   padding: 10px 20px 5px 20px;
   margin-top: 20px;
   position: relative;
-  font-size: 12px;
+  font-size: 13px;
 }
 .param-block--no-title {
   padding-bottom: 10px;
 }
 .param-block .row {
-  line-height: 25px;
+  line-height: 28px;
 }
 .param-block .row > div {
   padding: 0;
