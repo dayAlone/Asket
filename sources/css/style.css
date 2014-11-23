@@ -2596,3 +2596,7 @@ body.print .gallery .big a img {
     display: block;
   }
 }
+.resp_slider .fotorama__arr .el svg path,
+.resp_slider .fotorama__arr .el svg g {
+  fill: #fff !important;
+}
