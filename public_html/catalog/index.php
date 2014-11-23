@@ -77,7 +77,7 @@ elseif(isset($_GLOBALS['currentCatalogSection'])):
 	        "IBLOCK_ID"    => "1",
 	        "SECTION_ID"   => ($_GLOBALS['currentCatalogInnerSection']?$_GLOBALS['currentCatalogInnerSection']:$_GLOBALS['currentCatalogSection']),
 	        "SECTION_CODE" => "",
-	        "TOP_DEPTH"    => "2",
+	        "TOP_DEPTH"    => "1",
 	        "CACHE_TYPE"   => "A",
 	        "CACHE_TIME"   => "36000",
 	        "CACHE_NOTES"  => $_REQUEST['ELEMENT_CODE'],

@@ -38,16 +38,29 @@ if(strlen($_REQUEST['ELEMENT_CODE'])>0 && !isset($_GLOBALS['currentCatalogInnerS
             ),
             false
           );
+          $path     = preg_split('/\//', $APPLICATION->GetCurDir(), false, PREG_SPLIT_NO_EMPTY);
+          $urls     = array();
+
+          for ($i=0; $i < count($path); $i++)
+            $urls[] = (isset($urls[$i-1])?$urls[$i-1]:"/").$path[$i].'/';
+
+          $urls[]="/";
+          global $banner;
+          $banner = array("PROPERTY_PAGES" => $urls)
+
           $APPLICATION->IncludeComponent("bitrix:news.list", "banners", 
           array(
-            "IBLOCK_ID"   => 8,
-            "NEWS_COUNT"  => "99",
-            "SORT_BY1"    => "SORT",
-            "SORT_ORDER1" => "ASC",
-            "DETAIL_URL"  => "/",
-            "PROPERTY_CODE"  => array("LINK"),
-            "CACHE_TYPE"  => "A",
-            "SET_TITLE"   => "N"
+            "IBLOCK_ID"     => 8,
+            "NEWS_COUNT"    => "99",
+            "FILTER_NAME"   => "banner",
+            "SORT_BY1"      => "SORT",
+            "SORT_ORDER1"   => "ASC",
+            "DETAIL_URL"    => "/",
+            "PROPERTY_CODE" => array("LINK", "TARGET", "ALL", "PAGES"),
+            "CACHE_TYPE"    => "A",
+            "CACHE_FILTER"  => "Y",
+            "SET_TITLE"     => "N"
+
              ),
              false
         );?>

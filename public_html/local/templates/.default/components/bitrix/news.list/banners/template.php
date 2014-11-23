@@ -3,6 +3,6 @@
 ?>
 <div class="banners center">
   <?foreach ($arResult['ITEMS'] as $item):?>
-    <a href="<?=$item['PROPERTIES']['LINK']['VALUE']?>"><img src="<?=$item['PREVIEW_PICTURE']['SRC']?>"></a>
+    <a href="<?=$item['PROPERTIES']['LINK']['VALUE']?>" <?=($item['PROPERTIES']['TARGET']['VALUE_XML_ID']=="Y"?"target='_blank'":"")?>><img src="<?=$item['PREVIEW_PICTURE']['SRC']?>"></a>
   <?endforeach;?>
 </div>
