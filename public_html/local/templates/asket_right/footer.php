@@ -22,7 +22,7 @@
 
 				$urls[]="/";
 				global $banner;
-				$banner = array("PROPERTY_PAGES" => $urls)
+				$banner = array("PROPERTY_PAGES" => $urls);
 
 				$APPLICATION->IncludeComponent("bitrix:news.list", "banners", 
 				array(
