@@ -21,7 +21,15 @@ endforeach;?>
               $parent = $item['ID'];
             ?>
               <div class="catalog-sections__side-item catalog-sections__side-item__active catalog-sections__side-item__height?>">
-                <a href="<?=SITE_URL?><?=$item['SECTION_PAGE_URL']?>"><div class="catalog-sections__side-item_icon"><?=file_get_contents($_SERVER['DOCUMENT_ROOT'].CFile::GetPath($item['UF_SVG']))?></div>
+                <a href="<?=SITE_URL?><?=$item['SECTION_PAGE_URL']?>">
+                  <div class="catalog-sections__side-item_icon">
+                    <?if($item['UF_ICON']):?>
+                      <img src="<?=CFile::GetPath($item['UF_ICON'])?>" alt="" class="first">
+                      <img src="<?=CFile::GetPath($item['UF_ICON_HOVER'])?>" alt="" class="last">
+                    <?else:?>
+                    <?=file_get_contents($_SERVER['DOCUMENT_ROOT'].CFile::GetPath($item['UF_SVG']))?>
+                    <?endif;?>
+                  </div>
                 <div class="catalog-sections__side-item_text"><?=$item['NAME']?></div></a>
                 <ul>
             <?else:
