@@ -6918,12 +6918,14 @@ button.close {
   font-family: 'MainFont';
   src: url("../fonts/ForosWeb-Medium.otf");
   src: local('☺'), url("../fonts/ForosWeb-Medium.otf") format('truetype');
+  src: url("../fonts/ForosWeb-Medium.eot?#iefix") format('embedded-opentype'), url("../fonts/ForosWeb-Medium.woff") format('woff'), url("../fonts/ForosWeb-Medium.otf") format('truetype');
   font-weight: bold;
 }
 @font-face {
   font-family: 'MainFont';
   src: url("../fonts/ForosWeb-Regular.otf");
   src: local('☺'), url("../fonts/ForosWeb-Regular.otf") format('truetype');
+  src: url("../fonts/ForosWeb-Regular.eot?#iefix") format('embedded-opentype'), url("../fonts/ForosWeb-Regular.woff") format('woff'), url("../fonts/ForosWeb-Regular.otf") format('truetype');
   font-weight: normal;
 }
 select {
@@ -7883,7 +7885,7 @@ select:focus {
   height: 290px;
 }
 .promo .resp_slider .fotorama__arr {
-  width: 48px !important;
+  width: 50px !important;
 }
 .promo .resp_slider .item {
   -webkit-border-radius: 7px;
@@ -9623,7 +9625,7 @@ body.print .gallery .big a img {
 }
 .resp_slider .fotorama__arr {
   background: rgba(0,0,0,0.5);
-  padding: 30px 0px;
+  padding: 30px 10px;
   margin-top: -46px;
   text-align: center;
   top: 50%;
