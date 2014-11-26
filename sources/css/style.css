@@ -806,9 +806,6 @@ select:focus {
   text-align: center;
   line-height: 57px;
 }
-.bx-ie8 .catalog-sections__side-item_icon {
-  display: none;
-}
 .catalog-sections__side-item_icon svg,
 .catalog-sections__side-item_icon img {
   max-width: 51px;
@@ -835,9 +832,6 @@ select:focus {
   color: #243747;
   max-width: 70%;
   vertical-align: middle;
-}
-.bx-ie8 .catalog-sections__side-item_text {
-  margin-left: 20px;
 }
 .catalog-sections__side-item__active {
   background: #2d73dd;
