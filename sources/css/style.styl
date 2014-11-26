@@ -566,13 +566,16 @@ a, input, select
 			background-repeat no-repeat
 			text-align center
 			line-height 57px
-			svg
+			svg, img
+				&.first
+					display block
+				&.last
+					display none
 				vertical-align middle
 				display inline-block
 				g, path
 					fill #2c3b4c
-			.bx-ie8 &, .bx-ie9 &
-				display none
+			
 		&_text
 			display inline-block
 			.bx-ie8 &
@@ -585,7 +588,11 @@ a, input, select
 			background #2d73dd
 			box-shadow inset 1px 2px 7px rgba(12,51,115,.97)
 			.catalog-sections__side-item_icon
-				svg
+				svg, img
+					&.first
+						display none
+					&.last
+						display block
 					vertical-align middle
 					display inline-block
 					g, path

@@ -7725,17 +7725,24 @@ select:focus {
 .bx-ie8 .catalog-sections__side-item_icon {
   display: none;
 }
-.catalog-sections__side-item_icon svg {
+.catalog-sections__side-item_icon svg,
+.catalog-sections__side-item_icon img {
   vertical-align: middle;
   display: inline-block;
 }
-.catalog-sections__side-item_icon svg g,
-.catalog-sections__side-item_icon svg path {
-  fill: #2c3b4c;
+.catalog-sections__side-item_icon svg.first,
+.catalog-sections__side-item_icon img.first {
+  display: block;
 }
-.bx-ie8 .catalog-sections__side-item_icon,
-.bx-ie9 .catalog-sections__side-item_icon {
+.catalog-sections__side-item_icon svg.last,
+.catalog-sections__side-item_icon img.last {
   display: none;
+}
+.catalog-sections__side-item_icon svg g,
+.catalog-sections__side-item_icon img g,
+.catalog-sections__side-item_icon svg path,
+.catalog-sections__side-item_icon img path {
+  fill: #2c3b4c;
 }
 .catalog-sections__side-item_text {
   display: inline-block;
@@ -7752,16 +7759,29 @@ select:focus {
   -webkit-box-shadow: inset 1px 2px 7px rgba(12,51,115,0.97);
   box-shadow: inset 1px 2px 7px rgba(12,51,115,0.97);
 }
-.catalog-sections__side-item__active .catalog-sections__side-item_icon svg {
+.catalog-sections__side-item__active .catalog-sections__side-item_icon svg,
+.catalog-sections__side-item__active .catalog-sections__side-item_icon img {
   vertical-align: middle;
   display: inline-block;
 }
+.catalog-sections__side-item__active .catalog-sections__side-item_icon svg.first,
+.catalog-sections__side-item__active .catalog-sections__side-item_icon img.first {
+  display: none;
+}
+.catalog-sections__side-item__active .catalog-sections__side-item_icon svg.last,
+.catalog-sections__side-item__active .catalog-sections__side-item_icon img.last {
+  display: block;
+}
 .catalog-sections__side-item__active .catalog-sections__side-item_icon svg g,
-.catalog-sections__side-item__active .catalog-sections__side-item_icon svg path {
+.catalog-sections__side-item__active .catalog-sections__side-item_icon img g,
+.catalog-sections__side-item__active .catalog-sections__side-item_icon svg path,
+.catalog-sections__side-item__active .catalog-sections__side-item_icon img path {
   fill: #fff;
 }
 .bx-ie8 .catalog-sections__side-item__active .catalog-sections__side-item_icon svg,
-.bx-ie9 .catalog-sections__side-item__active .catalog-sections__side-item_icon svg {
+.bx-ie8 .catalog-sections__side-item__active .catalog-sections__side-item_icon img,
+.bx-ie9 .catalog-sections__side-item__active .catalog-sections__side-item_icon svg,
+.bx-ie9 .catalog-sections__side-item__active .catalog-sections__side-item_icon img {
   display: none;
 }
 .catalog-sections__side-item__active .catalog-sections__side-item_text {
