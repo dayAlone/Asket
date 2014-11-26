@@ -7695,7 +7695,7 @@ select:focus {
 }
 .catalog-sections__side-item ul li span {
   position: absolute;
-  top: 1px;
+  top: -4px;
   left: 0;
 }
 .catalog-sections__side-item ul li+li {
