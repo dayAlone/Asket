@@ -774,6 +774,9 @@ select:focus {
   position: relative;
   padding-left: 14px;
 }
+.catalog-sections__side-item ul li div {
+  vertical-align: top;
+}
 .catalog-sections__side-item ul li span {
   position: absolute;
   top: 1px;
