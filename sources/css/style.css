@@ -811,12 +811,13 @@ select:focus {
 }
 .catalog-sections__side-item_icon svg,
 .catalog-sections__side-item_icon img {
+  max-width: 51px;
   vertical-align: middle;
   display: inline-block;
 }
 .catalog-sections__side-item_icon svg.first,
 .catalog-sections__side-item_icon img.first {
-  display: block;
+  display: inline-block;
 }
 .catalog-sections__side-item_icon svg.last,
 .catalog-sections__side-item_icon img.last {
