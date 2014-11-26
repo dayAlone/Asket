@@ -1487,7 +1487,7 @@ h4 {
   display: block;
 }
 .tabs__content .content {
-  min-height: 1032px;
+  min-height: 320px;
   padding-left: 45px;
 }
 .tabs__content .content:after {
