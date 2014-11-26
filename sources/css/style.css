@@ -769,6 +769,16 @@ select:focus {
   line-height: 22px;
   font-size: 13px;
   color: #fff;
+  position: relative;
+  padding-left: 14px;
+}
+.catalog-sections__side-item ul li span {
+  position: absolute;
+  top: 1px;
+  left: 0;
+}
+.catalog-sections__side-item ul li+li {
+  margin-top: 5px;
 }
 .catalog-sections__side-item ul li a.active div {
   text-decoration: none;

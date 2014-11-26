@@ -36,7 +36,7 @@ endforeach;?>
           case '3':
             if($item['IBLOCK_SECTION_ID']==$parent):
              ?>
-              <li>— <a href="<?=SITE_URL?><?=$item['SECTION_PAGE_URL']?>" class="<?=($_REQUEST['ELEMENT_CODE']==$item['CODE']?"active":"")?>">
+              <li><span>—</span> <a href="<?=SITE_URL?><?=$item['SECTION_PAGE_URL']?>" class="<?=($_REQUEST['ELEMENT_CODE']==$item['CODE']?"active":"")?>">
                 <div class="catalog-sections__side-item_text"><?=$item['NAME']?></div>
               </a></li>
              <?
