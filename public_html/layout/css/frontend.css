@@ -7883,7 +7883,7 @@ select:focus {
   height: 290px;
 }
 .promo .resp_slider .fotorama__arr {
-  width: 50px !important;
+  width: 48px !important;
 }
 .promo .resp_slider .item {
   -webkit-border-radius: 7px;
@@ -9623,7 +9623,7 @@ body.print .gallery .big a img {
 }
 .resp_slider .fotorama__arr {
   background: rgba(0,0,0,0.5);
-  padding: 30px 10px;
+  padding: 30px 0px;
   margin-top: -46px;
   text-align: center;
   top: 50%;
