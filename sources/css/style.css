@@ -854,7 +854,7 @@ select:focus {
 }
 .catalog-sections__side-item__active .catalog-sections__side-item_icon svg.last,
 .catalog-sections__side-item__active .catalog-sections__side-item_icon img.last {
-  display: block;
+  display: inline-block;
 }
 .catalog-sections__side-item__active .catalog-sections__side-item_icon svg g,
 .catalog-sections__side-item__active .catalog-sections__side-item_icon img g,
