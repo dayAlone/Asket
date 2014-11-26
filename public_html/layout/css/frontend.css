@@ -8234,6 +8234,16 @@ select:focus {
   margin-bottom: 25px;
   height: 360px;
 }
+.features .fotorama__arr {
+  background: rgba(0,0,0,0.5);
+  padding: 30px 10px;
+  margin-top: -46px;
+  text-align: center;
+}
+.features .fotorama__arr svg path,
+.features .fotorama__arr svg g {
+  fill: #fff;
+}
 .features__item {
   height: 320px;
 }
@@ -9610,6 +9620,12 @@ body.print .gallery .big a img {
   background-color: #fff;
   -webkit-border-radius: 7px;
   border-radius: 7px;
+}
+.resp_slider .fotorama__arr {
+  background: rgba(0,0,0,0.5);
+  padding: 30px 10px;
+  margin-top: -46px;
+  text-align: center;
 }
 .resp_slider .fotorama__arr .el svg path,
 .resp_slider .fotorama__arr .el svg g {
