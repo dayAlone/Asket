@@ -9,7 +9,7 @@
 				        "TOP_DEPTH"    => "2",
 				        "CACHE_TYPE"   => "A",
 				        "CACHE_TIME"   => "3600",
-				        "SECTION_USER_FIELDS" => array("UF_SVG"),
+				        "SECTION_USER_FIELDS" => array("UF_SVG","UF_ICON","UF_ICON_HOVER"),
 				    ),
 				    false
 				);

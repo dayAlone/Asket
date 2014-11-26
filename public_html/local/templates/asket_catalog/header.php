@@ -33,7 +33,7 @@ if(strlen($_REQUEST['ELEMENT_CODE'])>0 && !isset($_GLOBALS['currentCatalogInnerS
                 "CACHE_TYPE"          => "N",
                 "CACHE_TIME"          => "36000",
                 "CACHE_NOTES"         => $_REQUEST['ELEMENT_CODE'],
-                "SECTION_USER_FIELDS" => array("UF_SVG"),
+                "SECTION_USER_FIELDS" => array("UF_SVG","UF_ICON","UF_ICON_HOVER"),
                 "CURRENT"             => $_GLOBALS['currentCatalogSection']
             ),
             false
