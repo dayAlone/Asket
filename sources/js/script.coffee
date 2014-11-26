@@ -63,11 +63,12 @@ autoHeight = (el, selector='', height_selector = false, use_padding=false, debug
 
 $(document).ready ->
 
-	$('.features')
-		.on 'fotorama:ready', ()->
-			$('.features .fotorama__arr--prev').html("<svg width=\"19px\" height=\"34px\" viewBox=\"0 0 19 34\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><g stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\"><path d=\"M5,6 L5,5 L29,5 L29,7 L7,7 L7,29 L5,29 L5,6 Z\" fill=\"#000000\" sketch:type=\"MSShapeGroup\" transform=\"translate(17, 17) rotate(-45) translate(-17, -17)\" class=\"arrow\"></path></g></svg>")
-			$('.features .fotorama__arr--next').html("<svg width=\"19px\" height=\"34px\" viewBox=\"0 0 19 34\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><g stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\"><path d=\"M18,17 L18,-6 L16,-6 L16,16 L-6,16 L-6,18 L18,18 L18,17 Z\" fill=\"#000000\" sketch:type=\"MSShapeGroup\" transform=\"translate(17, 17) rotate(-45) translate(-17, -17)\" class=\"arrow\"></path></g></svg>")
-		.fotorama()
+	if $('.features').length > 0
+		$('.features')
+			.on 'fotorama:ready', ()->
+				$('.features .fotorama__arr--prev').html("<svg width=\"19px\" height=\"34px\" viewBox=\"0 0 19 34\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><g stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\"><path d=\"M5,6 L5,5 L29,5 L29,7 L7,7 L7,29 L5,29 L5,6 Z\" fill=\"#000000\" sketch:type=\"MSShapeGroup\" transform=\"translate(17, 17) rotate(-45) translate(-17, -17)\" class=\"arrow\"></path></g></svg>")
+				$('.features .fotorama__arr--next').html("<svg width=\"19px\" height=\"34px\" viewBox=\"0 0 19 34\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><g stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\"><path d=\"M18,17 L18,-6 L16,-6 L16,16 L-6,16 L-6,18 L18,18 L18,17 Z\" fill=\"#000000\" sketch:type=\"MSShapeGroup\" transform=\"translate(17, 17) rotate(-45) translate(-17, -17)\" class=\"arrow\"></path></g></svg>")
+			.fotorama()
 	$('a.refresh').click (e)->
 		console.log 123
 		getCaptcha()
