@@ -9630,7 +9630,8 @@ body.print .gallery .big a img {
   height: 32px;
 }
 .resp_slider .fotorama__arr .el {
-  margin: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
   width: 100%;
 }
 .resp_slider .fotorama__arr .el svg path,
