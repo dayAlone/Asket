@@ -9626,6 +9626,11 @@ body.print .gallery .big a img {
   padding: 30px 10px;
   margin-top: -46px;
   text-align: center;
+  top: 50%;
+}
+.resp_slider .fotorama__arr .el {
+  margin: 0 !important;
+  width: 100%;
 }
 .resp_slider .fotorama__arr .el svg path,
 .resp_slider .fotorama__arr .el svg g {
