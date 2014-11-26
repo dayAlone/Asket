@@ -2711,6 +2711,7 @@ body.print .gallery .big a img {
   margin-top: -46px;
   text-align: center;
   top: 50%;
+  height: 32px;
 }
 .resp_slider .fotorama__arr .el {
   margin: 0 !important;
