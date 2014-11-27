@@ -686,6 +686,7 @@ select:focus {
 }
 .toolbar .select__frame {
   width: 210px !important;
+  overflow: hidden;
 }
 .toolbar .select .trigger {
   -webkit-border-radius: 0;
@@ -852,7 +853,7 @@ select:focus {
 }
 .catalog-sections__side-item__active .catalog-sections__side-item_icon svg.last,
 .catalog-sections__side-item__active .catalog-sections__side-item_icon img.last {
-  display: inline-block;
+  display: inline-block !important;
 }
 .catalog-sections__side-item__active .catalog-sections__side-item_icon svg g,
 .catalog-sections__side-item__active .catalog-sections__side-item_icon img g,
