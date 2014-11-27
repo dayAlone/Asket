@@ -685,7 +685,6 @@ select:focus {
   position: relative;
 }
 .toolbar .select__frame {
-  width: 210px !important;
   overflow: hidden;
 }
 .toolbar .select .trigger {
@@ -710,6 +709,7 @@ select:focus {
   -webkit-border-radius: 3px;
   border-radius: 3px;
   border: 0;
+  width: 210px !important;
   float: left;
   width: 100%;
   line-height: 31px;
