@@ -7600,6 +7600,9 @@ select:focus {
   width: 100%;
   position: relative;
 }
+.toolbar .select__frame {
+  width: 210px !important;
+}
 .toolbar .select .trigger {
   -webkit-border-radius: 0;
   border-radius: 0;
@@ -8384,7 +8387,7 @@ h4 {
 }
 .bx-ie8 .tabs__title-link:after,
 .bx-ie9 .tabs__title-link:after {
-  display: none;
+  display: none !important;
 }
 .tabs__title-link--active {
   background: #f4f6fa;
@@ -8411,6 +8414,10 @@ h4 {
   display: block;
   left: auto;
   right: -25px;
+}
+.bx-ie9 .tabs__title-link:first-of-type.tabs__title-link--active:after,
+.bx-ie9 .tabs__title-link--first.tabs__title-link--active:after {
+  display: none;
 }
 .tabs__title-link:last-of-type,
 .tabs__title-link--last {

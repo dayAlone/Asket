@@ -478,6 +478,8 @@ a, input, select
 	.pages
 		margin-top 3px
 	.select
+		&__frame
+			width 210px !important
 		full-width()
 		position relative
 
@@ -995,7 +997,7 @@ h1, h2, h3, h4
 				color #3f5067
 			&:after
 				.bx-ie8 &, .bx-ie9 &
-					display none
+					display none !important
 				position absolute
 				height 56px
 				top -14px
@@ -1019,6 +1021,8 @@ h1, h2, h3, h4
 					display none
 				&.tabs__title-link--active
 					&:after	
+						.bx-ie9 &
+							display none
 						background-position 0 -110px !important
 						z-index 3
 						display block
