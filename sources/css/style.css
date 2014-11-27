@@ -880,6 +880,8 @@ select:focus {
 .banners a {
   float: left;
   width: 100%;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
   margin: 20px 0;
 }
 .promo {
