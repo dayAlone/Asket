@@ -173,7 +173,7 @@ endif;?>
 		endif;
 		?><hr />
 	<?endforeach;?>
-	<?if($arParams["DISPLAY_BOTTOM_PAGER"] != "N") echo $arResult["NAV_STRING"]?>
+	<?=$arResult["NAV_STRING"]?>
 	<br />
 	<p>
 	<?if($arResult["REQUEST"]["HOW"]=="d"):?>
