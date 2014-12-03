@@ -65,7 +65,7 @@ array(
   "SORT_BY1"    => "SORT",
   "SORT_ORDER1" => "ASC",
   "DETAIL_URL"  => "/catalog/#ELEMENT_CODE#/",
-  "PROPERTY_CODE"  => array("ELEMENTS"),
+  "PROPERTY_CODE"  => array("ELEMENTS", "LINKS"),
   "CACHE_TYPE"  => "A",
   "SET_TITLE"   => "N"
    ),

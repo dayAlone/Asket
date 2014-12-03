@@ -1,4 +1,9 @@
-<?$this->setFrameMode(true);?>
+<?$this->setFrameMode(true);
+if(count($arParams['LINKS'])>0):
+  foreach ($arParams['LINKS'] as $key => $link)
+    $arResult['ITEMS'][$key]['DETAIL_PAGE_URL'] = $link;
+endif;
+?>
 <?=(isset($arParams['SECTION_NAME'])?'
   <div class="row--title">
     <div class="row">

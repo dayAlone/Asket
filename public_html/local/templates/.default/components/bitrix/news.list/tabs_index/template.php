@@ -19,6 +19,7 @@
               "SORT_BY1"    => "SORT",
               "SORT_ORDER1" => "ASC",
               "DETAIL_URL"  => "/catalog/#ELEMENT_CODE#/",
+              "LINKS"       => (count($item['PROPERTIES']['LINKS']['VALUE'])>0?$item['PROPERTIES']['LINKS']['VALUE']:false),
               "PROPERTY_CODE" => array(
                 1 => "YEAR",
                 2 => "ENGINE",
