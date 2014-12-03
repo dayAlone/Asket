@@ -7315,6 +7315,7 @@ select:focus {
   float: left;
   width: 100%;
   position: relative;
+  min-height: 50px;
 }
 .block .select .trigger {
   -webkit-border-radius: 0;
