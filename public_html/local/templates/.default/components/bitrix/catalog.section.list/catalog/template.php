@@ -15,7 +15,7 @@
       array(
         "IBLOCK_ID"   => 1,
         "NEWS_COUNT"  => "3",
-        "SORT_BY1"    => "SORT",
+        "SORT_BY1"    => "PROPERTY_AVAILABILITY",
         "SORT_ORDER1" => "ASC",
         "DETAIL_URL"  => "/catalog/#ELEMENT_CODE#/",
         "PARENT_SECTION"  => $item['ID'],
