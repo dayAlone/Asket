@@ -1,7 +1,8 @@
 <?$this->setFrameMode(true);
 if(count($arParams['LINKS'])>0):
   foreach ($arParams['LINKS'] as $key => $link)
-    $arResult['ITEMS'][$key]['DETAIL_PAGE_URL'] = $link;
+    if(isset($arResult['ITEMS'][$key]['DETAIL_PAGE_URL']))
+      $arResult['ITEMS'][$key]['DETAIL_PAGE_URL'] = $link;
 endif;
 ?>
 <?=(isset($arParams['SECTION_NAME'])?'
