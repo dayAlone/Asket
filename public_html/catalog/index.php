@@ -48,7 +48,7 @@ elseif(strlen($_REQUEST['ELEMENT_CODE'])>0 && is_array($_GLOBALS['currentCatalog
         "FILTER_NAME"          => "filter",
         "NEWS_COUNT"           => "21",
         "SORT_BY1"             => (isset($_SESSION["SORT_BY1"])?$_SESSION["SORT_BY1"]:"PROPERTY_AVAILABILITY"),
-        "SORT_ORDER1"          => (isset($_SESSION["SORT_ORDER1"])?$_SESSION["SORT_ORDER1"]:"DESC"),
+        "SORT_ORDER1"          => (isset($_SESSION["SORT_ORDER1"])?$_SESSION["SORT_ORDER1"]:"ASC"),
         "SHOW_FILTER"          => "Y",
         "DETAIL_URL"           => "/catalog/#ELEMENT_CODE#/",
         "PARENT_SECTION"       => $_GLOBALS['currentCatalogInnerSection']['ID'],

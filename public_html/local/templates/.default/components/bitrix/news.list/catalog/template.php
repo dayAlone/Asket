@@ -15,8 +15,9 @@ endif;
   <div class="toolbar">
     <form action="./" method="POST">
     <div class="row">
-      <div class="col-md-3 col-xs-3">
-        <div class="select"><img src="/layout/images/trigger.png" class="trigger">
+      <div class="col-xs-2"><nobr>Сортировать по</nobr></div>
+      <div class="col-xs-3">
+        <div class="select">
           <div class="select__frame">
           <select name="SORT_BY1">
             <option <?=($arParams["SORT_BY1"]=="PROPERTY_PRICE"?"selected":"")?> value="PROPERTY_PRICE">цене</option>
@@ -25,9 +26,9 @@ endif;
           </div>
         </div>
       </div>
-      <div class="col-md-1 col-xs-1 no-padding">Выводить</div>
-      <div class="col-md-3 col-xs-3">
-        <div class="select"><img src="/layout/images/trigger.png" class="trigger">
+      <div class="col-xs-1 no-padding">Выводить</div>
+      <div class="col-xs-3">
+        <div class="select">
           <div class="select__frame">
           <select name="SORT_ORDER1">
           <?if($arParams["SORT_BY1"]=="PROPERTY_PRICE"):?>
