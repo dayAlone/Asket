@@ -15,7 +15,7 @@ endif;
   <div class="toolbar">
     <form action="./" method="POST">
     <div class="row">
-      <div class="col-xs-2"><nobr>Сортировать по</nobr></div>
+      <div class="col-xs-2" style="padding-right:0"><nobr>Сортировать по</nobr></div>
       <div class="col-xs-3">
         <div class="select">
           <div class="select__frame">
