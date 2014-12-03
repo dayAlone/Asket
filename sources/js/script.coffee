@@ -74,9 +74,6 @@ $(document).ready ->
 		getCaptcha()
 		e.preventDefault()
 
-	$('.toolbar select').on 'change', (e)->
-		$(this).parents('form').submit()
-
 	$('.promo__banner').hoverIntent
 		over : ()->
 			if !$(this).hasClass 'promo__banner--hover'
@@ -187,12 +184,16 @@ $(document).ready ->
 		overlay_gallery: false
 		deeplinking: false
 		
-	$('.breadcrumbs select')
+	$('select')
 		.chosen
 			disable_search: true
 			width: "100%"
 		.change ()->
-			window.location.href = $(this).val()
+			if $(this).parents('.breadcrumbs').length > 0
+				window.location.href = $(this).val()
+				
+			if $(this).parents('.toolbar').length > 0
+				$(this).parents('form').submit()
 		.on "chosen:showing_dropdown", ()->
 			drop = $(this).parent().find('.chosen-drop')
 			drop.velocity
@@ -253,9 +254,9 @@ $(document).ready ->
 				.addClass 'in'
 		out : ()->
 	
-	$('#leasing-select').on 'change', ()->
+	$('#leasing-select').chosen().change ()->
 		$('.leasing-content').removeClass 'leasing-content--active'
-		$($(this).val()).addClass 'leasing-content--active'
+		$($('#leasing-select').val()).addClass 'leasing-content--active'
 		#window.location.href = $(this).find('option:selected').data('url')
 
 	$('.tabs .tabs__title .tabs__title-link').click (s)->

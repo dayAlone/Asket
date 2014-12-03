@@ -1,7 +1,7 @@
 <?$this->setFrameMode(true);?>
 <div class="block faq">
   <h3>Мы найдем решение, если:</h3>
-  <div class="select"><img src="./layout/images/trigger.png" class="trigger">
+  <div class="select">
     <div class="select__frame">
     <select id="leasing-select">
       <?foreach ($arResult['ITEMS'] as $item):?>

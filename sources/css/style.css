@@ -22,12 +22,6 @@ select {
 .select__frame {
   float: left;
   width: 100%;
-  overflow-x: hidden;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-}
-.select__frame select {
-  width: 110% !important;
 }
 .fotorama__arr,
 .fotorama__fullscreen-icon,
@@ -416,16 +410,12 @@ select:focus {
 .bx-ie8 .block .select .trigger {
   display: none;
 }
-.block .select__frame {
-  margin: 20px 0 28px 0;
+.block .select .chosen-drop {
+  top: 38px;
 }
-.block .select select {
-  -moz-appearance: button;
-  -webkit-appearance: button;
-  -webkit-appearance: button;
-  -moz-appearance: button;
-  appearance: button;
+.block .select .chosen-single {
   height: 41px;
+  text-decoration: none;
   -webkit-border-radius: 3px;
   border-radius: 3px;
   border: 0;
@@ -444,9 +434,13 @@ select:focus {
   background: -ms-linear-gradient(bottom, #b5c1cd 0%, #d3dde7 100%);
   background: linear-gradient(to top, #b5c1cd 0%, #d3dde7 100%);
 }
-.bx-ie8 .block .select select {
-  line-height: initial;
-  padding: 0 0 10px 15px;
+.block .select .chosen-single > div {
+  background-image: url("/layout/images/trigger.png");
+  background-position: left center;
+  height: 41px;
+}
+.block .select .chosen-single > div b {
+  display: none;
 }
 .block h1 {
   font-size: 28px;
@@ -684,9 +678,6 @@ select:focus {
   width: 100%;
   position: relative;
 }
-.toolbar .select__frame {
-  overflow: hidden;
-}
 .toolbar .select .trigger {
   -webkit-border-radius: 0;
   border-radius: 0;
@@ -698,18 +689,16 @@ select:focus {
 .bx-ie8 .toolbar .select .trigger {
   display: none;
 }
-.toolbar .select select {
-  -moz-appearance: button;
-  -webkit-appearance: button;
-  -webkit-appearance: button;
-  -moz-appearance: button;
-  appearance: button;
+.toolbar .select .chosen-container {
+  float: left;
+  width: 100%;
+}
+.toolbar .select .chosen-single {
   margin: 0;
   height: 31px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
   border: 0;
-  width: 210px !important;
   float: left;
   width: 100%;
   line-height: 31px;
@@ -725,10 +714,19 @@ select:focus {
   background: -ms-linear-gradient(bottom, #b5c1cd 0%, #d3dde7 100%);
   background: linear-gradient(to top, #b5c1cd 0%, #d3dde7 100%);
 }
-.bx-ie8 .toolbar .select select {
-  line-height: 1;
-  padding: 5px 0 7px 10px;
+.toolbar .select .chosen-single > div {
+  margin-right: 3px;
   height: 31px;
+  background-image: url("/layout/images/trigger.png");
+  -webkit-background-size: 40% auto;
+  -moz-background-size: 40% auto;
+  background-size: 40% auto;
+}
+.toolbar .select .chosen-single > div > b {
+  display: none;
+}
+.toolbar .select .chosen-drop {
+  top: 28px;
 }
 .catalog-sections__side {
   float: left;

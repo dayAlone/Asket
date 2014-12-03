@@ -30,8 +30,13 @@ endif;
         <div class="select"><img src="/layout/images/trigger.png" class="trigger">
           <div class="select__frame">
           <select name="SORT_ORDER1">
+          <?if($arParams["SORT_BY1"]=="PROPERTY_PRICE"):?>
             <option <?=($arParams["SORT_ORDER1"]=="DESC"?"selected":"")?> value="DESC">сначала большее</option>
             <option <?=($arParams["SORT_ORDER1"]=="ASC"?"selected":"")?> value="ASC">сначала меньшее</option>
+          <?else:?>
+            <option <?=($arParams["SORT_ORDER1"]=="ASC"?"selected":"")?> value="ASC">в наличии</option>
+            <option <?=($arParams["SORT_ORDER1"]=="DESC"?"selected":"")?> value="DESC">под заказ</option>
+          <?endif;?>
           </select>
           </div>
         </div>

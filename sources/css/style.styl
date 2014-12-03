@@ -30,10 +30,6 @@ select
 	appearance: none;
 .select__frame
 	full-width()
-	overflow-x hidden
-	border-radius 3px
-	select
-		width 110% !important
 		
 .fotorama__arr,.fotorama__fullscreen-icon,.fotorama__video-close,.fotorama__video-play
 	background-image url(../plugins/fotorama.png)
@@ -300,25 +296,26 @@ a, input, select
 			right 15px
 			.bx-ie8 &
 				display none
-		&__frame
-			margin: 20px 0 28px 0;
-		select
-			-moz-appearance    : button 
-			-webkit-appearance : button 
-			appearance         : button
-			
-			height 41px
-			border-radius 3px
-			border 0
-			full-width()
-			line-height 41px
-			font-size 16px
-			text-shadow 1px 1px 0 rgba(255,255,255,.4)
-			padding 0 15px
-			gray-gradient()
-			.bx-ie8 &
-				line-height initial
-				padding 0 0 10px 15px
+		.chosen
+			&-drop
+				top 38px
+			&-single
+				height 41px
+				text-decoration: none
+				border-radius 3px
+				border 0
+				full-width()
+				line-height 41px
+				font-size 16px
+				text-shadow 1px 1px 0 rgba(255,255,255,.4)
+				padding 0 15px
+				gray-gradient()
+				> div
+					background-image url(/layout/images/trigger.png)
+					background-position left center
+					height 41px
+					b
+						display none
 	
 	h1
 		font-size 28px
@@ -478,9 +475,6 @@ a, input, select
 	.pages
 		margin-top 3px
 	.select
-		&__frame
-			
-			overflow hidden
 		full-width()
 		position relative
 
@@ -492,25 +486,29 @@ a, input, select
 			max-width 11px
 			.bx-ie8 &
 				display none
-		select
-			-moz-appearance    : button 
-			-webkit-appearance : button 
-			appearance         : button
-			margin 0
-			height 31px
-			border-radius 3px
-			border 0
-			width 210px !important
-			full-width()
-			line-height 31px
-			font-size 13px
-			text-shadow 1px 1px 0 rgba(255,255,255,.4)
-			padding 0 10px
-			gray-gradient()
-			.bx-ie8 &
-				line-height: 1
-				padding 5px 0 7px 10px
+		.chosen
+			&-container
+				full-width()
+			&-single
+				margin 0
 				height 31px
+				border-radius 3px
+				border 0
+				full-width()
+				line-height 31px
+				font-size 13px
+				text-shadow 1px 1px 0 rgba(255,255,255,.4)
+				padding 0 10px
+				gray-gradient()
+				> div
+					margin-right 3px
+					height 31px
+					background-image url(/layout/images/trigger.png)
+					background-size 40% auto
+					> b
+						display none
+			&-drop
+				top 28px
 
 .catalog-sections__side
 	full-width()
