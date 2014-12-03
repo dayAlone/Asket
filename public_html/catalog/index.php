@@ -35,9 +35,9 @@ if(strlen($_REQUEST['ELEMENT_CODE'])>0 && !isset($_GLOBALS['currentCatalogInnerS
 	));
 elseif(strlen($_REQUEST['ELEMENT_CODE'])>0 && is_array($_GLOBALS['currentCatalogInnerSection'])):
   global $filter;
-  if($_SESSION['SORT_BY1'] != 'PROPERTY_PRICE')
+  if($_SESSION[$_REQUEST['ELEMENT_CODE'].'_SORT_BY1'] != 'PROPERTY_PRICE')
   {
-    if($_SESSION["SORT_ORDER1"] != 'DESC')
+    if($_SESSION[$_REQUEST['ELEMENT_CODE']."_SORT_ORDER1"] != 'DESC')
       $filter = array('=PROPERTY_AVAILABILITY' => "33");
     else
       $filter = array('!=PROPERTY_AVAILABILITY' => "33");
@@ -47,8 +47,8 @@ elseif(strlen($_REQUEST['ELEMENT_CODE'])>0 && is_array($_GLOBALS['currentCatalog
         "IBLOCK_ID"            => 1,
         "FILTER_NAME"          => "filter",
         "NEWS_COUNT"           => "21",
-        "SORT_BY1"             => (isset($_SESSION["SORT_BY1"])?$_SESSION["SORT_BY1"]:"PROPERTY_AVAILABILITY"),
-        "SORT_ORDER1"          => (isset($_SESSION["SORT_ORDER1"])?$_SESSION["SORT_ORDER1"]:"ASC"),
+        "SORT_BY1"             => (isset($_SESSION[$_REQUEST['ELEMENT_CODE']."_SORT_BY1"])?$_SESSION[$_REQUEST['ELEMENT_CODE']."_SORT_BY1"]:"PROPERTY_AVAILABILITY"),
+        "SORT_ORDER1"          => (isset($_SESSION[$_REQUEST['ELEMENT_CODE']."_SORT_ORDER1"])?$_SESSION[$_REQUEST['ELEMENT_CODE']."_SORT_ORDER1"]:"ASC"),
         "SHOW_FILTER"          => "Y",
         "DETAIL_URL"           => "/catalog/#ELEMENT_CODE#/",
         "PARENT_SECTION"       => $_GLOBALS['currentCatalogInnerSection']['ID'],
