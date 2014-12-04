@@ -23,6 +23,9 @@
 				case "DEPRECIATION":
 					$props[$prop["CODE"]] = $prop["VALUE"];
 				break;
+				case "SALE_TEXT":
+					$props[$prop["CODE"]] = html_entity_decode($prop["VALUE"]["TEXT"]);
+				break;
 				case "PRICE_ORDER":
 					$props[$prop["CODE"]] = $prop["VALUE_XML_ID"];
 				break;

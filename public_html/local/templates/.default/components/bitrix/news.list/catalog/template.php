@@ -69,6 +69,9 @@ endif;
               <div class="catalog__list-item_type"><?=$props['TYPE']?></div>
               <div class="catalog__list-item_name"><?=$item['NAME']?></div>
               <div class="catalog__list-item_props">
+                <?if(strlen($props['SALE_TEXT'])>0):?>
+                  <?=$props['SALE_TEXT']?>
+                <?else:?>
                   <?=($props['YEAR']?"Год выпуска: ".$props['YEAR']."<br>":"")?>
                   <?=($props['STATUS']?"Состояние: ".$props['STATUS']."<br>":"")?>
                   <?=($props['PRICE']?"Цена: ":"")?>
@@ -91,6 +94,7 @@ endif;
                   endif;
                   ?>
                   <?=($props['PLACE']?"Наличие: ".$props['AVAILABILITY']."<br>":"")?>
+                <?endif;?>
               </div>
             </a>
           </div>
