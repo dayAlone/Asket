@@ -37,6 +37,7 @@
                 14 => "CHASSIS",
                 15 => "PRICE_ORDER"
               ),
+              'SHOW_SALE' => (count($arResult['ITEMS'])-1==$key?"Y":""),
               "DISPLAY_BOTTOM_PAGER" => "N",
               "FILTER_NAME" => "catalog_filter",
               "CACHE_FILTER"  => "Y",
