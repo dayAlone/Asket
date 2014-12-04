@@ -8533,7 +8533,8 @@ h4 {
   padding: 15px 15px 71px 15px;
   text-decoration: none !important;
 }
-.special .catalog__list-item {
+.special .catalog__list-item,
+#special .catalog__list-item {
   padding: 15px 15px 87px 15px;
 }
 .catalog__list-item:hover {
