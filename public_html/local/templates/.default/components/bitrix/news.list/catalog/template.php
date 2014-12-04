@@ -70,7 +70,7 @@ endif;
               <div class="catalog__list-item_name"><?=$item['NAME']?></div>
               <div class="catalog__list-item_props">
                 <?if(strlen($props['SALE_TEXT'])>0&&$arParams['SHOW_SALE']=='Y'):?>
-                  <?=$props['SALE_TEXT']?>
+                  <br/><?=$props['SALE_TEXT']?>
                 <?else:?>
                   <?=($props['YEAR']?"Год выпуска: ".$props['YEAR']."<br>":"")?>
                   <?=($props['STATUS']?"Состояние: ".$props['STATUS']."<br>":"")?>
