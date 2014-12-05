@@ -141,7 +141,7 @@ endif;?>
 	<br /><hr />
 	<?foreach($arResult["SEARCH"] as $arItem):?>
 		<a class="search-page__title" href="<?echo $arItem["URL"]?>"><?echo $arItem["TITLE_FORMATED"]?></a>
-		<p><?echo strip_tags(htmlspecialchars_decode($arItem["BODY_FORMATED"]))?></p>
+		
 		<?if (
 			$arParams["SHOW_RATING"] == "Y"
 			&& strlen($arItem["RATING_TYPE_ID"]) > 0
@@ -167,11 +167,7 @@ endif;?>
 				);?>
 			</div>
 		<?endif;?>
-		<small><?=GetMessage("SEARCH_MODIFIED")?> <?=$arItem["DATE_CHANGE"]?></small><br /><?
-		if($arItem["CHAIN_PATH"]):?>
-			<small><?=GetMessage("SEARCH_PATH")?>&nbsp;<?=$arItem["CHAIN_PATH"]?></small><?
-		endif;
-		?><hr />
+		<hr />
 	<?endforeach;?>
 	<?=$arResult["NAV_STRING"]?>
 	<br />
