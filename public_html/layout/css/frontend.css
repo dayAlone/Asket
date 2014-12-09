@@ -8660,6 +8660,7 @@ h4 {
 }
 .modal-dialog .modal-content {
   float: left;
+  width: 100%;
   border: 0;
   padding: 10px 30px 25px;
 }
