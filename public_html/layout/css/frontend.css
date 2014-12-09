@@ -8659,6 +8659,7 @@ h4 {
   width: 675px;
 }
 .modal-dialog .modal-content {
+  float: left;
   border: 0;
   padding: 10px 30px 25px;
 }
@@ -8672,7 +8673,6 @@ h4 {
 }
 .modal-dialog .modal-content .success {
   display: none;
-  margin-bottom: 30px;
   float: left;
   width: 100%;
 }
