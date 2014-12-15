@@ -131,9 +131,9 @@ $props = &$item["PROPS"];
                     <?
                       $html="";
                       $a=0;
-                      foreach ($p as $i):
+                      foreach ($p as $z=>$i):
                         if(strlen($i)>0):
-                          $html.='<div class="protector__item">'.$i.'%</div>';
+                          $html.='<div class="protector__item protector__item-<?=$z?>">'.$i.'%</div>';
                           $a++;
                         endif;
                       endforeach;?>

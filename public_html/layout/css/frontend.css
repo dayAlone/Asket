@@ -6968,6 +6968,10 @@ body {
   height: 100%;
   background: #edf5f7;
 }
+body.bx-ie8,
+body.bx-ie9 {
+  font-family: 'Arial', sans-serif !important;
+}
 .container {
   width: 1077px;
   position: relative;
